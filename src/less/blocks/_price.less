@@ -2,7 +2,7 @@
 
 	.sale-icon {
 		position: absolute;
-		top: -10%;
+		top: -25%;
 
 		right: 0;
 		width: 300px;
@@ -14,7 +14,7 @@
 		background-color: @green;
 		-webkit-animation-name: swingElement;
 		animation-name: swingElement;
-		-webkit-animation-duration: 8s;
+		-webkit-animation-duration: 5s;
 		animation-duration: 5s;
 		-webkit-animation-iteration-count: infinite;
 		animation-iteration-count: infinite;
@@ -26,7 +26,7 @@
 			.title-2;
 			font-family: @bb;
 			margin-bottom: 0;
-			transform: rotate(30deg);
+
 		}
 	}
 }
@@ -35,48 +35,44 @@
 	position: relative;
 
 	.header-group .head-4 {
-
 		margin-bottom: 20px;
 
 	}
 
 	.title-2 {
 		border-bottom: 2px solid rgba(255, 255, 255, .2);
+		position: relative;
+		// z-index: 2;
 	}
 }
 
-@-webkit-keyframes swingElement {
-	0% {
-		-webkit-transform: translateY(0px);
-		transform: translateY(0px);
-	}
 
-	50% {
-		-webkit-transform: translateY(25px);
-		transform: translateY(25px);
-	}
-
-	100% {
-		-webkit-transform: translateY(0px);
-		transform: translateY(0px);
-	}
-}
 
 @keyframes swingElement {
 	0% {
-		-webkit-transform: translateY(0px);
-		transform: translateY(0px);
+
+		transform: rotate(-15deg);
 	}
 
+
 	50% {
-		-webkit-transform: translateY(15px);
-		transform: translateY(15px);
+		transform: rotate(15deg);
 	}
 
 	100% {
-		-webkit-transform: translateY(0px);
-		transform: translateY(0px);
+		transform: rotate(-15deg);
 	}
+}
+
+.tariff-item {
+	&+.tariff-item {
+		margin-top: 100px;
+	}
+}
+
+.tariff-item.tariff-item--bg .price-card {
+	background-color: @bg;
+	border-color: transparent;
 }
 
 .price-card {
@@ -87,4 +83,55 @@
 	border: 1px solid rgba(255, 255, 255, .6);
 	border-radius: 10px;
 
+}
+
+.price-card {
+	width: 67%;
+	max-width: 850px;
+}
+
+.price-card--black {
+	background-color: #000;
+	border-color: transparent;
+}
+
+.footer-group {
+	align-items: center;
+	margin-top: 80px;
+
+	.price-value {
+		.text-90;
+		line-height: 1;
+		position: relative;
+
+		.old-price {
+			position: absolute;
+			right: -20px;
+			transform: translateX(100%);
+			top: 0;
+			color: rgba(255, 255, 255, .5);
+			font-size: 20px;
+			text-decoration: line-through;
+		}
+	}
+}
+
+.price-card__info {
+	width: 32%;
+	max-width: 410px;
+}
+
+.price-card__info {
+	font-size: 18px;
+	line-height: 1.5;
+	padding-top: 34px;
+
+	span {
+		padding-right: 7px;
+	}
+}
+
+.tariff-item--title {
+	margin-top: 100px;
+	margin-bottom: 20px;
 }
