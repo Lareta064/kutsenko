@@ -9,9 +9,9 @@
 	}
 
 	.number {
-		min-width: 160px;
-		max-width: 160px;
-		height: 160px;
+		min-width: 1.3333em;
+		max-width: 1.3333em;
+		height: 1.3333em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -21,6 +21,12 @@
 		margin-right: 40px;
 		background-color: @bg;
 		border: 1px solid transparent;
+
+		@media(max-width:991px) {
+			min-width: 130px;
+			max-width: 130px;
+			height: 130px;
+		}
 	}
 
 	.number--red {
@@ -41,14 +47,19 @@
 		right: 0;
 		top: 50%;
 		transform: translateY(-50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media(max-width:1199px) {
+			display: none;
+		}
 	}
 
 	.pr-icon--play {
 		width: 300px;
 		height: 300px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+
 		border-radius: 50%;
 		background-color: @bg;
 		right: -2%;
@@ -65,6 +76,11 @@
 
 	.img-slides {
 		margin-top: 20px;
+		display: flex;
+
+		a+a {
+			margin-left: 10px;
+		}
 	}
 
 	.programm-text--offset {
