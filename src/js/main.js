@@ -1,6 +1,5 @@
 $(document).ready(function () {
-	$('[data-fancybox="gallery"]').fancybox({
 
-	});
+	$('[data-fancybox="gallery"]').fancybox();
 
 })
