@@ -1,47 +1,211 @@
+@font-face {
+	font-family: 'Bebas Neue Regular';
+	src: url('../fonts/BebasNeueRegular.eot');
+	src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BebasNeueRegular.woff') format('woff'),
+		url('../fonts/BebasNeueRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
-*{box-sizing: border-box;}
-html{scroll-behavior: smooth;}
-html, body{
+@font-face {
+	font-family: 'Bebas Neue Bold';
+	src: url('../fonts/BebasNeueBold.eot');
+	src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BebasNeueBold.woff') format('woff'),
+		url('../fonts/BebasNeueBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Regular';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Regular.woff') format('woff'),
+		url('../fonts/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Bold';
+	src: url('../fonts/Montserrat-ExtraBold.eot');
+	src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+		url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
+	font-family: 'Montserrat Regular', sans-serif;
+	// font-family: 'Proxima Nova Bold';
+	// font-family: 'Bebas Neue Bold';
+	font-size: 20px;
 	line-height: normal;
-	background-color:#141C24;
+	background-color: #111115;
 
 }
 
-a,a:hover {text-decoration: none;}
+a,
+a:hover {
+	text-decoration: none;
+}
 
 
-ul{
+ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
-h1, h2, h3, p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	padding: 0;
 	margin: 0;
 }
 
-img{max-width: 100%}
-input{
+h1,
+h2,
+h3 {
+	font-family: 'Bebas Neue Bold';
+	line-height: 1;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+input {
 	outline: none;
 }
 
+button {
+	cursor: pointer;
+	outline: none;
+	border: 0px;
+	box-shadow: none;
+	background-color: transparent;
+}
 
 
-.container{
-  width: 100%;
-  max-width: 1760px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  @media(min-width: 992px){padding: 0px 25px;}
-  @media(min-width: 1440px){padding: 0px 35px;}
-  @media(min-width: 1920px){padding: 0px;}
+.container {
+	width: 100%;
+	max-width: 1290px;
+	margin: 0 auto;
 
+	@media(max-width: 1439px) {
+		max-width: 1260px;
+	}
+
+	@media(max-width: 1364px) {
+		max-width: 1140px;
+	}
+
+	@media(max-width: 1199px) {
+		max-width: 932px;
+	}
+
+	@media(max-width: 991px) {
+		max-width: 708px;
+	}
+
+	@media(max-width: 767px) {
+		max-width: 540px;
+	}
+
+	@media(max-width: 579px) {
+		max-width: 360px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+}
+
+// typography
+.title-1 {
+	font-size: 260px;
+	letter-spacing: 0.02em;
+
+	@media(max-width:767px) {
+		font-size: 70px;
+	}
+}
+
+.title-2 {
+	font-size: 120px;
+}
+
+.title-3 {
+	font-size: 60px;
+	letter-spacing: 0.05em;
+}
+
+.text-30 {
+	font-size: 30px;
+	line-height: 1.23;
+
+	@media(max-width:767px) {
+		font-size: 18px;
+	}
+}
+
+.text-50 {
+	font-size: 50px;
+	line-height: 1.22;
+}
+
+.text-60 {
+	font-size: 60px;
+	line-height: 1.25;
+
+	@media(max-width:767px) {
+		font-size: 30px;
+	}
+}
+
+.text-red {
+	color: @red;
 }
