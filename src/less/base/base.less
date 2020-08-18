@@ -74,11 +74,13 @@ body {
 	height: 100%;
 	color: #fff;
 	font-family: 'Montserrat Regular', sans-serif;
-	// font-family: 'Proxima Nova Bold';
-	// font-family: 'Bebas Neue Bold';
 	font-size: 20px;
 	line-height: normal;
 	background-color: #111115;
+
+	@media(max-width:1199px) {
+		font-size: 18px;
+	}
 
 }
 
@@ -164,10 +166,65 @@ button {
 
 }
 
+// кнопки
+.btn {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-family: @m;
+	font-weight: 400;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	.tr;
+
+	&:hover {
+		color: @black;
+		background-color: #fff;
+	}
+}
+
+.btn.btn-red {
+	color: @red;
+	border-color: @red;
+
+	&:hover {
+		color: #fff;
+		background-color: @red;
+	}
+}
+
+.btn.btn-green {
+	color: @green;
+	border-color: @green;
+
+	&:hover {
+		color: #fff;
+		background-color: @green;
+	}
+}
+
+.btn.btn-solid {
+	background-color: @green;
+	border-color: @green;
+
+	&:hover {
+		color: @green;
+		background-color: transparent;
+	}
+}
+
 // typography
 .title-1 {
 	font-size: 260px;
 	letter-spacing: 0.02em;
+
+	@media(max-width:991px) {
+		font-size: 140px;
+	}
 
 	@media(max-width:767px) {
 		font-size: 70px;
@@ -181,6 +238,11 @@ button {
 .title-3 {
 	font-size: 60px;
 	letter-spacing: 0.05em;
+}
+
+.text-24 {
+	font-size: 24px;
+	line-height: 29px;
 }
 
 .text-30 {
@@ -201,6 +263,14 @@ button {
 	font-size: 60px;
 	line-height: 1.25;
 
+	@media(max-width:1199px) {
+		font-size: 38px;
+	}
+
+	@media(max-width:991px) {
+		font-size: 34px;
+	}
+
 	@media(max-width:767px) {
 		font-size: 30px;
 	}
@@ -208,4 +278,32 @@ button {
 
 .text-red {
 	color: @red;
+}
+
+.text-green {
+	color: @green;
+}
+
+.text-group {
+	h4 {
+		.text-24;
+		margin-bottom: 10px;
+		font-family: @mb;
+	}
+
+	p {
+		line-height: 1.5;
+	}
+}
+
+.text-group-30 {
+	h3 {
+		.text-30;
+		margin-bottom: 10px;
+		font-family: @mb;
+	}
+
+	p {
+		line-height: 1.5;
+	}
 }
