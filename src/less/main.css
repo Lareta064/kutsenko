@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: url('../fonts/BebasNeueRegular.eot');
+  src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeueRegular.woff') format('woff'), url('../fonts/BebasNeueRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url('../fonts/BebasNeueBold.eot');
+  src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeueBold.woff') format('woff'), url('../fonts/BebasNeueBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../fonts/Montserrat-ExtraBold.eot');
+  src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-ExtraBold.woff') format('woff'), url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: 'Montserrat Regular', sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  background-color: #111115;
+}
+@media (max-width: 1199px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Bebas Neue Bold';
+  line-height: 1;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+input {
+  outline: none;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: 0px;
+  box-shadow: none;
+  background-color: transparent;
+}
+section {
+  padding-top: 190px;
+}
+.container {
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+@media (max-width: 1439px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+@media (max-width: 1364px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 932px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 708px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 579px) {
+  .container {
+    max-width: 360px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.btn {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: 'Montserrat Regular';
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: #111115;
+  background-color: #fff;
+}
+.btn.btn-red {
+  color: #DD4F48;
+  border-color: #DD4F48;
+}
+.btn.btn-red:hover {
+  color: #fff;
+  background-color: #DD4F48;
+}
+.btn.btn-green {
+  color: #50B16D;
+  border-color: #50B16D;
+}
+.btn.btn-green:hover {
+  color: #fff;
+  background-color: #50B16D;
+}
+.btn.btn-solid {
+  background-color: #50B16D;
+  border-color: #50B16D;
+}
+.btn.btn-solid:hover {
+  color: #50B16D;
+  background-color: transparent;
+}
+.title-1 {
+  font-size: 260px;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 991px) {
+  .title-1 {
+    font-size: 140px;
+  }
+}
+@media (max-width: 767px) {
+  .title-1 {
+    font-size: 70px;
+  }
+}
+.title-2 {
+  font-size: 120px;
+  text-transform: uppercase;
+  margin-bottom: 0.8333em;
+}
+.title-3 {
+  font-size: 60px;
+  letter-spacing: 0.05em;
+}
+.text-24 {
+  font-size: 24px;
+  line-height: 29px;
+}
+.text-30 {
+  font-size: 30px;
+  line-height: 1.23;
+}
+@media (max-width: 767px) {
+  .text-30 {
+    font-size: 18px;
+  }
+}
+.text-50 {
+  font-size: 50px;
+  line-height: 1.22;
+}
+.text-60 {
+  font-size: 60px;
+  line-height: 1.25;
+}
+@media (max-width: 1199px) {
+  .text-60 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 991px) {
+  .text-60 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .text-60 {
+    font-size: 30px;
+  }
+}
+.text-red {
+  color: #DD4F48;
+}
+.text-green {
+  color: #50B16D;
+}
+.text-group h4 {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat Bold';
+}
+.text-group p {
+  line-height: 1.5;
+}
+.text-group-30 h3 {
+  font-size: 30px;
+  line-height: 1.23;
+  margin-bottom: 10px;
+  font-family: 'Montserrat Bold';
+}
+@media (max-width: 767px) {
+  .text-group-30 h3 {
+    font-size: 18px;
+  }
+}
+.text-group-30 p {
+  line-height: 1.5;
+}
+.ma {
+  margin-left: auto;
+  margin-right: auto;
+}
+.tr {
+  transition: 0.5s;
+}
+.block {
+  height: 50px;
+}
+.header {
+  padding-top: 50px;
+  position: relative;
+  height: 1525px;
+}
+.header-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 30px;
+}
+.logo {
+  font-family: 'Bebas Neue Regular';
+  font-size: 30px;
+  letter-spacing: 0.5em;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  opacity: 0.5;
+  display: inline-block;
+}
+.logo:hover {
+  border-color: #DD4F48;
+}
+.header-title {
+  margin-top: 150px;
+  position: relative;
+  z-index: 1;
+}
+.header-title h2 {
+  font-family: 'Proxima Nova Regular';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.23;
+  margin-bottom: 35px;
+  color: #DD4F48;
+}
+.header-title h1 {
+  margin-bottom: 70px;
+}
+.benefits {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.benefits-item {
+  width: 49%;
+  max-width: 610px;
+}
