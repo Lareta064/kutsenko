@@ -1,0 +1,106 @@
+.programms-list__item {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 100px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.number {
+		min-width: 1.3333em;
+		max-width: 1.3333em;
+		height: 1.3333em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.text-120;
+		margin-bottom: 0;
+		font-family: @bb;
+		margin-right: 40px;
+		background-color: @bg;
+		border: 1px solid transparent;
+
+		@media(max-width:991px) {
+			min-width: 130px;
+			max-width: 130px;
+			height: 130px;
+		}
+	}
+
+	.number--red {
+		background-color: @red;
+	}
+
+	.number--dashed {
+		border: 1px dashed rgba(255, 255, 255, .4);
+
+	}
+
+	.programm-text {
+		position: relative;
+	}
+
+	.pr-icon {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media(max-width:1199px) {
+			display: none;
+		}
+	}
+
+	.pr-icon--play {
+		width: 300px;
+		height: 300px;
+
+		border-radius: 50%;
+		background-color: @bg;
+		right: -2%;
+	}
+
+	.icon-play {
+		width: 35%;
+		max-width: 100px;
+	}
+
+	.icon-book {
+		max-width: 205px;
+	}
+
+	.img-slides {
+		margin-top: 20px;
+		display: flex;
+
+		a+a {
+			margin-left: 10px;
+		}
+	}
+
+	.programm-text--offset {
+		position: relative;
+		top: 35px;
+	}
+}
+
+.programms-footer {
+	padding-top: 40px;
+	padding-bottom: 60px;
+	background: @bg;
+	border-radius: 10px;
+	padding-left: 200px;
+	margin-top: 98px;
+
+	p {
+		font-size: 16px;
+		line-height: 1.5;
+		margin-top: 24px;
+		color: rgba(255, 255, 255, .6);
+	}
+}

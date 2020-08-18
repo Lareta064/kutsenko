@@ -1,3 +1,57 @@
+// ========== ПРОГРАММЫ КУРСА ==========
 section.programms
 	.container
 		h2.title-2 в программе курса
+		.programms-list
+			.programms-list__item
+				.number.number--red
+					span 9
+				.programm-text.text-50
+					p учебных модулей,<br> первый из которых бесплатный
+			include _modul-1.pug			
+			.programms-list__item
+				.pr-icon.pr-icon--play
+					.icon-play
+						img(src="img/play.png", alt="icon")
+				.number
+					span 30
+				.programm-text.text-50
+					p видеоуроков, средней продолжительностью в 40 минут
+			.programms-list__item
+				.number
+					span 17
+				.programm-text.text-50.programm-text--offset
+					p мини-презентаций для наглядного пояснения уроков и заданий
+					.img-slides
+						a(href="img/miniature1.jpg" data-fancybox="gallery")
+							img(src="img/miniature1.jpg" alt="img")
+						a(href="img/miniature2.jpg" data-fancybox="gallery")
+							img(src="img/miniature2.jpg" alt="img")
+						a(href="img/miniature3.jpg" data-fancybox="gallery")
+							img(src="img/miniature3.jpg" alt="img")
+						a(href="img/miniature4.jpg" data-fancybox="gallery")
+							img(src="img/miniature4.jpg" alt="img")
+						a(href="img/miniature5.jpg" data-fancybox="gallery")
+							img(src="img/miniature5.jpg" alt="img")
+			.programms-list__item
+				.pr-icon.pr-icon--book
+					.icon-book
+						img(src="img/book.png", alt="icon")
+				.number
+					span 54
+				.programm-text.text-50
+					p дополнительных материала<br> и полезных ссылок
+
+			.programms-list__item
+				.number.number--dashed
+					span 16
+				.programm-text.text-50
+					p проверенных временем книг об инвестициях и фондовом рынке
+					p.text-20 После окончания курса делюсь списком действительно полезных книг,<br> которые помог закрепить полученные навыки
+
+		.programms-footer
+			a(href="#!").btn.btn-red  Посмотреть полную программу курса
+			p Программа еще «шлифуется» и будет закончена в ближайшее время. <br> Возможны изменения. Откроется в Гугл-документе 
+
+// ========== КОНЕЦ ПРОГРАММЫ КУРСА ==========
+				

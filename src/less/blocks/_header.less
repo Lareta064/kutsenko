@@ -1,7 +1,7 @@
 .header {
 	padding-top: 50px;
 	position: relative;
-	height: 1525px;
+	// height: 1525px;
 }
 
 .header-bg {
@@ -55,9 +55,21 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+
+	@media(max-width:991px) {
+		display: block;
+	}
 }
 
 .benefits-item {
 	width: 49%;
 	max-width: 610px;
+
+	@media(max-width:991px) {
+		width: 100%;
+
+		&+.benefits-item {
+			margin-top: 24px;
+		}
+	}
 }
