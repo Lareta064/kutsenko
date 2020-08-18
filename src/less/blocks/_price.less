@@ -1,0 +1,90 @@
+.price {
+
+	.sale-icon {
+		position: absolute;
+		top: -10%;
+
+		right: 0;
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: @green;
+		-webkit-animation-name: swingElement;
+		animation-name: swingElement;
+		-webkit-animation-duration: 8s;
+		animation-duration: 5s;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+		z-index: 1;
+
+		span {
+			.title-2;
+			font-family: @bb;
+			margin-bottom: 0;
+			transform: rotate(30deg);
+		}
+	}
+}
+
+.header-group {
+	position: relative;
+
+	.header-group .head-4 {
+
+		margin-bottom: 20px;
+
+	}
+
+	.title-2 {
+		border-bottom: 2px solid rgba(255, 255, 255, .2);
+	}
+}
+
+@-webkit-keyframes swingElement {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+
+	50% {
+		-webkit-transform: translateY(25px);
+		transform: translateY(25px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+@keyframes swingElement {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+
+	50% {
+		-webkit-transform: translateY(15px);
+		transform: translateY(15px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+.price-card {
+	padding-top: 34px;
+	padding-right: 60px;
+	padding-bottom: 54px;
+	padding-left: 40px;
+	border: 1px solid rgba(255, 255, 255, .6);
+	border-radius: 10px;
+
+}
