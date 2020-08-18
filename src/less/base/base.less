@@ -246,6 +246,18 @@ section {
 	font-size: 260px;
 	letter-spacing: 0.02em;
 
+	@media(max-width:1439px) {
+		font-size: 200px;
+	}
+
+	@media(max-width:1364px) {
+		font-size: 220px;
+	}
+
+	@media(max-width:1199px) {
+		font-size: 180px;
+	}
+
 	@media(max-width:991px) {
 		font-size: 140px;
 	}
@@ -311,6 +323,18 @@ section {
 	font-size: 50px;
 	line-height: 1.22;
 
+	@media(max-width:1439px) {
+		font-size: 46px;
+	}
+
+	@media(max-width:1364px) {
+		font-size: 44px;
+	}
+
+	@media(max-width:1199px) {
+		font-size: 42px;
+	}
+
 	@media(max-width:991px) {
 		font-size: 38px;
 	}
@@ -324,16 +348,24 @@ section {
 	font-size: 60px;
 	line-height: 1.25;
 
+	@media(max-width:1439px) {
+		font-size: 56px;
+	}
+
+	@media(max-width:1364px) {
+		font-size: 54px;
+	}
+
 	@media(max-width:1199px) {
-		font-size: 38px;
+		font-size: 50px;
 	}
 
 	@media(max-width:991px) {
-		font-size: 34px;
+		font-size: 44px;
 	}
 
-	@media(max-width:767px) {
-		font-size: 30px;
+	@media(max-width:991px) {
+		font-size: 40px;
 	}
 }
 
@@ -385,4 +417,40 @@ section {
 
 .mb-40 {
 	margin-bottom: 40px;
+}
+
+::-webkit-scrollbar {
+	/* 1 - скроллбар */
+	width: 10px;
+	height: 10px;
+	background-color: #FFFFFF;
+	background-color: #000;
+}
+
+::-webkit-scrollbar-button {
+	/* 2 - кнопка */
+}
+
+::-webkit-scrollbar-track {
+	/* 3 - трек */
+	background-color: #dedede;
+	background-color: #000;
+}
+
+::-webkit-scrollbar-track-piece {
+	/* 4 - видимая часть трека */
+}
+
+::-webkit-scrollbar-thumb {
+	/* 5 - ползунок */
+	border-radius: 8px;
+	background-color: @red;
+}
+
+::-webkit-scrollbar-corner {
+	/* 6 - уголок */
+}
+
+::-webkit-resizer {
+	/* 7 - изменение размеров */
 }

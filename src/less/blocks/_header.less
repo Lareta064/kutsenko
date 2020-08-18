@@ -1,7 +1,10 @@
 .header {
 	padding-top: 50px;
 	position: relative;
-	// height: 1525px;
+
+	@media(max-width:1439px) {
+		padding-top: 30px;
+	}
 }
 
 .header-bg {
@@ -9,6 +12,11 @@
 	bottom: 0;
 	right: 0;
 	top: 30px;
+
+	@media(max-width:1439px) {
+		width: 50%;
+
+	}
 }
 
 .logo {
@@ -36,6 +44,10 @@
 	position: relative;
 	z-index: 1;
 
+	@media(max-width:1439px) {
+		margin-top: 80px;
+	}
+
 	h2 {
 		font-family: 'Proxima Nova Regular';
 		font-weight: 400;
@@ -43,10 +55,19 @@
 		line-height: 1.23;
 		margin-bottom: 35px;
 		color: @red;
+
+		@media(max-width:1199px) {
+			font-size: 28px;
+		}
+
+		@media(max-width:991px) {
+			font-size: 26px;
+		}
 	}
 
 	h1 {
 		margin-bottom: 70px;
+
 	}
 }
 
@@ -55,6 +76,10 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+
+	@media(max-width:991px) {
+		margin-top: 80px;
+	}
 
 	@media(max-width:991px) {
 		display: block;
