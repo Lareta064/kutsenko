@@ -17,6 +17,11 @@
 		width: 50%;
 
 	}
+
+	@media(max-width:767px) {
+		width: 100%;
+
+	}
 }
 
 .logo {
@@ -33,9 +38,12 @@
 	opacity: .5;
 	display: inline-block;
 
-	// &:hover {
-	// 	border-color: @red;
-	// }
+	&:hover {
+		border-color: @red;
+
+	}
+
+	@media(max-width:767px) {}
 }
 
 .header-title {
@@ -56,11 +64,17 @@
 		color: @red;
 
 		@media(max-width:1199px) {
-			font-size: 28px;
+			font-size: 24px;
 		}
 
-		@media(max-width:991px) {
-			font-size: 26px;
+		@media(max-width:767px) {
+			font-size: 18px;
+			max-width: 200px;
+
+			span {
+				margin-top: 10px;
+				display: inline-block;
+			}
 		}
 	}
 
