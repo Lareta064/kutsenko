@@ -1,0 +1,144 @@
+.modul-block {
+  position: relative;
+  padding: 50px 70px 100px 60px;
+  border: 2px solid @white;
+  border-radius: 10px;
+  margin-left: 75px;
+  margin-right: 75px;
+
+  .title-3 {
+    margin-bottom: 70px;
+    font-family: @b;
+  }
+
+  .text-group-30 p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .label-free {
+    font-family: @b;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 0.05em;
+    // padding: 10px;
+    border-radius: 5px;
+    // line-height: 1.2px;
+    right: -35px;
+    top: 0;
+    color: @green;
+    transform: rotate(-15deg);
+    background-color: @bg;
+  }
+}
+
+.lesson-block {
+  .lesson {
+    display: flex;
+    justify-content: space-between;
+  }
+    
+  .left-col {
+      width: 60%;
+      max-width: 740px;
+      margin-top: 80px;
+    }
+
+    .right-col {
+      width: 30%;
+      max-width: 310px;
+      p {
+        font-size: 16px;
+      }
+
+      span {
+        font-family: @bb;
+        font-size: 100px;
+        color: @red;
+      }
+
+      span.green {
+        font-family: @b;
+        color: @green;
+        font-size: 60px;
+      }
+  }
+  .btn.btn-red {
+    margin-top: 54px;
+    margin-bottom: 75px;
+  }
+}
+
+.title-5 {
+  font-family: @m;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.home-work__task p {
+  padding-left: 20px;
+}
+
+.text-group ul {
+  padding-left: 20px;
+}
+
+.lesson-benefits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 101px;
+  margin-left: -40px;
+  background-color: @bg;
+  border-radius: 10px;
+  padding: 20px 40px 30px;
+  overflow: hidden;
+}
+
+.right-col .cub-img {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  bottom: -46px;
+}
+
+.modul-footer {
+  .btn.btn-solid {
+    cursor: pointer;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    &:hover {
+      color: @white;
+      background: @green-hover;
+      opacity: 0.8;
+      .tr;
+    }
+  }
+}
+
+.modul-block__hidden,
+.home-work {
+  position: relative;
+}
+
+p.chek-icon {
+  position: relative;
+  width: fit-content;
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 25px;
+    background-image: url("../img/check.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    right: -40px;
+  }
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}

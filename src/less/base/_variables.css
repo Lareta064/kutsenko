@@ -1,0 +1,10 @@
+.ma {
+  margin-left: auto;
+  margin-right: auto;
+}
+.tr {
+  transition: 0.5s;
+}
+.block {
+  height: 50px;
+}
