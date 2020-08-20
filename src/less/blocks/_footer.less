@@ -1,5 +1,6 @@
 .footer {
-  margin-top: 200px;
+  margin-top: 220px;
+
   .btn {
     margin-bottom: 40px;
   }
@@ -7,20 +8,64 @@
   .title-5 {
     font-weight: 700;
     margin-bottom: 0;
+    margin-top: 0;
+
+    @media(max-width:1364px) {
+      font-size: 18px;
+
+    }
   }
 
-  .footer-flex {
-    margin-bottom: 24px;
-    align-items: center;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .text-group__head {
+    height: 70px;
+
+
+    p {
+      margin-top: 8px;
+
+      @media(max-width: 1364px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .social-block {
+    font-size: 20px;
+    margin-top: 1.2em;
+    margin-bottom: 3em;
+
+    a {
+      display: inline-block;
+    }
+
+    a+a {
+      margin-left: 2em;
+    }
+
+    @media(max-width: 1364px) {
+      font-size: 18px;
+    }
   }
 
   .privacy-policy a {
-    display: block; 
-    cursor: pointer;
-    border-bottom: 1px solid transparent;
-    // margin-right: 40px;
+    display: block;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #fff;
+
     &:hover {
-      border-bottom: 1px solid rgba(221, 79, 72, 0.5);
+      color: @red;
+    }
+
+    @media(max-width:1364px) {
+      font-size: 15px;
     }
   }
 
@@ -30,45 +75,55 @@
   }
 
   .right-col {
-    width: 30%;
-    max-width: 310px;
+    width: 40%;
+    max-width: 440px;
   }
 }
 
-.social{
-    margin-top: 15px;
+.link-border {
+  width: fit-content;
+  position: relative;
 }
 
-.social-item {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  color: @red;
-  border: 1px solid rgba(221, 79, 72, 0.8);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  
+.link-border:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgba(221, 79, 72, 0.4);
+  .tr;
+}
 
-  &:hover {
+.link-border:hover:after {
+  width: 100%;
+}
+
+// .disclaimer{
+//     margin-bottom: 40px;
+//     align-items: center;
+//     font-size: 10px;
+// }
+
+
+
+.details-author {
+  font-size: 18px;
+  line-height: 1.8;
+
+  a {
     color: #fff;
-    background-color: @red;
+
+    &:hover {
+      opacity: .6;
+    }
   }
 }
 
-.disclaimer{
-    margin-bottom: 40px;
-    align-items: center;
-    font-size: 10px;
-}
-
-.social-item + .social-item{
-    margin-left: 25px;
-}
-
-.details-author{
-    font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 65px;
+.footer-bottom {
+  margin-top: 24px;
+  color: rgba(255, 255, 255, .6);
+  font-size: 18px;
+  line-height: 1.5;
 }
