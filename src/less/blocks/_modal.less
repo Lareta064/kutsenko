@@ -1,0 +1,44 @@
+.popup-fade {
+	display: none;
+}
+
+.popup-fade:before {
+	content: '';
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	z-index: 9999;
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	width: 100%;
+	max-width: 1000px;
+	background: #fff;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	z-index: 99999;
+	opacity: 1;
+	overflow: auto;
+	height: 700px;
+
+	@media(max-width:1439px) {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		height: 600px;
+	}
+}
+
+.popup-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
