@@ -102,7 +102,7 @@ $(document).ready(function () {
 		return false;
 	});
 
-	$('.popup-close').click(function () {
+	$('.popup-close2').click(function () {
 		$(this).parents('.popup-fade-2').fadeOut();
 		bodyEl.removeClass('noscroll');
 		return false;
