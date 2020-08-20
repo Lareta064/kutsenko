@@ -68,7 +68,7 @@ $(document).ready(function () {
 	// 		bodyEl.removeClass('noscroll');
 	// 	}
 	// });
-
+	let bodyEl = $('body');
 	$('.popup-open1').click(function () {
 		$('.popup-fade-1').fadeIn();
 		bodyEl.addClass('noscroll');
