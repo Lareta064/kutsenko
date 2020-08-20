@@ -45,29 +45,32 @@ $(document).ready(function () {
 
 		});
 	}
+	// VIDEO
+	const videoContent = document.querySelector('#videoPlay');
+	const videoBtn = videoContent.querySelector('.video-btn');
+	const videoText = videoContent.querySelector('.video-text');
+	const videoClip = document.querySelector('#video');
+	videoContent.addEventListener('click', function () {
+		if (videoClip.paused) {
+			videoClip.play();
+			videoBtn.style.opacity = "0";
+			videoText.style.opacity = "0";
+			this.classList.add("active");
+		} else {
+			videoClip.pause();
+			videoBtn.style.opacity = "1";
+			videoText.style.opacity = "1";
+			this.classList.remove("active");
+		}
+		//videoClip.play();
+	});
+	videoClip.addEventListener("ended", function () {
+		videoClip.pause();
+		videoBtn.style.opacity = "1";
+		videoText.style.opacity = "1";
+		this.classList.remove("active");
+	})
 
-	// MODAL Клик по ссылке "Закрыть".
-	// $('.popup-close').click(function () {
-	// 	$(this).parents('.popup-fade').fadeOut();
-	// 	return false;
-	// });
-
-	// // Закрытие по клавише Esc.
-	// $(document).keydown(function (e) {
-	// 	if (e.keyCode === 27) {
-	// 		e.stopPropagation();
-	// 		$('.popup-fade-1').fadeOut();
-	// 	}
-	// });
-
-	// // Клик по фону, но не по окну.
-	// let bodyEl = $('body')
-	// $('.popup-fade-1').click(function (e) {
-	// 	if ($(e.target).closest('.popup').length == 0) {
-	// 		$(this).fadeOut();
-	// 		bodyEl.removeClass('noscroll');
-	// 	}
-	// });
 	let bodyEl = $('body');
 	$('.popup-open1').click(function () {
 		$('.popup-fade-1').fadeIn();

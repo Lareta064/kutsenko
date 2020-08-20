@@ -29,13 +29,15 @@ section.about
 							p Сертифицированный эксперт и риск&#8209;менеджер по глобальным финансовым рынкам и инвестицонным инструментам (Университет Райз, Хьюстон, США) 
 						a(href="#!").btn.btn-small Проверить
 
-			.about-content__video
+			.about-content__video#videoPlay
 				.video-text.text-30
 					p Рассказываю почему каждый должен заниматься инвестированием
 				.video-btn
 					img(src="img/play2.png", alt="play")
 					.video-duration 0:59
 				.video-wrapper
+					video#video(poster="img/video-poster.jpg")
+						source(src="video.mp4" type="video/mp4"  )
 		section.quote-block
 			.quote-text
 				.img-quote

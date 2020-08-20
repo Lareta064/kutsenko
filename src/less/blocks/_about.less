@@ -101,6 +101,24 @@
 	background-size: cover;
 	background-position: 0 0;
 	width: 100%;
+	position: relative;
+
+	video {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.video-wrapper:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	height: 35%;
+	background-color: #111115;
+	background: linear-gradient(180deg, rgba(17, 17, 21, 0) 0%, #111115 100%);
 }
 
 .quote-text {
