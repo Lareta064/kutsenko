@@ -36,6 +36,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
+
     .text-group h4 {
       line-height: 1.4;
     }
@@ -60,6 +61,22 @@
       top: -38px;
     }
 
+    .sale:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      height: 5.0em;
+      background-color: #111115;
+      background: linear-gradient(180deg, rgba(17, 17, 21, 0) 0%, #111115 100%);
+    }
+
+    .sale.active:after {
+      display: none;
+    }
+
     p {
       font-size: 16px;
       line-height: 1.5;
@@ -75,6 +92,7 @@
     span.text-green {
       font-family: @b;
       font-size: 60px;
+
       span {
         font-size: 100px;
       }
@@ -105,14 +123,24 @@
   display: flex;
   justify-content: space-between;
   margin-top: 101px;
-  margin-left: -40px;
+  // margin-left: -40px;
   background-color: @bg;
   border-radius: 10px;
   padding: 20px 40px 0px;
+  padding-left: 30px;
   overflow: hidden;
-  li + li {
+
+  @media(max-width:1439px) {
+    padding-bottom: 35px;
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  li+li {
     margin-top: 30px;
   }
+
   .left-col {
     width: 80%;
   }
@@ -123,9 +151,12 @@
   width: 300px;
   bottom: -16px;
   right: -50px;
+
   @media (max-width: 1439px) {
     bottom: -60px;
+    right: -15px;
   }
+
   @media (max-width: 1199px) {
     width: 250px;
   }
@@ -140,6 +171,7 @@
     padding-right: 30px;
     height: 60px;
     line-height: 60px;
+
     &:hover {
       color: @white;
       background-color: rgba(52, 177, 89, 1);
@@ -151,17 +183,33 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
     .left-col {
       width: 80%;
       max-width: 800px;
       // margin-top: 0;
     }
+
     .right-col {
       width: 10%;
       display: flex;
       justify-content: flex-end;
     }
   }
+}
+
+.modul-block__hidden {
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.modul-block__hidden.active {
+  height: 1880px;
+}
+
+.btn-allModul.hide {
+  display: none;
 }
 
 .modul-block__hidden,
@@ -172,6 +220,7 @@
 p.chek-icon {
   position: relative;
   width: fit-content;
+
   &::after {
     display: block;
     position: absolute;
@@ -206,7 +255,7 @@ p.chek-icon {
   padding-top: 10px;
 }
 
-.lesson-3 ul li + li {
+.lesson-3 ul li+li {
   margin-top: 12px;
 }
 
