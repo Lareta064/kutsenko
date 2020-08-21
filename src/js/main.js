@@ -125,4 +125,43 @@ $(document).ready(function () {
 			bodyEl.removeClass('noscroll');
 		}
 	});
+	// модал-3
+	$('.popup-open3').click(function () {
+		$('.popup-fade-3').fadeIn();
+		bodyEl.addClass('noscroll');
+		return false;
+	});
+
+	$('.popup-close3').click(function () {
+		$(this).parents('.popup-fade-3').fadeOut();
+		bodyEl.removeClass('noscroll');
+		return false;
+	});
+
+	$(document).keydown(function (e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade-3').fadeOut();
+			bodyEl.removeClass('noscroll');
+		}
+	});
+
+	$('.popup-fade-3').click(function (e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();
+			bodyEl.removeClass('noscroll');
+		}
+	});
+	// slider sertif
+	$('.sertificates-slider').owlCarousel({
+		items: 1,
+		loop: true,
+		dots: false,
+		margin: 20,
+		navSpeed: 1000,
+		smartSpeed: 1000,
+		nav: true,
+		navText: ['<span class="arr-left"><i class="fas fa-arrow-left"></i></span>', '<span class="arr-left"><i class="fas fa-arrow-right"></i></span>'],
+
+	})
 })

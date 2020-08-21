@@ -1,5 +1,6 @@
 .popup-fade {
 	display: none;
+	position: relative;
 }
 
 .popup-fade:before {
@@ -26,7 +27,8 @@
 	border-radius: 10px;
 	z-index: 99999;
 	opacity: 1;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	height: 700px;
 
 	@media(max-width:1439px) {
@@ -44,15 +46,83 @@
 	right: 10px;
 }
 
-.mofal-text{
+.mofal-text {
 	font-size: 15px;
-	p+p{
+
+	p+p {
 		margin-top: 20px;
 	}
-	h3{
+
+	h3 {
 		margin-top: 20px;
 	}
-	h5{
+
+	h5 {
 		margin-bottom: 15px;
+	}
+}
+
+.popup-content {
+	width: 100%;
+	max-width: 500px;
+	.ma;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider-item {
+	max-width: 500px;
+}
+
+.popup {
+	display: flex;
+}
+
+.popup-close3 {
+	margin: auto;
+	position: absolute;
+	right: 5px;
+	top: 0;
+	font-size: 50px;
+	transform: rotate(45deg);
+	.tr;
+
+	&:hover {
+		color: @red;
+	}
+}
+
+.sertificates-slider.owl-carousel .owl-nav {
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+
+	.owl-prev,
+	.owl-next {
+		span {
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			color: @green;
+
+			transition: .5s;
+
+			&:hover {
+
+				color: #fff;
+			}
+		}
+
+
+	}
+
+	.owl-next {
+		margin-left: 20px;
 	}
 }
