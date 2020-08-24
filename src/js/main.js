@@ -14,14 +14,14 @@ $(document).ready(function () {
 
 	});
 	// показать все отзывы
-	const revBtn = document.querySelector('.btn-allReviews');
-	const revItem = document.querySelectorAll('.review-col');
-	revBtn.addEventListener('click', function () {
-		this.parentElement.classList.add('hide');
-		for (let item of revItem) {
-			item.classList.add('active');
-		}
-	});
+	// const revBtn = document.querySelector('.btn-allReviews');
+	// const revItem = document.querySelectorAll('.review-col');
+	// revBtn.addEventListener('click', function () {
+	// 	this.parentElement.classList.add('hide');
+	// 	for (let item of revItem) {
+	// 		item.classList.add('active');
+	// 	}
+	// });
 	// показать/скрыть весь Модуль
 	const modulBtn = document.querySelector('.btn-allModul');
 	const saleInfo = document.querySelector('#saleInfo');
