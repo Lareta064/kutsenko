@@ -90,18 +90,69 @@
 }
 
 .programms-footer {
+	position: relative;
 	padding-top: 40px;
 	padding-bottom: 60px;
-	background: @bg;
+	background: @white;
 	border-radius: 10px;
-	padding-left: 200px;
-	margin-top: 100px;
+	padding-left: 15.5%;
+	margin-top: 148px;
+	// width: 40%;
+
+	@media(max-width:1199px){
+		padding-left: 5.5%;
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+
+	.programms-footer__col{
+		width: 55%;
+	}
+
+	.btn{
+		color: @white;
+		background-color: rgba(221, 79, 72, 0.8);
+
+		@media(max-width:1199px){
+			font-size: 17px;
+		}
+
+		&:hover{
+			border: 1px solid #DD4F48;
+			background-color: #DD4F48;
+		}
+	}
 
 	p {
 		font-size: 16px;
 		line-height: 1.5;
 		margin-top: 24px;
-		color: rgba(255, 255, 255, .6);
+		color: @black;
+		@media(max-width:1199px){
+			font-size: 13px;
+		}
+	}
+
+	.programms-footer__blank{
+		position: absolute;
+		bottom: 0;
+		right: 70px;
+		width: 28%;
+		height: 280px;
+		overflow: hidden;
+		box-shadow: 0px 10px 20px rgba(17, 17, 21, 0.15);
+		
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			height: 50px;
+			background-color: #111115;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+		}
 	}
 }
 
