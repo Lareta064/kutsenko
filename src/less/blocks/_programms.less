@@ -1,8 +1,20 @@
+.programms .title-2 {
+	@media(max-width:767px) {
+		padding-bottom: 20px;
+		margin-bottom: 80px;
+		border-bottom: 1px solid rgba(255, 255, 255, .2);
+	}
+}
+
 .programms-list__item {
 	display: flex;
 	align-items: center;
 	position: relative;
 	margin-bottom: 100px;
+
+	@media(max-width:767px) {
+		display: block;
+	}
 
 	&:last-child {
 		margin-bottom: 0;
@@ -20,12 +32,19 @@
 		font-family: @bb;
 		margin-right: 40px;
 		background-color: @bg;
+		border-radius: 5px;
 		border: 1px solid transparent;
 
-		@media(max-width:991px) {
-			min-width: 130px;
-			max-width: 130px;
-			height: 130px;
+		@media(max-width:767px) {
+			min-width: 120px;
+			max-width: 120px;
+			height: 120px;
+			font-size: 100px;
+			line-height: 1;
+			font-size: 100px;
+			margin-right: 0;
+			margin-bottom: 20px;
+			letter-spacing: 0.05em;
 		}
 	}
 
@@ -99,25 +118,25 @@
 	margin-top: 148px;
 	// width: 40%;
 
-	@media(max-width:1199px){
+	@media(max-width:1199px) {
 		padding-left: 5.5%;
 		padding-top: 30px;
 		padding-bottom: 50px;
 	}
 
-	.programms-footer__col{
+	.programms-footer__col {
 		width: 55%;
 	}
 
-	.btn{
+	.btn {
 		color: @white;
 		background-color: rgba(221, 79, 72, 0.8);
 
-		@media(max-width:1199px){
+		@media(max-width:1199px) {
 			font-size: 17px;
 		}
 
-		&:hover{
+		&:hover {
 			border: 1px solid #DD4F48;
 			background-color: #DD4F48;
 		}
@@ -128,12 +147,13 @@
 		line-height: 1.5;
 		margin-top: 24px;
 		color: @black;
-		@media(max-width:1199px){
+
+		@media(max-width:1199px) {
 			font-size: 13px;
 		}
 	}
 
-	.programms-footer__blank{
+	.programms-footer__blank {
 		position: absolute;
 		bottom: 0;
 		right: 70px;
@@ -141,7 +161,7 @@
 		height: 280px;
 		overflow: hidden;
 		box-shadow: 0px 10px 20px rgba(17, 17, 21, 0.15);
-		
+
 		&:after {
 			content: "";
 			position: absolute;

@@ -6,9 +6,18 @@
   border-radius: 10px;
   margin-bottom: 100px;
 
+  @media(max-width:767px) {
+    padding-top: 27px;
+  }
+
   .speicial-offset {
     padding-left: 60px;
     padding-right: 70px;
+
+    @media(max-width:767px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   .title-3 {
@@ -34,10 +43,24 @@
     color: @green;
     transform: rotate(-15deg);
     background-color: @bg;
-    @media(max-width: 1439px){
+
+    @media(max-width: 1439px) {
       right: -10px;
     }
+
+    @media(max-width: 767px) {
+      transform: rotate(-75deg);
+      right: -65px;
+    }
   }
+
+  // .right-col--desk {
+  //   display: block;
+
+  //   @media(max-width: 991px) {
+  //     display: none;
+  //   }
+  // }
 }
 
 .lesson-block {
@@ -46,8 +69,16 @@
     justify-content: space-between;
     margin-top: 80px;
 
+    @media(max-width:991px) {
+      display: block;
+    }
+
     .text-group h4 {
       line-height: 1.4;
+
+      @media(max-width:991px) {
+        font-size: 20px;
+      }
     }
   }
 
@@ -58,12 +89,22 @@
   .left-col {
     width: 62%;
     max-width: 740px;
-    // margin-top: 102px;
+
+    @media(max-width: 991px) {
+      width: 100%;
+      margin-bottom: 70px;
+    }
   }
 
   .right-col {
     width: 32%;
     max-width: 367px;
+
+    @media(max-width: 991px) {
+      width: 100%;
+      max-width: 100%;
+
+    }
 
     .sale {
       position: relative;
@@ -221,6 +262,21 @@
   }
 }
 
+.btn-allModul {
+  @media(max-width:767px) {
+    display: none;
+  }
+}
+
+.btn-modulModal {
+  display: none;
+
+  @media(max-width:767px) {
+    display: block;
+    text-align: center;
+  }
+}
+
 .btn-allModul.hide {
   display: none;
 }
@@ -258,10 +314,6 @@ p.chek-icon {
 .lesson.lesson-3 {
   align-items: center;
 
-  // .big-num{
-  //   font-size: 100px;
-  //   font-weight: 700;
-  // }
 }
 
 .lesson-3 ul {
@@ -278,5 +330,17 @@ p.chek-icon {
 
   p {
     max-width: 278px;
+  }
+}
+
+@media(max-width:767px) {
+  .modul-block .text-group-30 h3 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  #saleInfo p {
+    max-height: 75px;
+    overflow: hidden;
   }
 }

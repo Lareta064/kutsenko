@@ -276,13 +276,20 @@ section {
   }
 
   @media (max-width: 767px) {
-    font-size: 50px;
+    font-size: 60px;
+    letter-spacing: 0.05em;
+    line-height: 1.067;
   }
 }
 
 .title-3 {
   font-size: 60px;
   letter-spacing: 0.05em;
+
+  @media(max-width:767px) {
+    font-size: 50px;
+    line-height: 1;
+  }
 }
 
 .title-5 {
@@ -384,6 +391,15 @@ section {
   margin-bottom: 40px;
 }
 
+.br-mobile {
+  display: none;
+
+
+  @media(max-width:767px) {
+    display: block;
+  }
+
+}
 
 .text-50 {
   font-size: 50px;
@@ -402,12 +418,11 @@ section {
   }
 
   @media(max-width:991px) {
-    font-size: 38px;
+    font-size: 35px;
+    line-height: 1.35;
   }
 
-  @media(max-width:991px) {
-    font-size: 32px;
-  }
+
 }
 
 
