@@ -2,6 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 60px;
+
+	@media(max-width:767px) {
+		display: block;
+	}
 }
 
 .review-col {
@@ -9,6 +13,14 @@
 	overflow: hidden;
 	position: relative;
 	transition: .5s;
+
+	@media(max-width:767px) {
+		height: auto;
+
+		&:first-child:after {
+			display: none;
+		}
+	}
 
 }
 
@@ -18,13 +30,13 @@
 	margin-bottom: 50px;
 }
 
-.review-col.active {
-	height: 1500px;
+// .review-col.active {
+// 	height: 1500px;
 
-	&:after {
-		display: none;
-	}
-}
+// 	&:after {
+// 		display: none;
+// 	}
+// }
 
 .review-btn {
 	text-align: center;
