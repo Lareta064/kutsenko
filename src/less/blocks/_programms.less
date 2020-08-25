@@ -1,8 +1,28 @@
+.programms {
+	@media(max-width:767px) {
+		padding-top: 200px;
+		overflow: hidden;
+	}
+}
+
+.programms .title-2 {
+	@media(max-width:767px) {
+		padding-bottom: 20px;
+		margin-bottom: 80px;
+		border-bottom: 1px solid rgba(255, 255, 255, .2);
+	}
+}
+
 .programms-list__item {
 	display: flex;
 	align-items: center;
 	position: relative;
 	margin-bottom: 100px;
+
+	@media(max-width:767px) {
+		display: block;
+		margin-bottom: 117px;
+	}
 
 	&:last-child {
 		margin-bottom: 0;
@@ -20,12 +40,20 @@
 		font-family: @bb;
 		margin-right: 40px;
 		background-color: @bg;
+		border-radius: 5px;
 		border: 1px solid transparent;
 
-		@media(max-width:991px) {
-			min-width: 130px;
-			max-width: 130px;
-			height: 130px;
+		@media(max-width:767px) {
+			min-width: 120px;
+			max-width: 120px;
+			height: 120px;
+			font-size: 100px;
+			line-height: 1.4;
+			font-size: 100px;
+			margin-right: 0;
+			margin-bottom: 27px;
+			letter-spacing: 0.05em;
+			align-items: unset;
 		}
 	}
 
@@ -51,8 +79,14 @@
 		justify-content: center;
 		align-items: center;
 
+
+	}
+
+	.pr-icon--book {
 		@media(max-width:1199px) {
-			display: none;
+			right: -35px;
+			top: auto;
+			bottom: -140%;
 		}
 	}
 
@@ -63,6 +97,14 @@
 		border-radius: 50%;
 		background-color: @bg;
 		right: -2%;
+
+		@media(max-width:1199px) {
+			width: 160px;
+			height: 160px;
+			right: -15%;
+			top: auto;
+			bottom: -41%;
+		}
 	}
 
 	.icon-play {
@@ -72,6 +114,10 @@
 
 	.icon-book {
 		max-width: 205px;
+
+		@media(max-width:1199px) {
+			max-width: 180px;
+		}
 	}
 
 	.img-slides {
@@ -81,11 +127,41 @@
 		a+a {
 			margin-left: 10px;
 		}
+
+		@media(max-width:767px) {
+			overflow-x: auto;
+
+			::-webkit-scrollbar {
+				width: 0;
+			}
+
+			margin-top: 33px;
+			margin-right: -20px;
+
+			a {
+				min-height: 70px;
+				min-width: 100px;
+			}
+		}
 	}
 
 	.programm-text--offset {
 		position: relative;
 		top: 35px;
+
+		@media(max-width:1199px) {
+			top: 0;
+		}
+	}
+
+	.text-20.mt-mob {
+		margin-top: 0;
+
+		@media(max-width:767px) {
+			margin-top: 20px;
+			font-size: 18px;
+			line-height: 1.5;
+		}
 	}
 }
 
@@ -99,27 +175,68 @@
 	margin-top: 148px;
 	// width: 40%;
 
-	@media(max-width:1199px){
+	@media(max-width:1199px) {
 		padding-left: 5.5%;
 		padding-top: 30px;
 		padding-bottom: 50px;
+
 	}
 
-	.programms-footer__col{
+	@media(max-width:767px) {
+		padding-top: 180px;
+		padding-right: 55px;
+		margin-left: -10px;
+		margin-right: -10px;
+		margin-top: 143px;
+		padding-left: 20px;
+		padding-bottom: 55px;
+	}
+
+	.programms-footer__col {
 		width: 55%;
+
+		@media(max-width:767px) {
+			width: 100%;
+		}
 	}
 
-	.btn{
+	.btn {
 		color: @white;
 		background-color: rgba(221, 79, 72, 0.8);
 
-		@media(max-width:1199px){
+		@media(max-width:1199px) {
 			font-size: 17px;
 		}
 
-		&:hover{
+		&:hover {
 			border: 1px solid #DD4F48;
 			background-color: #DD4F48;
+		}
+
+		@media(max-width:991px) {
+			display: inline-block;
+			width: 280px;
+			height: 65px;
+			font-size: 20px;
+			line-height: 64px;
+			text-align: center;
+		}
+	}
+
+	.btn-text-desktop {
+		display: block;
+
+		@media(max-width:991px) {
+			display: none;
+		}
+	}
+
+	.btn-text-mobile {
+		display: none;
+
+		@media(max-width:991px) {
+			display: block;
+
 		}
 	}
 
@@ -128,12 +245,17 @@
 		line-height: 1.5;
 		margin-top: 24px;
 		color: @black;
-		@media(max-width:1199px){
+
+		@media(max-width:1199px) {
 			font-size: 13px;
+		}
+
+		@media(max-width:1199px) {
+			font-size: 16px;
 		}
 	}
 
-	.programms-footer__blank{
+	.programms-footer__blank {
 		position: absolute;
 		bottom: 0;
 		right: 70px;
@@ -141,7 +263,15 @@
 		height: 280px;
 		overflow: hidden;
 		box-shadow: 0px 10px 20px rgba(17, 17, 21, 0.15);
-		
+
+		@media(max-width:767px) {
+			bottom: 65%;
+			right: auto;
+			left: 20px;
+			width: 80%;
+			height: 205px;
+		}
+
 		&:after {
 			content: "";
 			position: absolute;
@@ -152,6 +282,21 @@
 			height: 50px;
 			background-color: #111115;
 			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: -5px;
+			right: -5px;
+			height: 1px;
+			background-color: rgba(0, 0, 0, .5);
+			display: none;
+
+			@media(max-width:767px) {
+				display: block;
+			}
 		}
 	}
 }
@@ -172,6 +317,12 @@
 		height: 48px;
 		right: -60px;
 		bottom: 0;
+
+		@media(max-width:1199px) {
+			right: -67px;
+			bottom: -18px;
+			transform: rotate(15deg);
+		}
 
 	}
 }
