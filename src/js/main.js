@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
-	// $('[data-fancybox="gallery"]').fancybox();
-	$("[data-fancybox='gallery']").fancybox({
-		autoSize: false,
-		maxWidth: 100,
-		maxHeight: 70,
-		width: 100,
-		height: 70,
-		scrolling: 'yes'
-	});
+	$('[data-fancybox="gallery"]').fancybox();
+	// $("[data-fancybox='gallery']").fancybox({
+	// 	autoSize: false,
+	// 	maxWidth: 100,
+	// 	maxHeight: 70,
+	// 	width: 100,
+	// 	height: 70,
+	// 	scrolling: 'yes'
+	// });
 
 	// ПАРАЛЛАКС ДВИЖЕНИЯ ЗА МЫШКОЙ
 	let headerSection = document.querySelector('section.quote-block')
