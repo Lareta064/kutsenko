@@ -1,4 +1,7 @@
 .price {
+	@media(max-width:767px) {
+		overflow: hidden;
+	}
 
 	.sale-icon {
 		position: absolute;
@@ -60,6 +63,14 @@
 				font-size: 60px;
 			}
 		}
+
+		@media(max-width:767px) {
+			top: auto;
+			bottom: -28%;
+			right: -49px;
+			// width: 140px;
+			// height: 140px;
+		}
 	}
 }
 
@@ -69,12 +80,21 @@
 	.head-4 {
 		margin-bottom: 20px;
 
+		@media(max-width:767px) {
+			font-size: 30px;
+		}
+
 	}
 
 	.title-2 {
 		border-bottom: 2px solid rgba(255, 255, 255, .2);
 		position: relative;
 		padding-bottom: 20px;
+
+		@media(max-width:767px) {
+			margin-bottom: 100px;
+			padding-bottom: 33px;
+		}
 	}
 }
 
@@ -119,9 +139,7 @@
 	border: 1px solid rgba(255, 255, 255, .6);
 	border-radius: 10px;
 
-}
 
-.price-card {
 	width: 67%;
 	max-width: 850px;
 
@@ -129,6 +147,23 @@
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	@media(max-width:767px) {
+		width: 100%;
+		min-width: 355px;
+		margin-left: -10px;
+		padding: 24px 20px 50px;
+	}
+}
+
+@media(max-width:767px) {
+
+	.price-card {
+		.text-group-30 h3 {
+			font-size: 30px;
+			font-weight: 400;
+		}
 	}
 }
 
@@ -141,10 +176,23 @@
 	align-items: center;
 	margin-top: 70px;
 
+	@media(max-width:767px) {
+		margin-top: 60px;
+
+		.btn {
+			margin-top: 18px;
+			width: 280px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+		}
+	}
+
 	.price-value {
 		.text-90;
 		line-height: 1;
 		position: relative;
+
 
 		.old-price {
 			position: absolute;
@@ -154,6 +202,27 @@
 			color: rgba(255, 255, 255, .5);
 			font-size: 20px;
 			text-decoration: line-through;
+
+			@media(max-width:767px) {
+				right: auto;
+				top: auto;
+				left: 0;
+				bottom: -29px;
+				transform: translateX(0%);
+			}
+		}
+
+		&.price-value--mob {
+			@media(max-width:767px) {
+				margin-bottom: 34px;
+			}
+
+		}
+	}
+
+	&.block-flex {
+		@media(max-width:767px) {
+			display: block;
 		}
 	}
 }
@@ -183,4 +252,17 @@
 .tariff-item--title {
 	margin-top: 100px;
 	margin-bottom: 20px;
+
+	@media(max-width:767px) {
+		font-size: 40px;
+		letter-spacing: .1em;
+		margin-bottom: 33px;
+	}
+}
+
+.footer-group.footer-group--proff .btn {
+	@media(max-width:767px) {
+		width: 240px;
+		text-align: center;
+	}
 }
