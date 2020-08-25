@@ -1,0 +1,9 @@
+.modul-block.modul-block__modal {
+  border: 0px;
+}
+.modul-block.modul-block__modal p.subtitle {
+  columns: ;
+}
+.modul-block.modul-block__modal .lesson-block .right-col .sale:after {
+  display: none;
+}
