@@ -80,6 +80,14 @@ $(document).ready(function () {
 	})
 
 	let bodyEl = $('body');
+
+	function popupOpen(popBtn, popWind) {
+
+		$(popWind).fadeIn();
+		bodyEl.addClass('noscroll');
+		return false;
+
+	}
 	$('.popup-open1').click(function () {
 		$('.popup-fade-1').fadeIn();
 		bodyEl.addClass('noscroll');
@@ -160,6 +168,33 @@ $(document).ready(function () {
 			bodyEl.removeClass('noscroll');
 		}
 	});
+	// модал-4
+	$('.popup-open4').click(function () {
+		$('.popup-fade-4').fadeIn();
+		bodyEl.addClass('noscroll');
+		return false;
+	});
+
+	$('.popup-close4').click(function () {
+		$(this).parents('.popup-fade-4').fadeOut();
+		bodyEl.removeClass('noscroll');
+		return false;
+	});
+
+	$(document).keydown(function (e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade-4').fadeOut();
+			bodyEl.removeClass('noscroll');
+		}
+	});
+
+	$('.popup-fade-4').click(function (e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();
+			bodyEl.removeClass('noscroll');
+		}
+	});
 	// slider sertif
 	$('.sertificates-slider').owlCarousel({
 		items: 1,
@@ -171,5 +206,48 @@ $(document).ready(function () {
 		nav: true,
 		navText: ['<span class="arr-left"><i class="fas fa-arrow-left"></i></span>', '<span class="arr-left"><i class="fas fa-arrow-right"></i></span>'],
 
-	})
-})
+	});
+
+	//плавающая кнопка
+	let element = document.querySelector('#modul-footer');
+
+	let Visible = function (target) {
+		// Все позиции элемента
+		var targetPosition = {
+				top: window.pageYOffset + target.getBoundingClientRect().top,
+				left: window.pageXOffset + target.getBoundingClientRect().left,
+				right: window.pageXOffset + target.getBoundingClientRect().right,
+				bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+			},
+			// Получаем позиции окна
+			windowPosition = {
+				top: window.pageYOffset,
+				left: window.pageXOffset,
+				right: window.pageXOffset + document.documentElement.clientWidth,
+				bottom: window.pageYOffset + document.documentElement.clientHeight
+			};
+
+		if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+			targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+			targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+			targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+			// Если элемент полностью видно, то запускаем следующий код
+			$('#floatingBtn').removeClass("active");
+		} else {
+			// Если элемент не видно, то запускаем этот код
+			$('#floatingBtn').addClass("active");
+		};
+	};
+
+	// Запускаем функцию при прокрутке блока
+
+	$(".modul-block__body").on("scroll", function (e) {
+		if ($(".modul-block__body").scrollTop() > 0) {
+			Visible(element);
+		} else {
+			$('#floatingBtn').removeClass("active");
+		}
+
+	});
+
+});
