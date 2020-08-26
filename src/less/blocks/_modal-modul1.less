@@ -1,5 +1,6 @@
 .modul-block.modul-block__modal {
   border: 0px;
+  margin-bottom: 0;
 
   @media (max-width: 424px) {
     margin-left: -10px;
@@ -26,6 +27,11 @@
     font-family: @bb;
     font-size: 60px;
     margin-bottom: 75px;
+    margin-bottom: 35px;
+  }
+
+  .modul-block__body {
+    padding-top: 40px;
   }
 
   .title-5 {
@@ -42,7 +48,7 @@
     margin-bottom: 15px;
   }
 
-  .home-work__task p + p {
+  .home-work__task p+p {
     margin-top: 11px;
   }
 
@@ -79,9 +85,9 @@
     top: 26px;
   }
 
-  
-    .lesson-benefits {
-      @media (max-width: 425px){
+
+  .lesson-benefits {
+    @media (max-width: 425px) {
       margin-left: -10px;
       min-width: 355px;
       padding-top: 20px;
@@ -97,6 +103,7 @@
 
   .lesson-2 {
     margin-top: 85px;
+
     .title-5 {
       margin-top: 30px;
     }
@@ -106,7 +113,7 @@
     margin-top: 75px;
   }
 
-  .lesson-3 ul li + li {
+  .lesson-3 ul li+li {
     margin-top: 17px;
   }
 
@@ -129,7 +136,53 @@
     text-align: center;
   }
 
-  p.text-16{
+  p.text-16 {
     color: @op06;
   }
+}
+
+.popup-close4 {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 50px;
+  transform: rotate(45deg);
+  z-index: 10;
+}
+
+.popup,
+.popup-fade.popup-full {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 0);
+}
+
+.popup-fade.popup-full .popup {
+  padding: 0;
+}
+
+.modul-block__body {
+  overflow: auto;
+  width: 100%;
+  height: calc(~"100vh - 190px");
+}
+
+#floatingBtn.active {
+  position: fixed;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  min-width: 315px;
+  max-width: 315px;
+  white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
 }
