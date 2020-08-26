@@ -1,4 +1,6 @@
 .programms {
+	overflow: hidden;
+
 	@media(max-width:767px) {
 		padding-top: 200px;
 		overflow: hidden;
@@ -86,6 +88,12 @@
 		@media(max-width:1199px) {
 			right: -35px;
 			top: auto;
+			transform: translateY(30%);
+		}
+
+		@media(max-width:767px) {
+			transform: translateY(0%);
+			top: auto;
 			bottom: -140%;
 		}
 	}
@@ -101,8 +109,13 @@
 		@media(max-width:1199px) {
 			width: 160px;
 			height: 160px;
-			right: -15%;
+			right: 0%;
 			top: auto;
+			bottom: -100%;
+		}
+
+		@media(max-width:767px) {
+			right: -15%;
 			bottom: -41%;
 		}
 	}
