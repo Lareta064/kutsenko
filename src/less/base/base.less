@@ -77,6 +77,7 @@ body {
   font-size: 20px;
   line-height: normal;
   background-color: #111115;
+  // min-width: 375px;
 
   @media (max-width: 1199px) {
     font-size: 18px;
@@ -120,6 +121,10 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+svg{
+  max-width: 100%;
 }
 
 input {
@@ -469,38 +474,4 @@ section {
 }
 
 
-// ::-webkit-scrollbar {
-//   /* 1 - скроллбар */
-//   width: 10px;
-//   height: 10px;
-//   background-color: #FFFFFF;
-//   background-color: #000;
-// }
 
-::-webkit-scrollbar-button {
-  /* 2 - кнопка */
-}
-
-::-webkit-scrollbar-track {
-  /* 3 - трек */
-  background-color: #dedede;
-  background-color: #000;
-}
-
-::-webkit-scrollbar-track-piece {
-  /* 4 - видимая часть трека */
-}
-
-::-webkit-scrollbar-thumb {
-  /* 5 - ползунок */
-  border-radius: 8px;
-  // background-color: @red;
-}
-
-::-webkit-scrollbar-corner {
-  /* 6 - уголок */
-}
-
-::-webkit-resizer {
-  /* 7 - изменение размеров */
-}

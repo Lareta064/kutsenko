@@ -34,9 +34,17 @@
     padding-top: 40px;
   }
 
+  .text-group-30 p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
   .title-5 {
     margin-top: 50px;
     font-size: 18px;
+  }
+
+  h5.title-5 {
+    font-family: @mb;
   }
 
   //   .text-group h4{
@@ -48,7 +56,7 @@
     margin-bottom: 15px;
   }
 
-  .home-work__task p+p {
+  .home-work__task p + p {
     margin-top: 11px;
   }
 
@@ -78,13 +86,12 @@
     margin-top: -8px;
   }
 
-  p.chek-icon::after {
+  .chek-icon::after {
     width: 24px;
     height: 20px;
-    right: 122px;
-    top: 26px;
+    right: -37px;
+    top: 0;
   }
-
 
   .lesson-benefits {
     @media (max-width: 425px) {
@@ -113,7 +120,7 @@
     margin-top: 75px;
   }
 
-  .lesson-3 ul li+li {
+  .lesson-3 ul li + li {
     margin-top: 17px;
   }
 
@@ -123,6 +130,10 @@
 
   .percent-200 {
     margin-top: 40px;
+    p {
+      font-size: 16px;
+      font-family: @mb;
+    }
   }
 
   .lesson-4 {
@@ -139,18 +150,21 @@
   p.text-16 {
     color: @op06;
   }
+
+  p.chek-icon--20 {
+    font-size: 20px;
+  }
 }
 
 .popup-close4 {
   position: absolute;
-  top: 0;
+  top: 17px;
   right: 20px;
   font-size: 50px;
-  transform: rotate(45deg);
   z-index: 10;
 }
 
-.popup,
+.popup.popup-large,
 .popup-fade.popup-full {
   position: fixed;
   top: 0;
