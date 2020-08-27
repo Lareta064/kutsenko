@@ -13,9 +13,11 @@
 	overflow: hidden;
 	position: relative;
 	transition: .5s;
+	width: 49%;
 
 	@media(max-width:767px) {
 		height: auto;
+		width: 100%;
 
 		&:last-child {
 			height: 600px;
@@ -80,8 +82,11 @@
 		padding-right: 10px;
 		padding-top: 30px;
 		padding-bottom: 70px;
-		margin-left: -10px;
 		min-width: 355px;
+	}
+
+	@media(max-width:424px){
+		margin-left: -10px;
 	}
 
 	.title-3 {
