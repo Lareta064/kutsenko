@@ -56,7 +56,7 @@
     margin-bottom: 15px;
   }
 
-  .home-work__task p + p {
+  .home-work__task p+p {
     margin-top: 11px;
   }
 
@@ -120,7 +120,7 @@
     margin-top: 75px;
   }
 
-  .lesson-3 ul li + li {
+  .lesson-3 ul li+li {
     margin-top: 17px;
   }
 
@@ -130,6 +130,7 @@
 
   .percent-200 {
     margin-top: 40px;
+
     p {
       font-size: 16px;
       font-family: @mb;
@@ -186,6 +187,28 @@
   overflow: auto;
   width: 100%;
   height: calc(~"100vh - 190px");
+
+  &::-webkit-scrollbar {
+    /* 1 - скроллбар */
+    width: 6px;
+    height: 30px;
+    background-color: #FFFFFF;
+    background-color: #000;
+  }
+
+
+  &::-webkit-scrollbar-track {
+    /* 3 - трек */
+    background-color: #dedede;
+    background-color: #000;
+  }
+
+
+  &::-webkit-scrollbar-thumb {
+    /* 5 - ползунок */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 }
 
 #floatingBtn.active {

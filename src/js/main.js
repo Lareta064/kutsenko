@@ -81,7 +81,7 @@ $(document).ready(function () {
 
 	let bodyEl = $('body');
 
-	function setupPopup(popupClass, openButtonClass, ) {
+	function setupPopup(popupClass, openButtonClass, closeButtonClass) {
 		$(openButtonClass).click(function () {
 			$(popupClass).fadeIn();
 			bodyEl.addClass('noscroll');
