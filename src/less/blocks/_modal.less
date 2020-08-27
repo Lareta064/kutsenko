@@ -121,6 +121,43 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
+	max-height: 600px;
+	height: 95vh;
+  }
+}
+
+.popup-close,
+.popup-close2,
+.popup-close3,
+.popup-close4 {
+	@media(max-width: 574px){
+		width: 25px;
+	}
+}
+
+.scroll-wrapper{
+	height: 90%;
+	overflow-y: auto;
+	
+	&::-webkit-scrollbar {
+	/* 1 - скроллбар */
+	width: 10px;
+	height: 10px;
+	background-color: #FFFFFF;
+	background-color: #000;
+  }
+  
+  
+  	&::-webkit-scrollbar-track {
+	/* 3 - трек */
+	background-color: #dedede;
+	background-color: #000;
+  }
+  
+  
+  	&::-webkit-scrollbar-thumb {
+	/* 5 - ползунок */
+	border-radius: 8px;
+	background-color: rgba(255, 255, 255, 0.7);
   }
 }
