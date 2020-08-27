@@ -81,120 +81,143 @@ $(document).ready(function () {
 
 	let bodyEl = $('body');
 
-	function popupOpen(popBtn, popWind) {
-
-		$(popWind).fadeIn();
-		bodyEl.addClass('noscroll');
-		return false;
-
+	function setupPopup(popupClass, openButtonClass, ) {
+		$(openButtonClass).click(function () {
+			$(popupClass).fadeIn();
+			bodyEl.addClass('noscroll');
+			return false;
+		});
+		$(closeButtonClass).click(function () {
+			$(this).parents(popupClass).fadeOut();
+			bodyEl.removeClass('noscroll');
+			return false;
+		});
+		$(document).keydown(function (e) {
+			if (e.keyCode === 27) {
+				e.stopPropagation();
+				$(popupClass).fadeOut();
+				bodyEl.removeClass('noscroll');
+			}
+		});
+		$(popupClass).click(function (e) {
+			if ($(e.target).closest('.popup').length == 0) {
+				$(this).fadeOut();
+				bodyEl.removeClass('noscroll');
+			}
+		});
 	}
-	$('.popup-open1').click(function () {
-		$('.popup-fade-1').fadeIn();
-		bodyEl.addClass('noscroll');
-		return false;
-	});
 
-	$('.popup-close').click(function () {
-		$(this).parents('.popup-fade-1').fadeOut();
-		bodyEl.removeClass('noscroll');
-		return false;
-	});
+	setupPopup('.popup-fade-1', '.popup-open1', '.popup-close');
+	setupPopup('.popup-fade-2', '.popup-open2', '.popup-close2');
+	setupPopup('.popup-fade-3', '.popup-open3', '.popup-close3');
+	setupPopup('.popup-fade-4', '.popup-open4', '.popup-close4');
+	// $('.popup-open1').click(function () {
+	// 	$('.popup-fade-1').fadeIn();
+	// 	bodyEl.addClass('noscroll');
+	// 	return false;
+	// });
 
-	$(document).keydown(function (e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup-fade-1').fadeOut();
-			bodyEl.removeClass('noscroll');
-		}
-	});
+	// $('.popup-close').click(function () {
+	// 	$(this).parents('.popup-fade-1').fadeOut();
+	// 	bodyEl.removeClass('noscroll');
+	// 	return false;
+	// });
 
-	$('.popup-fade-1').click(function (e) {
-		if ($(e.target).closest('.popup').length == 0) {
-			$(this).fadeOut();
-			bodyEl.removeClass('noscroll');
-		}
-	});
-	// модал-2
-	$('.popup-open2').click(function () {
-		$('.popup-fade-2').fadeIn();
-		bodyEl.addClass('noscroll');
-		return false;
-	});
+	// $(document).keydown(function (e) {
+	// 	if (e.keyCode === 27) {
+	// 		e.stopPropagation();
+	// 		$('.popup-fade-1').fadeOut();
+	// 		bodyEl.removeClass('noscroll');
+	// 	}
+	// });
 
-	$('.popup-close2').click(function () {
-		$(this).parents('.popup-fade-2').fadeOut();
-		bodyEl.removeClass('noscroll');
-		return false;
-	});
+	// $('.popup-fade-1').click(function (e) {
+	// 	if ($(e.target).closest('.popup').length == 0) {
+	// 		$(this).fadeOut();
+	// 		bodyEl.removeClass('noscroll');
+	// 	}
+	// });
+	// // модал-2
+	// $('.popup-open2').click(function () {
+	// 	$('.popup-fade-2').fadeIn();
+	// 	bodyEl.addClass('noscroll');
+	// 	return false;
+	// });
 
-	$(document).keydown(function (e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup-fade-2').fadeOut();
-			bodyEl.removeClass('noscroll');
-		}
-	});
+	// $('.popup-close2').click(function () {
+	// 	$(this).parents('.popup-fade-2').fadeOut();
+	// 	bodyEl.removeClass('noscroll');
+	// 	return false;
+	// });
 
-	$('.popup-fade-2').click(function (e) {
-		if ($(e.target).closest('.popup').length == 0) {
-			$(this).fadeOut();
-			bodyEl.removeClass('noscroll');
-		}
-	});
-	// модал-3
-	$('.popup-open3').click(function () {
-		$('.popup-fade-3').fadeIn();
-		bodyEl.addClass('noscroll');
-		return false;
-	});
+	// $(document).keydown(function (e) {
+	// 	if (e.keyCode === 27) {
+	// 		e.stopPropagation();
+	// 		$('.popup-fade-2').fadeOut();
+	// 		bodyEl.removeClass('noscroll');
+	// 	}
+	// });
 
-	$('.popup-close3').click(function () {
-		$(this).parents('.popup-fade-3').fadeOut();
-		bodyEl.removeClass('noscroll');
-		return false;
-	});
+	// $('.popup-fade-2').click(function (e) {
+	// 	if ($(e.target).closest('.popup').length == 0) {
+	// 		$(this).fadeOut();
+	// 		bodyEl.removeClass('noscroll');
+	// 	}
+	// });
+	// // модал-3
+	// $('.popup-open3').click(function () {
+	// 	$('.popup-fade-3').fadeIn();
+	// 	bodyEl.addClass('noscroll');
+	// 	return false;
+	// });
 
-	$(document).keydown(function (e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup-fade-3').fadeOut();
-			bodyEl.removeClass('noscroll');
-		}
-	});
+	// $('.popup-close3').click(function () {
+	// 	$(this).parents('.popup-fade-3').fadeOut();
+	// 	bodyEl.removeClass('noscroll');
+	// 	return false;
+	// });
 
-	$('.popup-fade-3').click(function (e) {
-		if ($(e.target).closest('.popup').length == 0) {
-			$(this).fadeOut();
-			bodyEl.removeClass('noscroll');
-		}
-	});
-	// модал-4
-	$('.popup-open4').click(function () {
-		$('.popup-fade-4').fadeIn();
-		bodyEl.addClass('noscroll');
-		return false;
-	});
+	// $(document).keydown(function (e) {
+	// 	if (e.keyCode === 27) {
+	// 		e.stopPropagation();
+	// 		$('.popup-fade-3').fadeOut();
+	// 		bodyEl.removeClass('noscroll');
+	// 	}
+	// });
 
-	$('.popup-close4').click(function () {
-		$(this).parents('.popup-fade-4').fadeOut();
-		bodyEl.removeClass('noscroll');
-		return false;
-	});
+	// $('.popup-fade-3').click(function (e) {
+	// 	if ($(e.target).closest('.popup').length == 0) {
+	// 		$(this).fadeOut();
+	// 		bodyEl.removeClass('noscroll');
+	// 	}
+	// });
+	// // модал-4
+	// $('.popup-open4').click(function () {
+	// 	$('.popup-fade-4').fadeIn();
+	// 	bodyEl.addClass('noscroll');
+	// 	return false;
+	// });
 
-	$(document).keydown(function (e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup-fade-4').fadeOut();
-			bodyEl.removeClass('noscroll');
-		}
-	});
+	// $('.popup-close4').click(function () {
+	// 	$(this).parents('.popup-fade-4').fadeOut();
+	// 	bodyEl.removeClass('noscroll');
+	// 	return false;
+	// });
 
-	$('.popup-fade-4').click(function (e) {
-		if ($(e.target).closest('.popup').length == 0) {
-			$(this).fadeOut();
-			bodyEl.removeClass('noscroll');
-		}
-	});
+	// $(document).keydown(function (e) {
+	// 	if (e.keyCode === 27) {
+	// 		e.stopPropagation();
+	// 		$('.popup-fade-4').fadeOut();
+	// 		bodyEl.removeClass('noscroll');
+	// 	}
+	// });
+
+	// $('.popup-fade-4').click(function (e) {
+	// 	if ($(e.target).closest('.popup').length == 0) {
+	// 		$(this).fadeOut();
+	// 		bodyEl.removeClass('noscroll');
+	// 	}
+	// });
 	// slider sertif
 	$('.sertificates-slider').owlCarousel({
 		items: 1,
