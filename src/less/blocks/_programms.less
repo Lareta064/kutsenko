@@ -281,10 +281,18 @@
 		position: absolute;
 		bottom: 0;
 		right: 70px;
-		width: 28%;
+		width: calc(~'28% + 16px');
+		padding-left: 8px;
+		padding-right: 8px;
+		border-bottom: 1px solid rgba(17, 17, 21, 0.15);
 		height: 280px;
 		overflow: hidden;
-		box-shadow: 0px 10px 20px rgba(17, 17, 21, 0.15);
+
+		img {
+			box-shadow: 0px 10px 20px rgba(17, 17, 21, 0.15);
+		}
+
+		// box-shadow: 0px 10px 20px rgba(17, 17, 21, 0.15);
 
 		@media(max-width:767px) {
 			bottom: 65%;
