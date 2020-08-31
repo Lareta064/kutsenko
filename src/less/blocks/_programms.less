@@ -49,10 +49,18 @@
     span {
       position: relative;
       left: -2px;
-      top: 25px;
+	  top: 14px;
+	  &.offset-left{
+		left: -6px;
+	  }
 	}
 	
 	
+	@media (max-width: 991px){
+		span {
+			top: 29px;
+		  }
+	}
 
     @media (max-width: 767px) {
       min-width: 120px;
