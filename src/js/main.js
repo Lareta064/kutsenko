@@ -1,14 +1,6 @@
 $(document).ready(function () {
 
 	$('[data-fancybox="gallery"]').fancybox();
-	// $("[data-fancybox='gallery']").fancybox({
-	// 	autoSize: false,
-	// 	maxWidth: 100,
-	// 	maxHeight: 70,
-	// 	width: 100,
-	// 	height: 70,
-	// 	scrolling: 'yes'
-	// });
 
 	// ПАРАЛЛАКС ДВИЖЕНИЯ ЗА МЫШКОЙ
 	let headerSection = document.querySelector('section.quote-block')
@@ -21,15 +13,7 @@ $(document).ready(function () {
 		}
 
 	});
-	// показать все отзывы
-	// const revBtn = document.querySelector('.btn-allReviews');
-	// const revItem = document.querySelectorAll('.review-col');
-	// revBtn.addEventListener('click', function () {
-	// 	this.parentElement.classList.add('hide');
-	// 	for (let item of revItem) {
-	// 		item.classList.add('active');
-	// 	}
-	// });
+
 	// показать/скрыть весь Модуль
 	const modulBtn = document.querySelector('.btn-allModul');
 	const saleInfo = document.querySelector('#saleInfo');
@@ -111,113 +95,7 @@ $(document).ready(function () {
 	setupPopup('.popup-fade-2', '.popup-open2', '.popup-close2');
 	setupPopup('.popup-fade-3', '.popup-open3', '.popup-close3');
 	setupPopup('.popup-fade-4', '.popup-open4', '.popup-close4');
-	// $('.popup-open1').click(function () {
-	// 	$('.popup-fade-1').fadeIn();
-	// 	bodyEl.addClass('noscroll');
-	// 	return false;
-	// });
-
-	// $('.popup-close').click(function () {
-	// 	$(this).parents('.popup-fade-1').fadeOut();
-	// 	bodyEl.removeClass('noscroll');
-	// 	return false;
-	// });
-
-	// $(document).keydown(function (e) {
-	// 	if (e.keyCode === 27) {
-	// 		e.stopPropagation();
-	// 		$('.popup-fade-1').fadeOut();
-	// 		bodyEl.removeClass('noscroll');
-	// 	}
-	// });
-
-	// $('.popup-fade-1').click(function (e) {
-	// 	if ($(e.target).closest('.popup').length == 0) {
-	// 		$(this).fadeOut();
-	// 		bodyEl.removeClass('noscroll');
-	// 	}
-	// });
-	// // модал-2
-	// $('.popup-open2').click(function () {
-	// 	$('.popup-fade-2').fadeIn();
-	// 	bodyEl.addClass('noscroll');
-	// 	return false;
-	// });
-
-	// $('.popup-close2').click(function () {
-	// 	$(this).parents('.popup-fade-2').fadeOut();
-	// 	bodyEl.removeClass('noscroll');
-	// 	return false;
-	// });
-
-	// $(document).keydown(function (e) {
-	// 	if (e.keyCode === 27) {
-	// 		e.stopPropagation();
-	// 		$('.popup-fade-2').fadeOut();
-	// 		bodyEl.removeClass('noscroll');
-	// 	}
-	// });
-
-	// $('.popup-fade-2').click(function (e) {
-	// 	if ($(e.target).closest('.popup').length == 0) {
-	// 		$(this).fadeOut();
-	// 		bodyEl.removeClass('noscroll');
-	// 	}
-	// });
-	// // модал-3
-	// $('.popup-open3').click(function () {
-	// 	$('.popup-fade-3').fadeIn();
-	// 	bodyEl.addClass('noscroll');
-	// 	return false;
-	// });
-
-	// $('.popup-close3').click(function () {
-	// 	$(this).parents('.popup-fade-3').fadeOut();
-	// 	bodyEl.removeClass('noscroll');
-	// 	return false;
-	// });
-
-	// $(document).keydown(function (e) {
-	// 	if (e.keyCode === 27) {
-	// 		e.stopPropagation();
-	// 		$('.popup-fade-3').fadeOut();
-	// 		bodyEl.removeClass('noscroll');
-	// 	}
-	// });
-
-	// $('.popup-fade-3').click(function (e) {
-	// 	if ($(e.target).closest('.popup').length == 0) {
-	// 		$(this).fadeOut();
-	// 		bodyEl.removeClass('noscroll');
-	// 	}
-	// });
-	// // модал-4
-	// $('.popup-open4').click(function () {
-	// 	$('.popup-fade-4').fadeIn();
-	// 	bodyEl.addClass('noscroll');
-	// 	return false;
-	// });
-
-	// $('.popup-close4').click(function () {
-	// 	$(this).parents('.popup-fade-4').fadeOut();
-	// 	bodyEl.removeClass('noscroll');
-	// 	return false;
-	// });
-
-	// $(document).keydown(function (e) {
-	// 	if (e.keyCode === 27) {
-	// 		e.stopPropagation();
-	// 		$('.popup-fade-4').fadeOut();
-	// 		bodyEl.removeClass('noscroll');
-	// 	}
-	// });
-
-	// $('.popup-fade-4').click(function (e) {
-	// 	if ($(e.target).closest('.popup').length == 0) {
-	// 		$(this).fadeOut();
-	// 		bodyEl.removeClass('noscroll');
-	// 	}
-	// });
+	
 	// slider sertif
 	$('.sertificates-slider').owlCarousel({
 		items: 1,
