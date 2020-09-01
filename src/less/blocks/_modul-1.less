@@ -165,7 +165,7 @@
         font-size: 100px;
       }
 
-      p {
+      &+p {
         font-family: @mb;
       }
     }
@@ -310,24 +310,24 @@
   position: relative;
 }
 
-.chek-icon {
-  position: relative;
-  width: fit-content;
+// .chek-icon {
+//   position: relative;
+//   width: fit-content;
 
-  &::after {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 25px;
-    background-image: url("../img/check.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    top: 0;
-    right: -40px;
-  }
-}
+//   &::after {
+//     display: block;
+//     position: absolute;
+//     content: "";
+//     width: 30px;
+//     height: 25px;
+//     background-image: url("../img/check.png");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     top: 0;
+//     right: -40px;
+//   }
+// }
 
 .footer-flex {
   display: flex;

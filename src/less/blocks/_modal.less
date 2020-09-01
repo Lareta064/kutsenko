@@ -71,6 +71,7 @@
   }
 }
 
+
 .sertificates-slider.owl-carousel .owl-nav {
   position: absolute;
   bottom: -40px;
@@ -141,6 +142,12 @@
 .popup-close2,
 .popup-close3,
 .popup-close4 {
+  cursor: pointer;
+  &:hover{
+    path{
+      fill: @red;
+    }
+  }
   @media(max-width: 574px) {
     width: 25px;
   }
@@ -172,3 +179,5 @@
     background-color: rgba(255, 255, 255, 0.7);
   }
 }
+
+

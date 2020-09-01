@@ -1,3 +1,7 @@
+mixin check
+	svg(width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+		path(d="M12.8168 24.742C12.543 25.0634 12.0696 25.0879 11.7646 24.7965L0.237683 13.7779C-0.067244 13.4865 -0.0805017 12.9961 0.207896 12.6881L3.88045 8.76875C4.16902 8.46079 4.65456 8.4474 4.95948 8.73867L11.2562 14.7573C11.5611 15.0487 12.0346 15.0242 12.3084 14.7028L24.6099 0.26713C24.8837 -0.0542246 25.3682 -0.0909157 25.6862 0.185748L29.7355 3.70569C30.0537 3.98218 30.09 4.47151 29.8161 4.79287L12.8168 24.742Z" fill="#50B16D")
+
 .popup-fade.popup-fade-4.popup-full
 	.popup.popup-large
 		.popup-close4 
@@ -27,7 +31,9 @@
 									h5.title-5 Домашняя работа
 									.home-work__task
 										p Пройти тест;
-										p Открыть брокерский счет и&nbsp;#[span.chek-icon завести 1000&nbsp;&#8381;]
+										p Открыть брокерский счет и&nbsp;завести 1000&nbsp;&#8381;
+											span.chek-icon 
+												+check
 							.lesson.lesson-2
 								.left-col
 									.text-group
@@ -63,7 +69,9 @@
 									.home-work
 										h5.title-5 Домашняя работа
 										.home-work__task
-											p.chek-icon--20 Купить свою первую акцию #[span.chek-icon (облигацию, фонд)]
+											p.chek-icon--20 Купить свою первую акцию (облигацию, фонд)
+												span.chek-icon 
+													+check
 							.lesson-benefits
 								.left-col
 									.text-group

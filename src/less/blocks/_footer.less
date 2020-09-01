@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 220px;
+  margin-top: 177px;
   padding-bottom: 70px;
 
   .btn {
@@ -32,6 +32,11 @@
 
   .text-group__head {
     height: 70px;
+
+    .title-5{
+      font-family: @mb;
+    }
+    
     @media (max-width: 991px) {
       height: 90px;
     }
@@ -116,9 +121,14 @@
   }
 }
 
+.social-block .link-border::after{
+  background-color: transparent;
+}
+
 .link-border {
   width: fit-content;
   position: relative;
+  .tr;
 }
 
 .link-border:after {
@@ -126,14 +136,14 @@
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 0;
+  width: 100%;
   height: 1px;
-  background-color: rgba(221, 79, 72, 0.4);
+  background-color: rgba(225, 255, 255, 0.5);
   .tr;
 }
 
 .link-border:hover:after {
-  width: 100%;
+  background-color: rgba(221, 79, 72, 0.4);
 }
 
 // .disclaimer{
@@ -150,7 +160,7 @@
     color: #fff;
 
     &:hover {
-      opacity: 0.6;
+      color: @red;
     }
   }
 }
