@@ -1,3 +1,14 @@
+mixin docs
+	<svg width="36" height="48" viewBox="0 0 36 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M35.3823 13.147V44.9077C35.3823 46.6158 33.9969 47.9999 32.2902 47.9999H3.70983C2.0018 47.9999 0.617676 46.6158 0.617676 44.9077V3.09216C0.617582 1.38413 2.00171 0 3.70983 0H22.2353L35.3823 13.147Z" fill="#518EF8"/>
+		<path d="M26.888 24.0989H9.1106V26.0743H26.888V24.0989Z" fill="white"/>
+		<path d="M26.888 28.5107H9.1106V30.4861H26.888V28.5107Z" fill="white"/>
+		<path d="M26.888 32.9224H9.1106V34.8978H26.888V32.9224Z" fill="white"/>
+		<path d="M21.7533 37.334H9.1106V39.3094H21.7533V37.334Z" fill="white"/>
+		<path d="M24.0291 12.8615L35.3824 17.5388V13.1472L28.9454 11.2466L24.0291 12.8615Z" fill="#3A5BBC"/>
+		<path d="M35.3824 13.147H25.3275C23.6194 13.147 22.2354 11.7629 22.2354 10.0549V0L35.3824 13.147Z" fill="#ACD1FC"/>
+		</svg>
+
 // ========== ПРОГРАММЫ КУРСА ==========
 section.programms
 	.container
@@ -17,14 +28,15 @@ section.programms
 					span 30
 				.programm-text.text-50
 					p видеоуроков, средней<br class="br-desktop"> продол&shy;жительностью в&nbsp;40&nbsp;минут
-			
+
 			.programms-list__item
 				.number.number--border
 					span.offset-left 15
 				.programm-text.text-50
-					span практических занятий,<br class="br-desktop">которые выполняются в&nbsp;рабочей тетради 
-					span.google-doc в Гугл-документе
-			
+					span практических занятий, <br class="br-desktop">которые выполняются в&nbsp;рабочей&nbsp;тетради
+					span.relative-span в&nbsp;Гугл-документе
+						span.google-doc 
+							+docs
 			.programms-list__item
 				.number
 					span.offset-left 17
@@ -41,11 +53,11 @@ section.programms
 							img(src="img/miniature4.jpg" alt="img")
 						a(href="img/gallery5.jpg" data-fancybox="gallery")
 							img(src="img/miniature5.jpg" alt="img")
-						
+
 			.programms-list__item
 				.pr-icon.pr-icon--book
 					.icon-book
-						img(src="img/book.png", alt="icon")
+						img(src="img/book.png" alt="icon")
 				.number
 					span 54
 				.programm-text.text-50
@@ -67,7 +79,6 @@ section.programms
 			.programms-footer__blank
 				.add-wrapper
 					img(src="img/blank.png" alt="blank")
-			
+
 
 // ========== КОНЕЦ ПРОГРАММЫ КУРСА ==========
-				
