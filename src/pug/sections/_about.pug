@@ -1,3 +1,21 @@
+mixin play
+	<svg width="156" height="170" viewBox="0 0 156 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g filter="url(#filter0_d)">
+		<path d="M132.819 69.5186L29.543 10.8413C25.3016 8.43997 20 11.4678 20 16.2706V133.729C20 138.532 25.3016 141.56 29.543 139.159L132.819 80.4814C137.06 77.9746 137.06 71.92 132.819 69.5186Z" fill="#DD4F48"/>
+		</g>
+		<defs>
+		<filter id="filter0_d" x="0" y="0" width="156" height="170" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+		<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+		<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+		<feOffset dy="10"/>
+		<feGaussianBlur stdDeviation="10"/>
+		<feColorMatrix type="matrix" values="0 0 0 0 0.866667 0 0 0 0 0.309804 0 0 0 0 0.282353 0 0 0 0.25 0"/>
+		<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+		<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+		</filter>
+		</defs>
+		</svg>
+
 //========== ОБ АВТОРЕ ==========
 section.about
 	.container
@@ -22,7 +40,7 @@ section.about
 						a(href="https://investorway.getcourse.ru/page2" target="_blank").btn.btn-small Попробовать бесплатный модуль
 					.about-content-block.w-50
 						.about-content__logo
-							img(src="img/diplom.png", alt="diplom")
+							img(src="img/diplom.jpg" srcset="img/diplom@2x.jpg 2x", alt="diplom")
 							
 						.text-16
 							p Сертифицированный эксперт и риск&#8209;менеджер по глобальным финансовым рынкам и инвестицонным инструментам (Университет Райз, Хьюстон, США) 
@@ -32,10 +50,11 @@ section.about
 				.video-text.text-30
 					p Рассказываю почему каждый должен заниматься инвестированием
 				.video-btn
-					img(src="img/play2.png", alt="play")
+					+play
+					//- img(src="img/play2.png", alt="play")
 					.video-duration 0:59
 				.video-wrapper
-					video#video(poster="img/video-poster.jpg")
+					video#video(poster="img/video-poster.jpg" srcset="img/video-poster@2x.jpg 2x", alt='video')
 						source(src="video.mp4" type="video/mp4")
 						source(src="video.webm" type="video/webm")
 						source(src="video.ogv" type="video/ogg")
