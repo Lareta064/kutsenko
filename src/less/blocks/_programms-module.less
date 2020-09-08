@@ -109,8 +109,16 @@
 		margin-bottom: 10px;
 	}
 
+	.mb-14 {
+		margin-bottom: 14px;
+	}
+
 	.mb-16 {
 		margin-bottom: 16px;
+	}
+
+	.mb24 {
+		margin-bottom: 24px;
 	}
 
 	.mb-60 {
@@ -159,11 +167,12 @@
 		}
 	}
 
-	.lesson-desk ul {
+	ul {
 		margin-top: 10px;
+		// padding-left: 20px;
 	}
 
-	.lesson-desk ul li {
+	ul li {
 		&+li {
 			margin-top: 10px;
 		}
@@ -171,7 +180,7 @@
 }
 
 .tooltip {
-	border: 3px solid #56F130;
+	border: 3px solid #50B16D;
 	position: relative;
 	border-radius: 10px;
 	width: 100%;
@@ -203,6 +212,10 @@
 	z-index: 2;
 	left: 38px;
 	bottom: -18px;
+}
+
+.tooltip ul {
+	padding-left: 20px;
 }
 
 .tooltip li+li {
@@ -298,4 +311,53 @@
 .text-bg--dark {
 	background: #25252E;
 
+}
+
+.col-8.col-md {
+	@media(min-width: 767px) and (max-width:991px) {
+		width: 100%;
+	}
+}
+
+//MODULE-2
+.programms-module {
+	.check-icon span {
+		margin-left: 5px;
+	}
+
+	.check-icon svg {
+		width: 26px;
+	}
+
+	.text-box-transform-bottom {
+		transform: translateY(100%);
+
+		@media(max-width:767px) {
+			transform: translateY(0%);
+			margin-top: 50px;
+		}
+	}
+
+	.text-70 {
+		font-size: 70px;
+		font-family: @b;
+		white-space: nowrap;
+
+		@media(min-width: 767px) and (max-width:991px) {
+			font-size: 60px;
+		}
+
+	}
+
+	.text-frame__content {
+		width: 72%;
+	}
+
+	.text-frame {
+		padding-top: 14px;
+		padding: 20px;
+		padding-bottom: 24px;
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, .2);
+	}
 }
