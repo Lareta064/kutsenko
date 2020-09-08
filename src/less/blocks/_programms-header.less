@@ -12,6 +12,7 @@
 }
 
 .toggle-menu-wrapper {
+    width: fit-content;
   width: 100%;
   max-width: 645px;
   overflow-x: auto;
@@ -24,22 +25,24 @@
   border-radius: 7px;
   padding: 4px 24px 4px 4px;
 
-  @media(min-width: 767px){
-      left: 75px;
-  }  
+  @media (min-width: 767px) {
+    left: 75px;
+  }
 }
 
 .toggle-menu__programms::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 .toggle-menu {
   height: 58px;
   white-space: nowrap;
-  align-items: center;
 }
 
 .toggle-menu__btn {
+    display: inline-block;
+    line-height: 3;
+    text-align: center;
   height: 58px;
   width: 50px;
   font-family: @mb;
@@ -58,7 +61,7 @@
     color: @bg;
   }
 
-  :first-child {
+  &:first-child {
     width: 140px;
   }
 }
@@ -66,5 +69,3 @@
 // .toggle-menu__btn :first-child {
 //   width: 140px;
 // }
-
-
