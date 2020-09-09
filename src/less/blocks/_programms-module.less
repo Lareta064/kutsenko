@@ -31,13 +31,17 @@
 
 	.module-content {
 		position: relative;
-		overflow: hidden;
+
+		@media(max-width:767px) {
+			overflow: hidden;
+		}
+
 	}
 
 	.label-free {
 		position: absolute;
-		right: 0;
-		top: 0;
+		right: -40px;
+		top: -50px;
 
 		@media(max-width:1365px) {
 			width: 350px;
@@ -49,6 +53,8 @@
 	}
 
 	h2.title-2 {
+		letter-spacing: 0.05em;
+
 		@media(max-width:767px) {
 			font-size: 50px;
 			line-height: 1;
@@ -113,6 +119,10 @@
 
 	.show-desktop {
 		display: inline-block;
+		padding-left: 30px;
+		padding-right: 30px;
+		height: 60px;
+		line-height: 60px;
 
 		@media(max-width:767px) {
 			display: none;
@@ -196,16 +206,20 @@
 	//lesson 3
 	.decor-text {
 		font-family: @b;
-		font-size: 60px;
+		font-size: 100px;
 		line-height: 100%;
 		letter-spacing: 0.02em;
 		color: @green;
 		margin-bottom: 20px;
+
+		span {
+			font-size: 60px;
+		}
 	}
 
 	.text-box-transform-top {
 		position: relative;
-		top: -20px;
+		top: -70px;
 
 
 		@media(max-width:767px) {
@@ -216,7 +230,7 @@
 
 	ul {
 		margin-top: 10px;
-		// padding-left: 20px;
+		padding-left: 20px;
 	}
 
 	ul li {
@@ -284,6 +298,10 @@
 		// border: 1px solid #fff;
 		max-width: 850px;
 
+		@media(min-width:1365px) {
+			width: 850px;
+		}
+
 	}
 
 	.lesson-desk {
@@ -339,12 +357,13 @@
 	border-radius: 10px;
 	padding-top: 14px;
 	padding-right: 40px;
-	padding-bottom: 24px;
+	padding-bottom: 16px;
 	padding-left: 20px;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	overflow: hidden;
 
 	.text-bg__left {
 		max-width: 610px;
@@ -362,7 +381,7 @@
 
 	.decor-img.decor-docs {
 		position: relative;
-		bottom: -28px;
+		bottom: -18px;
 
 		@media(max-width:767px) {
 			position: absolute;
@@ -394,12 +413,16 @@
 		width: 26px;
 	}
 
-	.text-box-transform-bottom {
-		transform: translateY(100%);
+	.text-box-transform {
+
+		position: relative;
+		top: -34px;
+		left: 32px;
 
 		@media(max-width:767px) {
-			transform: translateY(0%);
-			margin-top: 50px;
+			top: 0;
+			left: 0;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -412,6 +435,12 @@
 			font-size: 60px;
 		}
 
+	}
+
+	.text-frame {
+		@media(min-width:1365px) {
+			width: 850px;
+		}
 	}
 
 	.text-frame__content {
@@ -441,7 +470,7 @@
 	.text-frame__img {
 		position: absolute;
 		top: -20px;
-		right: -20px;
+		right: -90px;
 		z-index: 2;
 
 		@media(max-width:991px) {
@@ -539,4 +568,14 @@
 h5 span.text-regular {
 	font-family: @m;
 	font-weight: 400;
+}
+
+
+
+.sp-nowr {
+	white-space: nowrap;
+
+	@media(max-width:767px) {
+		white-space: pre-wrap;
+	}
 }
