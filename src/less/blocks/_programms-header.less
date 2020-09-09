@@ -1,6 +1,48 @@
 .fixed-toggle-menu {
 }
 
+form{
+  max-width: 117px;
+}
+
+.toggle-menu__select{
+  position: relative;
+
+  input{
+    z-index: 3;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    background: rgba(37, 37, 46, 0.5);
+    border-radius: 5px;
+    color:@white;
+  }
+}
+
+.toggle-menu__select__icon{
+
+}
+
+.form-select__options{
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  transform: translateY(100%);
+  padding: 6px;
+  padding-top: 12px;
+  background: #25252E;
+
+    li{
+    height: 36px;
+    line-height:36px;
+    color:@white;
+    cursor: pointer;
+    +li{
+
+    }
+  }
+}
+
 .programms-header {
   h1.page-title {
     font-family: @bb;
