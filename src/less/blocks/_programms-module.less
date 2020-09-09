@@ -1,6 +1,15 @@
 .programms-module {
 	overflow: hidden;
 
+	.module-content h2.title-2 {
+		font-size: 60px;
+		line-height: 1;
+
+		@media(max-width:1365px) {
+			font-size: 50px;
+		}
+	}
+
 	.chek-icon svg {
 		@media(max-width:767px) {
 			width: 26px;
@@ -29,6 +38,10 @@
 		position: absolute;
 		right: 0;
 		top: 0;
+
+		@media(max-width:1365px) {
+			width: 350px;
+		}
 
 		@media(max-width:767px) {
 			display: none;
@@ -92,6 +105,22 @@
 		}
 	}
 
+	.show-desktop {
+		display: inline-block;
+
+		@media(max-width:767px) {
+			display: none;
+		}
+	}
+
+	.show-mobile {
+		display: none;
+
+		@media(max-width:767px) {
+			display: inline-block;
+		}
+	}
+
 	.text-20 {
 		font-size: 20px;
 		line-height: 1.5;
@@ -135,6 +164,10 @@
 
 	.mb-120 {
 		margin-bottom: 120px;
+	}
+
+	.mb-140 {
+		margin-bottom: 140px;
 	}
 
 	.mt-auto {
@@ -270,6 +303,24 @@
 	}
 }
 
+.grid-row.grid-row--lg {
+	@media(max-width:991px) {
+		flex-direction: column;
+
+		.col-8,
+		.col-4 {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+.grid-row.grid-row--reverse {
+	@media(min-width:768px) {
+		flex-direction: row-reverse;
+	}
+}
+
 .text-bg {
 	border-radius: 10px;
 	padding-top: 14px;
@@ -297,7 +348,7 @@
 
 	.decor-img.decor-docs {
 		position: relative;
-		bottom: -24px;
+		bottom: -28px;
 
 		@media(max-width:767px) {
 			position: absolute;
@@ -351,6 +402,17 @@
 
 	.text-frame__content {
 		width: 72%;
+
+		@media(max-width:767px) {
+			width: 100%;
+
+		}
+	}
+
+	.text-frame__content.w-100 {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 30px;
 	}
 
 	.text-frame {
@@ -359,5 +421,74 @@
 		padding-bottom: 24px;
 		border-radius: 10px;
 		border: 1px solid rgba(255, 255, 255, .2);
+		position: relative;
+	}
+
+	.text-frame__img {
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		z-index: 2;
+
+		@media(max-width:991px) {
+			position: relative;
+			top: 0;
+			right: 0;
+			margin-top: 30px;
+		}
+	}
+
+	.grid-row--center {
+		align-items: center;
+	}
+
+	.block-list {
+		padding-left: 20px;
+
+		li+li {
+			margin-top: 10px;
+		}
+	}
+
+	.mob-mt-50 {
+		@media(max-width:991px) {
+			margin-top: 50px;
+		}
+	}
+
+	.mb-40-0 {
+		margin-bottom: 40px;
+
+		@media(max-width:991px) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+//-модуль 3
+.flex-title {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	@media(max-width:767px) {
+		flex-direction: column;
+	}
+}
+
+.logo-aero {
+	@media(max-width:767px) {
+		margin-bottom: 20px;
+		max-width: 280px;
+	}
+}
+
+.lesson-part {
+	padding-left: 35px;
+}
+
+.lesson-part-title {
+	span {
+		margin-right: 8px;
 	}
 }
