@@ -31,13 +31,17 @@
 
 	.module-content {
 		position: relative;
-		overflow: hidden;
+
+		@media(max-width:767px) {
+			overflow: hidden;
+		}
+
 	}
 
 	.label-free {
 		position: absolute;
-		right: 0;
-		top: 0;
+		right: -40px;
+		top: -50px;
 
 		@media(max-width:1365px) {
 			width: 350px;
@@ -49,6 +53,8 @@
 	}
 
 	h2.title-2 {
+		letter-spacing: 0.05em;
+
 		@media(max-width:767px) {
 			font-size: 50px;
 			line-height: 1;
@@ -68,6 +74,12 @@
 	}
 
 	.subtitle-block {
+		max-width: 850px;
+
+		.title-3 {
+			letter-spacing: 0;
+		}
+
 		.text-16 {
 			opacity: .7;
 			white-space: nowrap;
@@ -107,6 +119,10 @@
 
 	.show-desktop {
 		display: inline-block;
+		padding-left: 30px;
+		padding-right: 30px;
+		height: 60px;
+		line-height: 60px;
 
 		@media(max-width:767px) {
 			display: none;
@@ -150,6 +166,10 @@
 		margin-bottom: 24px;
 	}
 
+	.mb-30 {
+		margin-bottom: 30px;
+	}
+
 	.mb-60 {
 		margin-bottom: 60px;
 	}
@@ -160,6 +180,10 @@
 
 	.mt-80 {
 		margin-top: 80px;
+	}
+
+	.mb-100 {
+		margin-bottom: 100px;
 	}
 
 	.mb-120 {
@@ -182,16 +206,20 @@
 	//lesson 3
 	.decor-text {
 		font-family: @b;
-		font-size: 60px;
+		font-size: 100px;
 		line-height: 100%;
 		letter-spacing: 0.02em;
 		color: @green;
 		margin-bottom: 20px;
+
+		span {
+			font-size: 60px;
+		}
 	}
 
 	.text-box-transform-top {
 		position: relative;
-		top: -20px;
+		top: -70px;
 
 
 		@media(max-width:767px) {
@@ -202,7 +230,7 @@
 
 	ul {
 		margin-top: 10px;
-		// padding-left: 20px;
+		padding-left: 20px;
 	}
 
 	ul li {
@@ -270,6 +298,10 @@
 		// border: 1px solid #fff;
 		max-width: 850px;
 
+		@media(min-width:1365px) {
+			width: 850px;
+		}
+
 	}
 
 	.lesson-desk {
@@ -325,12 +357,13 @@
 	border-radius: 10px;
 	padding-top: 14px;
 	padding-right: 40px;
-	padding-bottom: 24px;
+	padding-bottom: 16px;
 	padding-left: 20px;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	overflow: hidden;
 
 	.text-bg__left {
 		max-width: 610px;
@@ -348,7 +381,7 @@
 
 	.decor-img.decor-docs {
 		position: relative;
-		bottom: -28px;
+		bottom: -18px;
 
 		@media(max-width:767px) {
 			position: absolute;
@@ -380,12 +413,16 @@
 		width: 26px;
 	}
 
-	.text-box-transform-bottom {
-		transform: translateY(100%);
+	.text-box-transform {
+
+		position: relative;
+		top: -34px;
+		left: 32px;
 
 		@media(max-width:767px) {
-			transform: translateY(0%);
-			margin-top: 50px;
+			top: 0;
+			left: 0;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -400,6 +437,12 @@
 
 	}
 
+	.text-frame {
+		@media(min-width:1365px) {
+			width: 850px;
+		}
+	}
+
 	.text-frame__content {
 		width: 72%;
 
@@ -411,8 +454,10 @@
 
 	.text-frame__content.w-100 {
 		width: 100%;
-		padding-left: 50px;
+		padding-left: 10px;
 		padding-right: 30px;
+		padding-bottom: 30px;
+		padding-top: 5px;
 	}
 
 	.text-frame {
@@ -427,7 +472,7 @@
 	.text-frame__img {
 		position: absolute;
 		top: -20px;
-		right: -20px;
+		right: -90px;
 		z-index: 2;
 
 		@media(max-width:991px) {
@@ -490,5 +535,49 @@
 .lesson-part-title {
 	span {
 		margin-right: 8px;
+	}
+}
+
+.text-box.text-box-pt-10 {
+	padding-top: 10px;
+}
+
+.logo-translate {
+
+	background-color: #fff;
+	border-radius: 10px;
+	transform: rotate(10deg) translateY(-40%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// padding: 10px;
+	width: 185px;
+	height: 185px;
+
+	img {
+		transform: rotate(-10deg);
+	}
+}
+
+.padding-1 {
+	padding-left: 30px;
+	padding-bottom: 44px;
+	padding-top: 24px;
+	padding-right: 40px;
+
+}
+
+h5 span.text-regular {
+	font-family: @m;
+	font-weight: 400;
+}
+
+
+
+.sp-nowr {
+	white-space: nowrap;
+
+	@media(max-width:767px) {
+		white-space: pre-wrap;
 	}
 }
