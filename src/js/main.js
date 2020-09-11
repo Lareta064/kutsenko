@@ -167,6 +167,24 @@ $(document).ready(function () {
 			this.classList.add('active');
 		})
 	}
+	const fixTopMenu = document.querySelector('.fix-top-menu');
+	if (fixTopMenu) {
+		window.addEventListener('scroll', function () {
+			if (window.innerWidth > 991) {
+				if (window.pageYOffset > 270) {
+					fixTopMenu.classList.add('active');
+				} else {
+					fixTopMenu.classList.remove('active');
+				}
+			} else {
+				if (window.pageYOffset > 30) {
+					fixTopMenu.classList.add('active');
+				} else {
+					fixTopMenu.classList.remove('active');
+				}
+			}
 
+		})
+	}
 
 });
