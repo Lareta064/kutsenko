@@ -150,5 +150,15 @@ $(document).ready(function () {
 		}
 
 	});
+	
+	// Навигация по Модулю
+	const toggleMenuBtn = document.querySelectorAll(".toggle-menu__btn");
+		console.log(toggleMenuBtn)
+		for (let i=0; i<toggleMenuBtn.length; i++){
+			toggleMenuBtn[i].addEventListener('click', function(){
+				console.log('55')
+			})
+		}
+
 
 });
