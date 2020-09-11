@@ -157,16 +157,16 @@ $(document).ready(function () {
 	});
 
 	// Навигация по Модулю
-	const toggleMenuBtn = document.querySelectorAll(".toggle-menu__btn");
-	console.log(toggleMenuBtn)
-	for (let i = 0; i < toggleMenuBtn.length; i++) {
-		toggleMenuBtn[i].addEventListener('click', function () {
-			for (let j = 0; j < toggleMenuBtn.length; j++) {
-				toggleMenuBtn[j].classList.remove('active');
-			}
-			this.classList.add('active');
-		})
-	}
+	// const toggleMenuBtn = document.querySelectorAll(".toggle-menu__btn");
+	// console.log(toggleMenuBtn)
+	// for (let i = 0; i < toggleMenuBtn.length; i++) {
+	// 	toggleMenuBtn[i].addEventListener('click', function () {
+	// 		for (let j = 0; j < toggleMenuBtn.length; j++) {
+	// 			toggleMenuBtn[j].classList.remove('active');
+	// 		}
+	// 		this.classList.add('active');
+	// 	})
+	// }
 	const fixTopMenu = document.querySelector('.fix-top-menu');
 	if (fixTopMenu) {
 		window.addEventListener('scroll', function () {
