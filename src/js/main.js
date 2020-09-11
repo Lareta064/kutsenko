@@ -161,7 +161,10 @@ $(document).ready(function () {
 	console.log(toggleMenuBtn)
 	for (let i = 0; i < toggleMenuBtn.length; i++) {
 		toggleMenuBtn[i].addEventListener('click', function () {
-			console.log('55')
+			for (let j = 0; j < toggleMenuBtn.length; j++) {
+				toggleMenuBtn[j].classList.remove('active');
+			}
+			this.classList.add('active');
 		})
 	}
 
