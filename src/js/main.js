@@ -170,7 +170,7 @@ $(document).ready(function () {
 	const fixTopMenu = document.querySelector('.fix-top-menu');
 	if (fixTopMenu) {
 		window.addEventListener('scroll', function () {
-			if (window.innerWidth > 991) {
+			if (window.innerWidth > 767) {
 				if (window.pageYOffset > 270) {
 					fixTopMenu.classList.add('active');
 				} else {
