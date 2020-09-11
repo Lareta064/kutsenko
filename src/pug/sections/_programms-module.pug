@@ -36,6 +36,23 @@ mixin times
 		<path d="M37.9436 40C37.4167 40 36.8903 39.7996 36.4894 39.3963L0.602758 3.51349C-0.200919 2.70933 -0.200919 1.4064 0.602758 0.602742C1.40643 -0.200914 2.7094 -0.200914 3.51357 0.602742L39.3972 36.486C40.2009 37.2897 40.2009 38.5926 39.3972 39.3963C38.9939 39.7971 38.4675 40 37.9436 40Z" fill="white"/>
 		</g>
 		</svg>
+mixin play
+	<svg width="156" height="170" viewBox="0 0 156 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g filter="url(#filter0_d)">
+			<path d="M132.819 69.5186L29.543 10.8413C25.3016 8.43997 20 11.4678 20 16.2706V133.729C20 138.532 25.3016 141.56 29.543 139.159L132.819 80.4814C137.06 77.9746 137.06 71.92 132.819 69.5186Z" fill="#DD4F48"/>
+		</g>
+		<defs>
+			<filter id="filter0_d" x="0" y="0" width="156" height="170" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+			<feOffset dy="10"/>
+			<feGaussianBlur stdDeviation="10"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.866667 0 0 0 0 0.309804 0 0 0 0 0.282353 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+			</filter>
+		</defs>
+	</svg>
 
 .fix-top-menu
 	.container
@@ -65,16 +82,16 @@ header.programms-header
 		h1.page-title Программа курса
 		.toggle-menu-wrapper.toggle-menu__programms
 			.toggle-menu
-				a(href="#").toggle-menu__btn Модуль 1
-				a(href="#").toggle-menu__btn 2
-				a(href="#").toggle-menu__btn 3
-				a(href="#").toggle-menu__btn 4
-				a(href="#").toggle-menu__btn 5
-				a(href="#").toggle-menu__btn 6
-				a(href="#").toggle-menu__btn 7
-				a(href="#").toggle-menu__btn 8
-				a(href="#").toggle-menu__btn 9
-section.programms-module.pt-100
+				a(href="#modul-1").toggle-menu__btn Модуль 1
+				a(href="#modul-2").toggle-menu__btn 2
+				a(href="#modul-3").toggle-menu__btn 3
+				a(href="#modul-4").toggle-menu__btn 4
+				a(href="#modul-5").toggle-menu__btn 5
+				a(href="#modul-6").toggle-menu__btn 6
+				a(href="#modul-7").toggle-menu__btn 7
+				a(href="#modul-8").toggle-menu__btn 8
+				a(href="#modul-9").toggle-menu__btn 9
+section.programms-module.pt-100#modul-1
 	.label-free.label-free-mob
 		img(src="img/free.png" srcset="img/free@2x.png 2x" alt="label" width="260")
 	.container
@@ -194,7 +211,7 @@ section.programms-module.pt-100
 						a(href="#!").btn.btn-solid.mt-80.mb24.show-mobile Попробовать бесплатно
 						p.text-16.txt-opacity Прохождение бесплатного модуля не обязывает вас к покупке платной части курса.<br> Я хочу, чтобы перед покупкой, вы были уверены в том, что курс действительно вам подойдет 
 //===МОДУЛЬ #2
-section.programms-module
+section.programms-module#modul-2
 	.container
 		.module-content
 			h2.title-2.pb-20.bottom-line Модуль 2
@@ -303,7 +320,7 @@ section.programms-module
 									li Понимать как правильно диверсифицировать портфель и сколько ценных бумаг в него нужно включать;
 									li Находить способы снижения налоговой нагрузку на инвестиционный портфель и использовать льготы от государства
 //===МОДУЛЬ #3
-section.programms-module
+section.programms-module#modul-3
 	.container
 		.module-content
 			h2.title-2.pb-20.bottom-line.flex-title
@@ -468,7 +485,7 @@ section.programms-module
 								li Строить линии поддержки, сопротивлений, выявлять ценовые тренды и&nbsp;правильно читать осцилляторы и индикаторы для&nbsp;покупки компаний на «дне»; 
 								li Распознавать, когда следует покупать хорошую недооцененную компанию на&nbsp;начале роста и&nbsp;продавать в конце роста 
 //===МОДУЛЬ #4
-section.programms-module
+section.programms-module#modul-4
 	.container
 		.module-content
 			h2.title-2.pb-20.bottom-line.flex-title
@@ -529,7 +546,7 @@ section.programms-module
 								li Пользоваться 5 инструментами для эффективного отбора облигаций и облигационных фондов в ваш портфель;
 								li Научитесь отбирать фонды в соответствии с вашей инвестиционной стратегией
 //===МОДУЛЬ #5
-section.programms-module
+section.programms-module#modul-5
 	.container
 		.module-content
 			h2.title-2.pb-20.bottom-line Модуль 5
@@ -553,7 +570,7 @@ section.programms-module
 			//-Модуль-5  Урок_5
 	.lesson-continue
 		.container
-			.lesson-wrapper.mb-120
+			.lesson-wrapper
 				.grid-row.mb-40
 					.col-8
 						.lesson-desk.mb-60
@@ -602,7 +619,7 @@ section.programms-module
 									li Проводить ребалансировку портфелей;
 									li Определять свой риск-профиль для эффективного составления портфелей
 //===МОДУЛЬ #6
-section.programms-module
+section.programms-module#modul-6
 	.container
 		.module-content
 			h2.title-2.pb-20.bottom-line.flex-title
@@ -627,7 +644,7 @@ section.programms-module
 									span.ic-inner 
 										+check
 		//модуль-6 урок-2									
-		.lesson-wrapper.mb-120
+		.lesson-wrapper
 			.grid-row.mb-60
 				.col-8
 					.lesson-desk
@@ -643,14 +660,14 @@ section.programms-module
 								li Моделировать разные портфели и определять их риск/доходность
 
 //===МОДУЛЬ #7
-section.programms-module
+section.programms-module#modul-7
 	.container
 		.module-content
 			h2.title-2.pb-20.bottom-line Модуль 7
 			.subtitle-block.mb-60
 				h3.title-3 Психологические особенности инвестиционного процесса 
 		//модуль-7 урок-1
-		.lesson-wrapper.mb-120
+		.lesson-wrapper
 			.grid-row.mb-60
 				.col-8
 					.lesson-desk
@@ -673,7 +690,7 @@ section.programms-module
 								li  Вовремя выявлять и устранять первые предвестники «неинвестиционного поведения
 
 //===МОДУЛЬ #8
-section.programms-module
+section.programms-module#modul-8
 	.container
 		.module-content
 			h2.title-2.pb-20.bottom-line.flex-title
@@ -684,7 +701,7 @@ section.programms-module
 				p.text-16.text-red.mb-30 Только в тарифах «Специалист» и «Профессионал»
 				p.text-20 Изучите продвинутую работу с торговым терминалом. Выставление заявок, стоп-ордеров, тейк-профитов
 		//модуль-8 урок-1
-		.lesson-wrapper.mb-120
+		.lesson-wrapper
 			.grid-row.mb-60
 				.col-8
 					.lesson-desk
@@ -700,7 +717,7 @@ section.programms-module
 								li Выставлять торговые заявки и контролировать свой убыток / прибыль
 
 //===МОДУЛЬ #9
-section.programms-module
+section.programms-module#modul-9
 	.container
 		.module-content
 			h2.title-2.pb-20.bottom-line.flex-title
@@ -711,7 +728,7 @@ section.programms-module
 				p.text-16.text-red.mb-30 Только в тарифах «Специалист» и «Профессионал»
 				p.text-20 Изучите продвинутую работу с торговым терминалом. Выставление заявок, стоп-ордеров, тейк-профитов
 		//модуль-9 урок-1
-		.lesson-wrapper.mb-120
+		.lesson-wrapper
 			.grid-row.mb-40
 				.col-8
 					.lesson-desk
@@ -727,4 +744,56 @@ section.programms-module
 						.text-bg__content
 							p.text-20.text-bold.mb-16  После прохождения 9 модуля вы сможете:
 							ul.text-16.block-list
-								li Знать как устроена работа сложных инвестиционных продуктов и деривативов 
+								li Знать как устроена работа сложных инвестиционных продуктов и деривативов
+section.about
+	.container
+		.quote-block
+			.quote-text
+				.img-quote
+					img(src="img/quote.png" alt="img")
+				p.text-60 #[span.text-red За месяц научу вас] эффективно и&nbsp;безопасно инвестировать деньги в&nbsp;фондовый&nbsp;рынок и&nbsp;обеспечивать себя&nbsp;доходом в год в размере
+
+			.super-big
+				img(src="img/percent.png" srcset="img/percent@2x.png 2x" alt="img") 
+		h2.title-2 об авторе
+		.about-content
+			.about-content__text
+				.about-content-header.text-group-30
+					h3 Никита Куценко
+					p Действующий инвестор, трейдер и портфельный управляющий. Эксперт по инвестиционным продуктам
+				.about-content-block
+					.about-content__logo.content__logo--so
+						img(src="img/so-logo.jpg" srcset="img/so-logo@2x.jpg 2x" width="300" alt="so-logo")
+					.text-16
+						p Со-основатель международного финансового финтех-стартапа STIPS|Oculus (партнеры IBM). Помогают трейдерам со всего мира агрегировать информацию об&nbsp;активах и принимать правильные торговые решения
+					//- a(href="#!").btn.btn-small Перейти
+				.block-flex
+					.about-content-block.w-50
+						.about-content__logo
+							img(src="img/author-logo.png" alt="author-logo")
+						.text-16
+							p Автор образовательных курсов о&nbsp;финансовой грамотности и бесплатного марафона «Путь Инвестора», в котором приняли участие более 4000 человек
+						a(href="https://investorway.getcourse.ru/page2" target="_blank").btn.btn-small Попробовать бесплатный модуль
+					.about-content-block.w-50
+						.about-content__logo
+							img(src="img/diplom.jpg" srcset="img/diplom@2x.jpg 2x" alt="diplom")
+
+						.text-16
+							p Сертифицированный эксперт и риск&#8209;менеджер по глобальным финансовым рынкам и инвестицонным инструментам (Университет Райз, Хьюстон, США) 
+						a(href="#!").popup-open3.btn.btn-small Проверить
+
+			.about-content__video#videoPlay
+				.video-text.text-30
+					p Рассказываю почему каждый должен заниматься инвестированием
+				.video-btn
+					+play
+					.video-duration 0:59
+				.video-wrapper
+					video#video(poster="img/video-poster.jpg" srcset="img/video-poster@2x.jpg 2x" alt='video')
+						source(src="video.mp4" type="video/mp4")
+						source(src="video.webm" type="video/webm")
+						source(src="video.ogv" type="video/ogg")
+//========== КОНЕЦ ОБ АВТОРЕ ==========
+include _review.pug
+include _price.pug
+include _footer.pug
