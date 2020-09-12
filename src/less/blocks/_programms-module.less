@@ -27,7 +27,7 @@
 			display: block;
 			width: 260px;
 			position: absolute;
-			right: -10px;
+			right: 0;
 			top: 375px;
 			z-index: 5;
 		}
@@ -186,6 +186,18 @@
 		margin-bottom: 60px;
 	}
 
+	.mt-50{
+		margin-top: 50px;
+	}
+
+	.mt-50 {
+		margin-top: 50px;
+	}
+
+	.mt-60{
+		margin-top: 60px;
+	}
+
 	.mb-40 {
 		margin-bottom: 40px;
 	}
@@ -194,12 +206,23 @@
 		margin-top: 80px;
 	}
 
+	.mb-90 {
+		margin-bottom: 90px;
+	}
+
 	.mb-100 {
 		margin-bottom: 100px;
 	}
 
+	.mt-120 {
+		margin-top: 120px;
+	}
+
 	.mb-120 {
 		margin-bottom: 120px;
+		@media(max-width: 991px){
+			margin-bottom: 60px;
+		}
 	}
 
 	.mb-140 {
@@ -418,6 +441,8 @@
 //MODULE-2
 .programms-module {
 	.check-icon span {
+		position: relative;
+		top:3px;
 		margin-left: 5px;
 	}
 
@@ -434,7 +459,7 @@
 		@media(max-width:767px) {
 			top: 0;
 			left: 0;
-			margin-bottom: 20px;
+			margin-bottom: 60px;
 		}
 	}
 
@@ -591,5 +616,12 @@ h5 span.text-regular {
 
 	@media(max-width:767px) {
 		white-space: pre-wrap;
+	}
+}
+
+.logo-rusgidro{
+	@media(max-width: 991px){
+		max-width: 260px;
+		margin-bottom: 20px;
 	}
 }
