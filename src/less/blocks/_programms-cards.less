@@ -5,7 +5,7 @@
 .block-card {
   display: flex;
   justify-content: space-between;
-  // width: 350px;
+  width: 100%;
 }
 
 .card {
@@ -67,7 +67,7 @@
 .block-card--33 {
   @media (max-width: 991px) {
     width: 995px;
-    padding-right: 10px;
+    padding-right: 20px;
   }
 }
 
@@ -102,7 +102,7 @@
 .block-card--66 {
   @media (max-width: 991px) {
     width: 660px;
-    padding-right: 10px;
+    padding-right: 20px;
   }
 }
 
@@ -141,6 +141,9 @@
   position: absolute;
   top: 34px;
   right: 30px;
+  @media (max-width: 991px) {
+    display: none;
+  }
 }
 
 .card-col{

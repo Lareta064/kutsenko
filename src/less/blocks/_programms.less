@@ -229,13 +229,33 @@
   padding-left: 15.5%;
   margin-top: 148px;
   background-color: @bg;
-
+  .btn-mob.btn{
+    display: none;
+  }
+  .btn-desc.btn{
+    display: inline-block;
+  }
   // width: 40%;
 
   @media (max-width: 1199px) {
     padding-left: 5.5%;
     padding-top: 30px;
     padding-bottom: 50px;
+    .btn-desc.btn{
+      display: none;
+    }
+    .btn-mob.btn{
+      display: inline-block;
+    }
+  }
+
+  @media (max-width: 991px){
+    .btn-desc.btn{
+      display: none;
+    }
+    .btn-mob.btn{
+      display: inline-block;
+    }
   }
 
   @media (max-width: 767px) {
