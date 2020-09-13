@@ -102,7 +102,7 @@
     }
 
     @media(min-width: 450px) and (max-width: 575px){
-      display: none;  
+      display: none;
     }
     // height: 20px;
     // right: -37px;
@@ -227,7 +227,18 @@
     background-color: rgba(255, 255, 255, 0.7);
   }
 }
-
+#floatingBtn{
+  transition:opacity 1s;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+       -o-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+   -webkit-animation: showBtn;
+     -moz-animation: showBtn;
+       -o-animation: showBtn;
+          animation: showBtn;
+  animation-duration: 1s;
+}
 #floatingBtn.active {
   position: fixed;
   bottom: 2px;
@@ -239,4 +250,21 @@
   white-space: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  -webkit-animation: showBtn;
+     -moz-animation: showBtn;
+       -o-animation: showBtn;
+          animation: showBtn;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+       -o-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes showBtn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
