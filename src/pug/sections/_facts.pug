@@ -20,7 +20,7 @@ mixin google
 
 section.facts
 	.container
-		h2.title-2 Зачем инвестировать в&nbsp;фондовый рынок
+		h2.title-2 Зачем инвестиро&shy;вать в&nbsp;фондовый рынок
 		.facts-text
 			p Каждый хочет жить счастливую жизнь в достатке и благополучии.
 			p Финансы — это ключ к счастью. Они открывают двери к хорошему образованию,<br> свободному перемещению по миру, качественной медицине и достижению<br> материальных целей.
@@ -30,27 +30,31 @@ section.facts
 			.grid-row
 				.col-8
 					.statistics-block
-						.statistics-block.statistics-block__percent
-							span.white 52%
-							span.text-20 американцев
-						.statistics-block.statistics-block__percent
-							span.white 39%
-							span.text-20 японцев
-						.statistics-block.statistics-block__percent
-							span.white 10%
-							span.text-20 китайцев
-						.statistics-block.statistics-block__percent
-							span.red 0,8%
-							span.text-20 россиян
+						.statistics-item__inner
+							.statistics-item.statistics-block__percent
+								p.white 52%
+								p.text-20 американцев
+						.statistics-item__inner		
+							.statistics-item.statistics-block__percent
+								p.white 39%
+								p.text-20 японцев
+						.statistics-item__inner
+							.statistics-item.statistics-block__percent
+								p.white 10%
+								p.text-20 китайцев
+						.statistics-item__inner		
+							.statistics-item.statistics-block__percent
+								p.red 0,8%
+								p.text-20 россиян
 				.col-4
 					.text-box
 						p.text-16.text-bold Сравните цифры и вы поймете,<br> почему одни живут хорошо,<br> а другие — плохо
 						a(href="#!").btn.btn-small Подробнее
 		.dividends
 			p.text-20 Инвестор получает с акций крупных компаний дивиденды. Например:
-			.grid-row
+			.grid-row.grid-row--swipe
 				.col-8
-					.card-color__block
+					.card-color__block.card-color--50
 						.card-color.card-color__green
 							p.text-16.bold Сбербанк
 							span.percent 8,93%

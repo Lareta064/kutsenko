@@ -31,11 +31,20 @@
 .statistics-block {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.statistics-item__inner{
+  // display: flex;
+  width: 25%;
+  @media(max-width: 767px){
+    width: 50%;
+  }
 }
 
 .statistics-block__percent,
 .compared-block__percent {
-  // display: flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   font-family: @bb;
@@ -54,8 +63,6 @@
   span.text-16 {
     font-family: @m;
   }
-
-  
 }
 
 .compared-block__percent{
@@ -92,11 +99,46 @@ p.text-16.text-bold {
   margin-bottom: 60px;
 }
 
+.grid-row--swipe{
+  width: 100%;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.grid-row--swipe {
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+
+  @media (max-width: 1439px) {
+    max-width: 1260px;
+  }
+
+  @media (max-width: 1364px) {
+    max-width: 1140px;
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 932px;
+  }
+
+  @media (max-width: 991px) {
+    margin-left: 10px;
+  }
+}
+
 .card-color {
   min-width: 190px;
   height: 124px;
   border-radius: 10px;
   padding: 10px 20px 16px 10px;
+}
+
+.card-color--50{
+  width: 49%;
 }
 
   .card-color__green {
