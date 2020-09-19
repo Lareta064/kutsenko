@@ -200,12 +200,7 @@ p.text-16.text-bold {
 }
 
 .compared {
-  p.text-16 {
-    color: @op06;
-  }
-
   .text-bold {
-    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
     @media (max-width: 767px) {
@@ -213,6 +208,11 @@ p.text-16.text-bold {
     }
   }
 }
+
+.text-opacity{
+  color: @op06;
+}
+
 .compared-block {
   display: flex;
   justify-content: space-between;
@@ -270,4 +270,8 @@ p.text-16.text-bold {
     display: block;
     margin-top: 30px;
   }
+}
+
+.mt-60{
+  margin-top: 60px;
 }

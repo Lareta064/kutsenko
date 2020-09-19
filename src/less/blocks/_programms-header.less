@@ -48,8 +48,7 @@
 .programms-header {
   padding-top: 75px;
 
-  @media(max-width:767px) {
-
+  @media (max-width: 767px) {
     padding-top: 30px;
   }
 
@@ -60,21 +59,17 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 
-    @media(max-width:1365px) {
+    @media (max-width: 1365px) {
       font-size: 90px;
-
     }
 
-    @media(max-width:991px) {
+    @media (max-width: 991px) {
       font-size: 80px;
-
     }
 
-    @media(max-width:767px) {
+    @media (max-width: 767px) {
       font-size: 60px;
-
     }
-
   }
 }
 
@@ -84,7 +79,7 @@
   max-width: 645px;
   overflow-x: auto;
 
-  @media(min-width: 991px) and (max-width: 1199px) {
+  @media (min-width: 991px) and (max-width: 1199px) {
     max-width: 580px;
   }
 }
@@ -96,8 +91,6 @@
   border-radius: 7px;
   padding: 4px 24px 4px 4px;
   z-index: 20;
-
-
 }
 
 .toggle-menu__programms::-webkit-scrollbar {
@@ -169,36 +162,31 @@
   display: block;
 }
 
-
 .fix-top-menu__content {
   display: flex;
 
-  @media(max-width: 991px) {
+  @media (max-width: 991px) {
     justify-content: flex-end;
 
     .toggle-menu__programms {
       display: none;
-
     }
-
-
 
     .fix-close-mob {
       margin-left: 30px;
     }
   }
-
 }
 
 .fix-top-btn {
   margin-left: 40px;
 
   .btn {
-    background: rgba(221, 79, 72, .9);
+    background: rgba(221, 79, 72, 0.9);
     color: #fff;
     .tr;
 
-    @media(max-width:767px) {
+    @media (max-width: 767px) {
       height: 40px;
       line-height: 38px;
     }
@@ -208,14 +196,13 @@
       color: #fff;
     }
   }
-
 }
 
 .fix-top-close {
   margin-left: auto;
 
   .btn {
-    background-color: rgba(17, 17, 21, .9);
+    background-color: rgba(17, 17, 21, 0.9);
 
     &:hover {
       color: rgba(17, 17, 21, 1);
@@ -227,7 +214,7 @@
 .fix-desk {
   display: block;
 
-  @media(max-width:991px) {
+  @media (max-width: 991px) {
     display: none;
   }
 }
@@ -235,7 +222,7 @@
 .fix-close-mob {
   display: none;
 
-  @media(max-width:991px) {
+  @media (max-width: 991px) {
     display: block;
   }
 }
@@ -244,12 +231,17 @@
   right: 75px;
   left: auto;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     right: 40px;
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     right: 20px;
+    &.offcet-60 {
+      @media (max-width: 767px) {
+        right: 60px;
+      }
+    }
   }
 
   .btn-red {
@@ -257,7 +249,7 @@
     color: #fff;
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 }
