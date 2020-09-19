@@ -144,11 +144,11 @@
   z-index: 10;
   display: none;
 
-  .toggle-menu__btn{
+  .toggle-menu__btn {
     width: 56px;
   }
 
-  .toggle-menu__btn:first-child{
+  .toggle-menu__btn:first-child {
     width: 140px;
   }
 
@@ -239,13 +239,24 @@
     display: block;
   }
 }
-.fix-top-menu.page-programms-btn{
-  right: 10%;
+
+.fix-top-menu.page-programms-btn {
+  right: 75px;
   left: auto;
-  .btn-red{
+
+  @media(max-width: 1199px) {
+    right: 40px;
+  }
+
+  @media(max-width: 767px) {
+    right: 20px;
+  }
+
+  .btn-red {
     background-color: @red;
     color: #fff;
-    &:hover{
+
+    &:hover {
       opacity: .8;
     }
   }

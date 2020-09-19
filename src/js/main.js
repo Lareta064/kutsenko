@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
 	$('[data-fancybox="gallery"]').fancybox();
+	$('[data-fancybox="gallery1"]').fancybox();
 
 	// ПАРАЛЛАКС ДВИЖЕНИЯ ЗА МЫШКОЙ
 	let headerSection = document.querySelector('section.quote-block')
