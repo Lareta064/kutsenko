@@ -25,6 +25,21 @@
     animation-timing-function: linear;
     z-index: 1;
 
+    span.sale-text{
+      position: relative;
+      left: 50px;
+      font-size: 70px;
+
+      @media(max-width: 991px){
+        left: 30px;
+        font-size: 30px;
+      }
+
+      @media(max-width: 767px){
+        left: 20px;
+      }
+    }
+
     span {
       .title-2;
       font-family: @bb;
