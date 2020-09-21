@@ -53,7 +53,38 @@ mixin play
 		</filter>
 		</defs>
 		</svg>
-
+mixin arr-down
+	<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g opacity="0.5" filter="url(#filter10_d)">
+		<path d="M21.5706 2.25856L12.9996 10L4.42925 2.25909C3.85692 1.74155 3.85692 0.903847 4.42925 0.387892C5.00159 -0.129121 5.92834 -0.128592 6.50067 0.387892L13.0002 6.25814L19.5009 0.387363C20.0733 -0.129121 21 -0.129121 21.5718 0.387363C22.1429 0.904376 22.1429 1.74155 21.5706 2.25856Z" fill="white"/>
+		</g>
+		<defs>
+		<filter id="filter10_d" x="0" y="0" width="26" height="18" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+		<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+		<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+		<feOffset dy="4"/>
+		<feGaussianBlur stdDeviation="2"/>
+		<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+		<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+		<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+		</filter>
+		</defs>
+		</svg>
+.sticky-menu#sticky-menu
+	a(href="content-page.html").reload-link
+	.sticky-menu__icon
+		+arr-down
+	ul.sticky-menu__list
+		li.active
+			a(href="#modul-1") Мод. 1
+		li
+			a(href="#modul-2") Мод. 2
+		li
+			a(href="#modul-3") Мод. 3
+		li
+			a(href="#modul-4") Мод. 4
+		li
+			a(href="#modul-5") Мод. 5
 .fix-top-menu
 	.container
 		.fix-top-menu__content
