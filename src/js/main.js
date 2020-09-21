@@ -169,8 +169,20 @@ $(document).ready(function () {
 	// 	})
 	// }
 	const fixTopMenu = document.querySelector('.fix-top-menu');
-	if (fixTopMenu) {
+	const fixModulList = document.querySelector('#sticky-menu');
+	fixModulList.addEventListener('click', function (e) {
+		console.log(e.target);
+	})
+	if (fixTopMenu || fixModulList) {
 		window.addEventListener('scroll', function () {
+
+			if (window.innerWidth <= 767) {
+				if (window.pageYOffset > 170) {
+					fixModulList.classList.add('active');
+				} else {
+					fixModulList.classList.remove('active');
+				}
+			}
 			if (window.innerWidth > 767) {
 				if (window.pageYOffset > 270) {
 					fixTopMenu.classList.add('active');
@@ -188,6 +200,17 @@ $(document).ready(function () {
 		})
 	}
 	$("#page-nav").onePageNav({
+		currentClass: "active",
+		changeHash: false,
+		scrollSpeed: 750,
+		scrollThreshold: 0.5,
+		filter: "",
+		easing: "swing",
+		begin: function () {},
+		end: function () {},
+		scrollChange: function ($currentListItem) {}
+	});
+	$(".sticky-menu__list").onePageNav({
 		currentClass: "active",
 		changeHash: false,
 		scrollSpeed: 750,
