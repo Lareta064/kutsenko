@@ -121,11 +121,11 @@ $(document).ready(function () {
 	let Visible = function (target) {
 		// Все позиции элемента
 		var targetPosition = {
-				top: window.pageYOffset + target.getBoundingClientRect().top,
-				left: window.pageXOffset + target.getBoundingClientRect().left,
-				right: window.pageXOffset + target.getBoundingClientRect().right,
-				bottom: window.pageYOffset + target.getBoundingClientRect().bottom
-			},
+			top: window.pageYOffset + target.getBoundingClientRect().top,
+			left: window.pageXOffset + target.getBoundingClientRect().left,
+			right: window.pageXOffset + target.getBoundingClientRect().right,
+			bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+		},
 			// Получаем позиции окна
 			windowPosition = {
 				top: window.pageYOffset,
@@ -157,23 +157,30 @@ $(document).ready(function () {
 
 	});
 
-	// Навигация по Модулю
-	// const toggleMenuBtn = document.querySelectorAll(".toggle-menu__btn");
-	// console.log(toggleMenuBtn)
-	// for (let i = 0; i < toggleMenuBtn.length; i++) {
-	// 	toggleMenuBtn[i].addEventListener('click', function () {
-	// 		for (let j = 0; j < toggleMenuBtn.length; j++) {
-	// 			toggleMenuBtn[j].classList.remove('active');
-	// 		}
-	// 		this.classList.add('active');
-	// 	})
-	// }
 	const fixTopMenu = document.querySelector('.fix-top-menu');
 	const fixModulList = document.querySelector('#sticky-menu');
-	fixModulList.addEventListener('click', function (e) {
-		console.log(e.target);
-	})
-	if (fixTopMenu || fixModulList) {
+	if (fixTopMenu) {
+		window.addEventListener('scroll', function () {
+			if (window.innerWidth > 767) {
+
+				if (window.pageYOffset > 270) {
+					console.log(555)
+					fixTopMenu.classList.add('active');
+				} else {
+					fixTopMenu.classList.remove('active');
+				}
+			}
+			else {
+				if (window.pageYOffset > 30) {
+					fixTopMenu.classList.add('active');
+				} else {
+					fixTopMenu.classList.remove('active');
+				}
+			}
+
+		});
+	}
+	if (fixModulList) {
 		window.addEventListener('scroll', function () {
 
 			if (window.innerWidth <= 767) {
@@ -183,21 +190,7 @@ $(document).ready(function () {
 					fixModulList.classList.remove('active');
 				}
 			}
-			if (window.innerWidth > 767) {
-				if (window.pageYOffset > 270) {
-					fixTopMenu.classList.add('active');
-				} else {
-					fixTopMenu.classList.remove('active');
-				}
-			} else {
-				if (window.pageYOffset > 30) {
-					fixTopMenu.classList.add('active');
-				} else {
-					fixTopMenu.classList.remove('active');
-				}
-			}
-
-		})
+		});
 	}
 	$("#page-nav").onePageNav({
 		currentClass: "active",
@@ -206,9 +199,9 @@ $(document).ready(function () {
 		scrollThreshold: 0.5,
 		filter: "",
 		easing: "swing",
-		begin: function () {},
-		end: function () {},
-		scrollChange: function ($currentListItem) {}
+		begin: function () { },
+		end: function () { },
+		scrollChange: function ($currentListItem) { }
 	});
 	$(".sticky-menu__list").onePageNav({
 		currentClass: "active",
@@ -217,9 +210,9 @@ $(document).ready(function () {
 		scrollThreshold: 0.5,
 		filter: "",
 		easing: "swing",
-		begin: function () {},
-		end: function () {},
-		scrollChange: function ($currentListItem) {}
+		begin: function () { },
+		end: function () { },
+		scrollChange: function ($currentListItem) { }
 	});
 
 });
