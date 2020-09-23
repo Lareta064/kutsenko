@@ -204,9 +204,7 @@
 
   @media(max-width:1439px) {
     padding-bottom: 35px;
-    // margin-left: 0px;
-    // padding-left: 20px;
-    // padding-right: 20px;
+
   }
 
   li+li {
@@ -215,6 +213,16 @@
 
   .left-col {
     width: 80%;
+
+    @media(min-width:768px) and(max-width:991px) {
+      width: 100%;
+    }
+  }
+
+  @media(min-width:768px) and(max-width:991px) {
+    .right-col {
+      display: none;
+    }
   }
 }
 
@@ -256,8 +264,8 @@
     justify-content: space-between;
     align-items: flex-end;
 
-    p{
-      color:rgba(255, 255, 255, 0.6);
+    p {
+      color: rgba(255, 255, 255, 0.6);
     }
 
     .left-col {
