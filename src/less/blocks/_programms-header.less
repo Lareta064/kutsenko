@@ -33,6 +33,10 @@
   padding-top: 7px;
   padding-left: 10px;
 
+  @media(min-width:768px){
+    top: 20px;
+  }
+
   .reload-link {
     position: absolute;
     display: inline-block;
@@ -221,6 +225,17 @@
 .fix-top-btn {
   margin-left: 40px;
 
+  @media (min-width: 768px){
+    position: relative;
+    top: -4px;
+  }
+
+  @media (min-width: 991px){
+    top: 8px;
+  } 
+
+ 
+
   .btn {
     background: rgba(221, 79, 72, 0.9);
     color: #fff;
@@ -253,6 +268,11 @@
 
 .fix-desk {
   display: block;
+
+  @media (min-width: 991px) {
+    position: relative;
+    top: 8px;
+  }
 
   @media (max-width: 991px) {
     display: none;
