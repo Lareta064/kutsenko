@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+console.log(333)
 	$('[data-fancybox="gallery"]').fancybox();
 	$('[data-fancybox="gallery1"]').fancybox();
 
@@ -117,7 +117,6 @@ $(document).ready(function () {
 
 	//плавающая кнопка
 	let element = document.querySelector('#modul-footer');
-
 	let Visible = function (target) {
 		// Все позиции элемента
 		var targetPosition = {
@@ -140,16 +139,19 @@ $(document).ready(function () {
 			targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
 			// Если элемент полностью видно, то запускаем следующий код
 			$('#floatingBtn').removeClass("active");
+			console.log("not visible");
 		} else {
 			// Если элемент не видно, то запускаем этот код
 			$('#floatingBtn').addClass("active");
+			console.log("visible");
 		};
 	};
 
 	// Запускаем функцию при прокрутке блока
 
-	$(".modul-block__body").on("scroll", function (e) {
-		if ($(".modul-block__body").scrollTop() > 0) {
+
+	$(".popup-scroll-detect").on("scroll", function (e) {
+		if ($(".popup-scroll-detect").scrollTop() > 0) {
 			Visible(element);
 		} else {
 			$('#floatingBtn').removeClass("active");
