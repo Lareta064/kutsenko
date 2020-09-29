@@ -40,7 +40,7 @@
   .col-8 {
     width: 61%;
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       width: 100%;
     }
   }
@@ -295,4 +295,14 @@ p.text-16.text-bold {
 
 .mt-60 {
   margin-top: 60px;
+}
+
+.grid-row.grid-column{
+  @media(min-width: 768px) and (max-width: 991px){
+    flex-direction: column;
+
+    .col-8{
+      width: 100%;
+    }
+  }
 }

@@ -8,6 +8,11 @@
   justify-content: space-between;
   margin-bottom: 124px;
 }
+@media (max-width: 991px) {
+  .for-whom-block {
+    margin-bottom: 60px;
+  }
+}
 @media (max-width: 767px) {
   .for-whom-block {
     margin-bottom: 140px;
@@ -21,7 +26,7 @@
   border-radius: 10px;
 }
 .for-whom-item--bg {
-  background-color: #25252E;
+  background-color: #25252e;
   padding: 10px 20px 16px;
 }
 .for-whom-item p.text-20 {
@@ -63,7 +68,9 @@
     display: flex;
     justify-content: space-between;
   }
-  .for-whom-title .decore-arrow.decore-arrow__mob {
+}
+@media (max-width: 767px) {
+  .decore-arrow.decore-arrow__mob {
     display: block;
   }
 }

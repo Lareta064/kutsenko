@@ -184,7 +184,18 @@
 }
 
 .home-work__task p {
+  position: relative;
+  width: fit-content;
   padding-left: 20px;
+
+  @media(min-width:768px){
+    span{
+      position: absolute;
+      right: -35px;
+      top: -5px;
+    }
+  }
+  
 }
 
 .text-group ul {
