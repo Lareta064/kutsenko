@@ -184,7 +184,18 @@
 }
 
 .home-work__task p {
+  position: relative;
+  width: fit-content;
   padding-left: 20px;
+
+  @media(min-width:768px){
+    span{
+      position: absolute;
+      right: -35px;
+      top: -5px;
+    }
+  }
+  
 }
 
 .text-group ul {
@@ -292,6 +303,22 @@
   height: 1900px;
 
   @media(max-width:1439px) {
+    height: 2051px;
+  }
+
+  @media(max-width:1439px) {
+    height: 1928px;
+  }
+
+  @media(max-width:1364px) {
+    height: 2051px;
+  }
+
+  @media(max-width:991px) {
+    height: 2274px;
+  }
+
+  @media(max-width:767px) {
     height: 1945px;
   }
 }
@@ -381,3 +408,4 @@
     overflow: hidden;
   }
 }
+
