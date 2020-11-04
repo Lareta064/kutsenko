@@ -22,16 +22,17 @@ section.about
 		h2.title-2 об авторе
 		.about-content
 			.about-content__text
-				.about-content-header.text-group-30
-					h3 Никита Куценко
-					p Действующий инвестор, трейдер и&nbsp;портфельный управляющий. Эксперт по инвестиционным продуктам
-				.about-content-block
-					.about-content__logo.content__logo--so
-						a(href="img/ibm.jpg" data-fancybox="gallery1")
-							img(src="img/so-logo.jpg" srcset="img/so-logo@2x.jpg 2x" width="300" alt="so-logo")
-					.text-16
-						p Со-основатель международного финансового финтех-стартапа STIPS|Oculus (партнеры IBM). Помогают трейдерам со всего мира агрегировать информацию об&nbsp;активах и принимать правильные торговые решения
-					//- a(href="#!").btn.btn-small Перейти
+				div(itemscope itemtype="https://schema.org/Person")
+					.about-content-header.text-group-30
+						h3(itemprop="name") Никита Куценко
+						p(itemprop="disambiguatingDescription") Действующий инвестор, трейдер и&nbsp;портфельный управляющий. Эксперт по инвестиционным продуктам
+					.about-content-block
+						.about-content__logo.content__logo--so
+							a(href="img/ibm.jpg" data-fancybox="gallery1")
+								img(src="img/so-logo.jpg" srcset="img/so-logo@2x.jpg 2x" width="300" alt="so-logo")
+						.text-16
+							p(itemprop="disambiguatingDescription") Со-основатель международного финансового финтех-стартапа STIPS|Oculus (партнеры IBM). Помогают трейдерам со всего мира агрегировать информацию об&nbsp;активах и принимать правильные торговые решения
+						//- a(href="#!").btn.btn-small Перейти
 				.block-flex
 					.about-content-block.w-50
 						.about-content__logo
