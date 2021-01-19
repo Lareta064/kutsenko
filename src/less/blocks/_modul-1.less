@@ -185,9 +185,15 @@
     }
 
     span.text-white {
+      display: block;
+      width: fit-content;
+      line-height: 0.8;
       font-family: @b;
-      font-size: 60px;
+      font-size: 20px;
       background-color: @green;
+      letter-spacing: 0.02em;
+      padding: 5px 10px 10px 10px;
+      margin-bottom: 10px;
 
       span {
         font-size: 100px;
@@ -235,7 +241,7 @@
   justify-content: space-between;
   margin-top: 101px;
   margin-left: -40px;
-  background-color: @bg;
+  background-color: #FFEDD9;
   border-radius: 10px;
   padding: 20px 40px 0px;
   padding-left: 30px;
@@ -268,7 +274,7 @@
 .right-col .cub-img {
   position: relative;
   width: 300px;
-  bottom: -16px;
+  bottom: 0;
   right: -50px;
 
   @media (max-width: 1439px) {
