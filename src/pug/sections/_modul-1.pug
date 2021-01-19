@@ -6,9 +6,9 @@ mixin check
 .modul-block
 	.modul-block__head.speicial-offset
 		.title-3 Модуль 1
-		//- .label-free.title-2 Бесплатно
-		.label-free
-			img(src="img/free.png"  srcset="img/free@2x.png 2x", alt="label" width="539")
+		.label-free.title-2 Бесплатно
+		//.label-free
+		//	img(src="img/free.png"  srcset="img/free@2x.png 2x", alt="label" width="539")
 		.text-group-30
 			h3.text-30 Инвестиции как&nbsp;способ&nbsp;достижения<br>финансовых целей
 			p В рамках марафона <br class="br-mobile"> «Путь Инвестора»
@@ -20,7 +20,9 @@ mixin check
 					p Разберем 4 мифа инвестиций. Изучим как сложный процент может помочь вам достигать ваших финансовых целей в 2 раза быстрее. Выясним структуру работы фондового рынка.
 			.right-col
 				.sale#saleInfo
-					span.percent %%
+					.percent
+						span %
+						span %
 					p Сложный процент — прибыль, которая суммируется с основной суммой вклада и&nbsp;в&nbsp;дальнейшем уже сама производит новую прибыль. Это та самая магия, которая делает людей богатыми
 		
 		.modul-block__hidden.speicial-offset
@@ -58,7 +60,7 @@ mixin check
 							p Пройти тест
 				.right-col
 					.percent-200
-						span.text-green на #[span 200%]
+						span.text-white на #[span 200%]
 						p больше доходности дают данные стратегии по сравнению с активными хедж-фондами
 			.lesson
 				.left-col
@@ -91,5 +93,5 @@ mixin check
 					.right-col
 						.btn.btn-small.btn-closeModul Свернуть
 	.speicial-offset
-		.btn.btn-green.btn-allModul Развернуть полное описание бесплатного модуля
-		.btn.btn-green.btn-modulModal.popup-open4 Описание модуля
+		.btn.btn-solid.btn-allModul Развернуть описание
+		.btn.btn-solid.btn-modulModal.popup-open4 Описание модуля
