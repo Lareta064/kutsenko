@@ -32,16 +32,18 @@ mixin docs
 section.price#price
 	.container
 		.header-group
-			//- .sale-icon
-			//- span &#8722; 10%
-			//- span.sale-text Уже без скидок
-			h4.head-4.text-green ПРОДАЖА ОСНОВНОГО КУРСА &mdash; СТАРТ 1 ОКТЯБРЯ
+			.sale-icon
+				span &#8722;20%
+				span.sale-text до 25 февраля
+			.badge Старт 15 февраля 2021
 			h2.title-2 Стоимость обучения
 		//===== тариф Бесплатно
 		.tariff-item.block-flex(itemscope itemtype="https://schema.org/ItemList")
 			.price-card
 				.text-group-30
-					h3(itemprop="name") Ознакомительный (не привязан к&nbsp;дате)
+					.head-box.mb-40
+						h3(itemprop="name") Ознакомительный
+						p.text-16 Начать обучение можно сразу
 					p.text-20.text-bold Включает:
 					.price-card-desk
 						p.text-16 Полный первый модуль<br class="br-mobile">платного курса — 4 видеоурока продолжительностью<br> 2,5 часа, 2 практических задания, 2&nbsp;теста и дополнительные материалы;
@@ -49,15 +51,16 @@ section.price#price
 					p.post-text.text-16 Без рабочей тетради, проверки домашних заданий и чата с куратором
 
 				.footer-group.block-flex
-					.price-value.text-green 0 &#8381;
+					.price-value 0 &#8381;
 					a(href="https://investorway.getcourse.ru/page14" target="_blank").btn.btn-green Начать обучение
 			.price-card__info
+				.badge.badge-upper Не привязан к дате
 				p #[span.text-red Прохождение бесплатного <br class="br-mobile"> модуля не&nbsp;обязывает вас <br class="br-mobile"> к покупке платной части курса] <br class="br-mobile"> Я&nbsp;хочу, чтобы перед покупкой, вы&nbsp;были уверены в том, что курс действительно вам подойдет
 		//===== тариф Любитель
 		.tariff-item.tariff-item--bg.block-flex.block-flex--center(itemscope itemtype="https://schema.org/ItemList")
 			.price-card
 				.text-group-30
-					h3(itemprop="name") Любитель
+					h3.mb-10(itemprop="name") Любитель
 					p.text-20.text-bold Включает:
 					.price-card-desk
 						p.text-16 Полный курс из 7 модулей —<br class="br-mobile">25 видеоуроков продолжительностью 16,5 часов, 12&nbsp;практических заданий, 10 тестов и дополнительные материалы;
@@ -65,14 +68,22 @@ section.price#price
 					p.post-text.text-16 С рабочей тетрадью, без проверки домашних заданий. Вы можете задавать вопросы, на которые получите квалифицированные ответы!
 
 				.footer-group.block-flex
-					.price-value.price-value--mob 4500 &#8381;
-						//- span.old-price 5000 &#8381;
-					a(href="https://investorway.getcourse.ru/page3" target="_blank").btn.btn-green Перейти к оплате
+					.price-value.price-value--mob.text-green 3600 &#8381;
+						//span.old-price 5000 &#8381;
+					a(href="https://investorway.getcourse.ru/page3" target="_blank").btn.btn-solid Перейти к оплате
+				//.subfooter-group
+				//	.badge.badge-round -20%
+				//	.subfooter-text.block-flex
+				//		p до 5 февраля
+				//		p 4500 &#8381; с 5 февраля
+				//		p 5000 &#8381; с 10 февраля
+
 			.price-card__info.pt-0
+				.badge.badge-upper c 15 февраля
 				p #[span.text-red Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить уровень финансовой грамотности и&nbsp;готов&nbsp;самостоятельно искать информацию и набивать «шишки»&nbsp;на&nbsp;практике
 				.text-part
 					p.text-bold Прохождение курса займет 
-					p 3 недели (около 25 часов)
+					p 1 месяц (около 25 часов)
 				.payment-block
 					p.text-16 Курс можно оплатить картой <br>или через сервисы
 					.pay-logo 
@@ -80,11 +91,9 @@ section.price#price
 							+apple
 						span
 							+google
-
-
 		//===== тариф Эксперт
 		h3.title-3.text-red.tariff-item--title ТОП выбор среди&nbsp;учеников
-		.tariff-item.block-flex(itemscope itemtype="https://schema.org/ItemList")
+		.tariff-item.tariff-item--bg.block-flex(itemscope itemtype="https://schema.org/ItemList")
 			.price-card
 				.text-group-30
 					h3(itemprop="name") Эксперт
@@ -99,16 +108,31 @@ section.price#price
 						p.text-16.text-offset Канал с оперативными торговыми идеями от лучших инвестиционных домов;
 						p.text-16.text-offset Чат со свободным общением всех участников курса по&nbsp;теме&nbsp;инвестиций и&nbsp;обсуждением своих торговых идей
 
+					.price-card-manual
+						.info-block
+							p #[span.text-bold Печатное учебное пособие,<br>] которое отправим бесплатно «Почтой России»
+						.tutorial-block
+							.img-block
+								img(src="img/manual.png", alt="tutorial" width="76")
+							.btn Узнать больше
+
 				.footer-group.footer-group--proff.block-flex
-					.price-value.price-value--mob 7500 &#8381;
-						//- span.old-price 7500 &#8381;
-					a(href="https://investorway.getcourse.ru/page5" target="_blank").btn.btn-green К оплате
+					.price-value.price-value--mob.text-green 7840 &#8381;
+						span.old-price 9800 &#8381;
+					a(href="https://investorway.getcourse.ru/page5" target="_blank").btn.btn-solid Перейти к оплате
+				.subfooter-group
+					.badge.badge-round -20%
+					.subfooter-text.block-flex
+						p до 5 февраля
+						p 8820 &#8381; с 5 февраля
+						p 9800 &#8381; с 10 февраля
+
 			.price-card__info.flex-column
 				.block-col
 					p #[span.text-red Для тех, кому важна групповая<br class="br-mobile">  активность и обратная связь <br class="br-mobile"> от автора курса.] Кто хочет заложить прочный фундамент своей финансовой свободы и&nbsp;знать все нюансы, позволяющие на старте избежать ошибок новичков
 					.text-part
 						p.text-bold Прохождение курса займет 
-						p 1 месяц (около 30 часов)
+						p 1,5 месяца (около 40 часов)
 				.block-col
 					.block-col__svg
 						+docs
@@ -118,7 +142,6 @@ section.price#price
 
 
 		//===== тариф Профессионал
-		
 		.tariff-item.block-flex(itemscope itemtype="https://schema.org/ItemList")
 			.price-card.price-card--black
 				.text-group-30
@@ -133,12 +156,29 @@ section.price#price
 						p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции»:
 						p.text-16.text-offset Канал с оперативными торговыми идеями от лучших инвестиционных домов;
 						p.text-16.text-offset Чат со свободным общением всех участников курса по&nbsp;теме&nbsp;инвестиций и обсуждением своих торговых&nbsp;идей
-					p.text-16.text-bold.mt-20.text-red Три&nbsp;личных&nbsp;консультации&nbsp;по&nbsp;1&nbsp;часу с автором курса
+
+					.price-card-manual
+						.info-block
+							p #[span.text-bold Печатное учебное пособие,<br>] которое отправим бесплатно «Почтой России»
+						.tutorial-block
+							.img-block
+								img(src="img/manual.png", alt="tutorial" width="76")
+							.btn Узнать больше
+
+					p.text-16.text-bold.mt-20 часа личных консультации;
+					p.text-16.text-bold.mt-20 Дополнительный модуль «Агрессивный прирост капитала»
 
 				.footer-group.footer-group--proff.block-flex
-					.price-value.price-value--mob 15 000 &#8381;
-						//- span.old-price 15000 &#8381;
-					a(href="https://investorway.getcourse.ru/page4" target="_blank").btn.btn-green К оплате
+					.price-value.price-value--mob.text-green 19 000 &#8381;
+						span.old-price 22800 &#8381;
+					a(href="https://investorway.getcourse.ru/page4" target="_blank").btn.btn-solid Перейти к оплате
+				.subfooter-group
+					.badge.badge-round -20%
+					.subfooter-text.block-flex
+						p до 5 февраля
+						p 20900 &#8381; с 5 февраля
+						p 22800 &#8381; с 10 февраля
+
 			.price-card__info.flex-column
 				.block-col
 					p #[span.text-red Для тех, кому важен персональный подход автора курса и личная передача опыта.]   Также&nbsp;я&nbsp;персонально&nbsp;помогаю вам с&nbsp;составлением вашего инвестиционного портфеля.
