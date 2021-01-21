@@ -14,7 +14,7 @@
     font-size: 20px;
     font-family: @mb;
     margin-bottom: 40px;
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       height: 44px;
       line-height: 44px;
       padding-left: 14px;
@@ -51,7 +51,7 @@
     display: flex;
     margin-top: 37px;
     align-items: center;
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       overflow: hidden;
       margin-left: -5px;
     }
@@ -60,7 +60,7 @@
   .subfooter-text.block-flex p {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       white-space: nowrap;
       overflow-x: auto;
     }
@@ -69,7 +69,6 @@
   .subfooter-text p + p {
     padding-left: 50px;
   }
-
 
 
   .sale-icon {
@@ -96,11 +95,13 @@
     z-index: 1;
     white-space: nowrap;
 
-    @media(min-width: 768px) and (max-width: 991px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       width: 220px;
       height: 220px;
       top: 77%;
     }
+
+
 
     span.sale-text {
       position: relative;
@@ -131,7 +132,6 @@
     @media (max-width: 1439px) {
       //width: 240px;
       //height: 240px;
-
       span {
         font-size: 95px;
       }
@@ -163,8 +163,8 @@
     //  top: auto;
     //  bottom: -28%;
     //  right: -49px;
-      // width: 140px;
-      // height: 140px;
+    // width: 140px;
+    // height: 140px;
     //}
 
     //@media (max-width: 424px) {
@@ -175,19 +175,22 @@
     //  height: 140px;
     //  //   z-index: 111;
     //}
-    .price .sale-icon--desk{
-      display: block;
-      @media(max-width: 767px){
-        display: none;}
-    }
 
-    .price .sale-icon--mob{
+  }
+
+.sale-icon--desk {
+    display: block;
+    @media (max-width: 767px) {
       display: none;
-      @media(max-width: 767px){
-        display: block;
-        position: relative;
-        top: -230px;
-      }
+    }
+  }
+
+ .sale-icon--mob {
+    display: none;
+    @media (max-width: 767px) {
+      display: flex;
+      position: relative;
+      top: -230px;
     }
   }
 
