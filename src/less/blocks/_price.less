@@ -14,6 +14,13 @@
     font-size: 20px;
     font-family: @mb;
     margin-bottom: 40px;
+    @media(max-width: 767px){
+      height: 44px;
+      line-height: 44px;
+      padding-left: 14px;
+      padding-right: 14px;
+      margin-bottom: 50px;
+    }
   }
 
   .badge-upper {
@@ -33,6 +40,7 @@
     line-height: 34px;
     background-color: @green;
     margin-bottom: 0;
+    margin-right: 10px;
   }
 
   .price-card .head-box.mb-40 h3 {
@@ -43,17 +51,26 @@
     display: flex;
     margin-top: 37px;
     align-items: center;
+    @media(max-width: 767px){
+      overflow: hidden;
+      margin-left: -5px;
+    }
   }
 
   .subfooter-text.block-flex p {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
-    margin-left: 10px;
+    @media(max-width: 767px){
+      white-space: nowrap;
+      overflow-x: auto;
+    }
   }
 
   .subfooter-text p + p {
     padding-left: 50px;
   }
+
+
 
   .sale-icon {
     position: absolute;
@@ -67,19 +84,22 @@
     justify-content: center;
     align-items: center;
     background-color: @green;
-    -webkit-animation-name: swingElement;
-    animation-name: swingElement;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
+    transform: rotate(15deg);
+    //-webkit-animation-name: swingElement;
+    //animation-name: swingElement;
+    //-webkit-animation-duration: 5s;
+    //animation-duration: 5s;
+    //-webkit-animation-iteration-count: infinite;
+    //animation-iteration-count: infinite;
+    //-webkit-animation-timing-function: linear;
+    //animation-timing-function: linear;
     z-index: 1;
     white-space: nowrap;
 
-    @media(max-width: 767px){
-      margin-bottom: 80px;
+    @media(min-width: 768px) and (max-width: 991px) {
+      width: 220px;
+      height: 220px;
+      top: 77%;
     }
 
     span.sale-text {
@@ -89,9 +109,9 @@
       line-height: 0.13;
       left: -3px;
 
-      @media (max-width: 991px) {
-        left: 30px;
-        font-size: 30px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        left: 0;
+        font-size: 20px;
       }
 
       @media (max-width: 767px) {
@@ -99,7 +119,7 @@
       }
     }
 
-    .title-2 span {
+    span {
       font-family: @bb;
       margin-bottom: 0;
       font-size: 160px;
@@ -109,53 +129,68 @@
     }
 
     @media (max-width: 1439px) {
-      width: 240px;
-      height: 240px;
+      //width: 240px;
+      //height: 240px;
 
       span {
-        font-size: 86px;
+        font-size: 95px;
       }
     }
 
-    @media (max-width: 1199px) {
-      top: -35%;
-      z-index: -1;
-      width: 200px;
-      height: 200px;
+    //@media (max-width: 1199px) {
+    //  top: -35%;
+    //  z-index: -1;
+    //  width: 200px;
+    //  height: 200px;
+    //
+    //  span {
+    //    font-size: 70px;
+    //  }
+    //}
 
-      span {
-        font-size: 70px;
-      }
-    }
+    //@media (max-width: 991px) {
+    //  top: 45px;
+    //  width: 150px;
+    //  height: 150px;
+    //  z-index: 111;
+    //
+    //  span {
+    //    font-size: 60px;
+    //  }
+    //}
 
-    @media (max-width: 991px) {
-      top: 45px;
-      width: 150px;
-      height: 150px;
-      z-index: 111;
-
-      span {
-        font-size: 60px;
-      }
-    }
-
-    @media (max-width: 767px) {
-      top: auto;
-      bottom: -28%;
-      right: -49px;
+    //@media (max-width: 767px) {
+    //  top: auto;
+    //  bottom: -28%;
+    //  right: -49px;
       // width: 140px;
       // height: 140px;
+    //}
+
+    //@media (max-width: 424px) {
+    //  top: auto;
+    //  bottom: -26%;
+    //  right: -51px;
+    //  width: 140px;
+    //  height: 140px;
+    //  //   z-index: 111;
+    //}
+    .price .sale-icon--desk{
+      display: block;
+      @media(max-width: 767px){
+        display: none;}
     }
 
-    @media (max-width: 424px) {
-      top: auto;
-      bottom: -26%;
-      right: -51px;
-      width: 140px;
-      height: 140px;
-      //   z-index: 111;
+    .price .sale-icon--mob{
+      display: none;
+      @media(max-width: 767px){
+        display: block;
+        position: relative;
+        top: -230px;
+      }
     }
   }
+
 
   .header-group {
     position: relative;
@@ -179,8 +214,8 @@
 
       @media (max-width: 767px) {
         font-size: 80px;
-        margin-bottom: 60px;
-        padding-bottom: 33px;
+        margin-bottom: 460px;
+        //padding-bottom: 33px;
       }
     }
   }
@@ -249,7 +284,7 @@
       //margin-bottom: 40px;
     }
 
-    .btn.btn-green{
+    .btn.btn-green {
       height: 60px;
       line-height: 60px;
       font-size: 20px;
@@ -289,7 +324,7 @@
         text-align: center;
       }
 
-      .btn.btn-solid{
+      .btn.btn-solid {
         height: 60px;
         line-height: 60px;
         padding-left: 30px;
@@ -369,7 +404,7 @@
     }
   }
 
-  h3.title-3.text-red.tariff-item--title{
+  h3.title-3.text-red.tariff-item--title {
     font-size: 40px;
     letter-spacing: 0.1em;
   }
@@ -388,7 +423,7 @@
 
 .price-card-desk {
   padding-left: 15px;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
   margin-top: 10px;
 
   p + {
@@ -453,7 +488,7 @@
 
 }
 
-.price-card-manual{
+.price-card-manual {
   display: flex;
   justify-content: space-between;
   background: rgb(17, 17, 21, 0.5);
@@ -463,31 +498,31 @@
   padding-bottom: 18px;
   padding-left: 20px;
   margin-top: 44px;
-  @media(max-width: 767px){
+  @media (max-width: 767px) {
     flex-direction: column;
   }
 
-  .info-block p{
+  .info-block p {
     font-size: 16px;
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       margin-bottom: 40px;
     }
   }
 
-  .tutorial-block{
+  .tutorial-block {
     position: relative;
     display: flex;
     justify-content: flex-end;
     width: 298px;
     align-items: center;
 
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       display: block;
       flex-direction: column-reverse;
       justify-content: flex-start;
     }
 
-    .img-block{
+    .img-block {
       position: absolute;
       bottom: -18px;
       left: 20px;
@@ -495,24 +530,26 @@
       filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
       border-radius: 0;
 
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         left: unset;
         right: 20px;
       }
+      @media (max-width: 992px) {
+        left: -15px;
+        //right: 20px;
+      }
     }
 
-    .btn{
+    .btn {
       height: 34px;
       line-height: 34px;
       font-size: 16px;
       color: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(255, 255, 255,0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
   }
 }
-
-
 
 
 .text-part.mt-20 {

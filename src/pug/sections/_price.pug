@@ -32,11 +32,14 @@ mixin docs
 section.price#price
 	.container
 		.header-group
-			.sale-icon
+			.sale-icon.sale-icon--desk
 				span &#8722;20%
 				span.sale-text до 25 февраля
 			.badge Старт 15 февраля 2021
 			h2.title-2 Стоимость обучения
+			.sale-icon.sale-icon--mob
+				span &#8722;20%
+				span.sale-text до 25 февраля
 		//===== тариф Бесплатно
 		.tariff-item.block-flex(itemscope itemtype="https://schema.org/ItemList")
 			.price-card
@@ -129,6 +132,7 @@ section.price#price
 
 			.price-card__info.flex-column
 				.block-col
+					.badge.badge-upper c 15 февраля
 					p #[span.text-red Для тех, кому важна групповая<br class="br-mobile">  активность и обратная связь <br class="br-mobile"> от автора курса.] Кто хочет заложить прочный фундамент своей финансовой свободы и&nbsp;знать все нюансы, позволяющие на старте избежать ошибок новичков
 					.text-part
 						p.text-bold Прохождение курса займет 
@@ -165,7 +169,7 @@ section.price#price
 								img(src="img/manual.png", alt="tutorial" width="76")
 							.btn Узнать больше
 
-					p.text-16.text-bold.mt-20 часа личных консультации;
+					p.text-16.text-bold.mt-20 2 часа личных консультации;
 					p.text-16.text-bold.mt-20 Дополнительный модуль «Агрессивный прирост капитала»
 
 				.footer-group.footer-group--proff.block-flex
@@ -181,10 +185,11 @@ section.price#price
 
 			.price-card__info.flex-column
 				.block-col
-					p #[span.text-red Для тех, кому важен персональный подход автора курса и личная передача опыта.]   Также&nbsp;я&nbsp;персонально&nbsp;помогаю вам с&nbsp;составлением вашего инвестиционного портфеля.
+					.badge.badge-upper c 15 февраля
+					p #[span.text-red Для тех, кому важен персональный подход автора курса и личная передача опыта.]   Рекомендуется будущим инвесторам, чей инвестиционный портфель на старте более 1 млн. ₽
 					.text-part
 						p.text-bold Прохождение курса займет 
-						p 1 месяц (около 40 часов)
+						p 1,5 месяца (около 40 часов)
 				.block-col
 					.block-col__img
 						img(src="img/ava.png" width="120" alt="avatar")
