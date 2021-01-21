@@ -24,7 +24,12 @@
     padding-left: 40px;
     margin-bottom: 140px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1364px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (max-width: 1199px) {
       flex-direction: column;
       padding-top: 30px;
       padding-left: 20px;
@@ -76,17 +81,20 @@
       padding-bottom: 24px;
       padding-left: 14px;
 
-      @media (max-width: 767px) {
-        margin-top: 100px;
-      }
-
       @media (max-width: 1199px) {
         margin-top: 60px;
       }
 
+      @media (max-width: 767px) {
+        margin-top: 100px;
+      }
+
       .text-20 {
-        font-family: "Montserrat Bold";
+        font-family: @mb;
         margin-bottom: 20px;
+        @media (max-width: 1364px){
+          font-size: 19px;
+        }
       }
 
       .text-16 p:first-child {
@@ -121,7 +129,7 @@
     }
 
     .header-group .text-30 {
-      font-family: "Montserrat Bold";
+      font-family: @mb;
       margin-bottom: 30px;
     }
 
@@ -129,6 +137,9 @@
       width: 520px;
       filter: drop-shadow(0px 16px 40px rgba(0, 0, 0, 0.35));
       border-radius: 0px 8px 8px 0px;
+      @media (max-width: 1364px){
+        width: 480px;
+      }
       @media (max-width: 767px) {
         position: relative;
         width: 315px;
@@ -199,9 +210,9 @@
         margin-top: 24px;
         color: @black;
 
-        @media (max-width: 1199px) {
-          font-size: 13px;
-        }
+        //@media (max-width: 1199px) {
+        //  font-size: 13px;
+        //}
 
         @media (max-width: 1199px) {
           font-size: 16px;

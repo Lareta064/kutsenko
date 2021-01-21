@@ -26,7 +26,7 @@
   .title-3 {
     font-family: @bb;
     font-size: 60px;
-    margin-bottom: 75px;
+    //margin-bottom: 75px;
     margin-bottom: 35px;
   }
 
@@ -57,13 +57,23 @@
     margin-top: 11px;
   }
 
-
-  span.text-green {
+  span.text-white {
+    display: block;
+    width: fit-content;
+    line-height: 0.8;
     font-family: @b;
-    font-size: 60px;
+    font-size: 20px;
+    background-color: @green;
+    letter-spacing: 0.02em;
+    padding: 5px 10px 10px 10px;
+    margin-bottom: 10px;
 
     span {
       font-size: 100px;
+    }
+
+    & + p {
+      font-family: @mb;
     }
   }
 
@@ -153,9 +163,9 @@
     text-align: center;
   }
 
-  p.text-16 {
-    color: @op06;
-  }
+  //p.text-16 {
+  //  color: @op06;
+  //}
 
   p.chek-icon--20 {
     font-size: 20px;
@@ -198,14 +208,14 @@
     /* 1 - скроллбар */
     width: 6px;
     height: 30px;
-    background-color: #FFFFFF;
+    //background-color: #FFFFFF;
     background-color: #000;
   }
 
 
   &::-webkit-scrollbar-track {
     /* 3 - трек */
-    background-color: #dedede;
+    //background-color: #dedede;
     background-color: #000;
   }
 
@@ -264,4 +274,10 @@
 
 .text-group-30.pl-10{
   padding-left: 10px;
+}
+
+.modul-footer__flex{
+  .text-16 p {
+    color: #111115;;
+  }
 }
