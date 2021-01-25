@@ -1,0 +1,308 @@
+.facts {
+  h2.title-2 {
+    margin-bottom: 60px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.facts-text {
+  margin-bottom: 60px;
+
+  p+p {
+    margin-top: 20px;
+  }
+
+  @media(max-width: 768px){
+    margin-top: 40px;
+  }
+}
+
+.statistics {
+  margin-bottom: 114px;
+}
+
+.statistics .text-20.text-bold,
+.compared .text-20.text-bold {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 66%;
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.conclusion,
+.conclusion-2 {
+  .col-8 {
+    width: 61%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .col-4 {
+    width: 28%;
+  }
+}
+
+.statistics-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.statistics-item__inner {
+
+  width: 25%;
+
+  @media (max-width: 1199px) {
+    width: 50%;
+  }
+}
+
+.statistics-block__percent,
+.compared-block__percent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: @bb;
+  font-size: 100px;
+
+  @media (max-width: 1199px) {
+    font-size: 90px;
+    margin-bottom: 50px;
+
+    p.white,
+    p.green-text {
+      font-size: 100px;
+    }
+  }
+
+  p.white {
+    color: @white;
+  }
+
+  p.red {
+    color: @red;
+  }
+
+  p.text-20 {
+    font-family: @m;
+  }
+
+  p.text-16 {
+    font-family: @m;
+  }
+}
+
+.compared-block__percent {
+  position: relative;
+}
+
+.compared__item__round {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 70px;
+  font-size: 16px;
+  font-family: @mb;
+  color: @green;
+  background-color: @white;
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+
+  @media(max-width:1199px) {
+    bottom: 52px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+  }
+}
+
+p.text-16.text-bold {
+  margin-bottom: 24px;
+}
+
+.card-color__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.grid-row--swipe {
+  width: 100%;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.grid-row--swipe {
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+
+  @media (max-width: 1439px) {
+    max-width: 1260px;
+  }
+
+  @media (max-width: 1364px) {
+    max-width: 1140px;
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 932px;
+  }
+
+  @media (max-width: 991px) {
+    margin-left: 10px;
+  }
+}
+
+.card-color {
+  min-width: 190px;
+  height: 124px;
+  border-radius: 10px;
+  padding: 10px 20px 16px 10px;
+  margin-right: 30px;
+
+  span.percent {
+    font-size: 40px;
+    font-family: @bb;
+  }
+}
+
+.card-color--50 {
+  width: 49%;
+}
+
+.card-color__green {
+  background-color: @green;
+}
+
+.card-color__blue {
+  background-color: @blue;
+}
+
+.card-color__red {
+  background-color: @red;
+}
+
+.card-color__white {
+  background-color: @white;
+  color: @black;
+}
+
+.factoid-money .text-70 {
+  font-size: 70px;
+  font-family: @b;
+  white-space: nowrap;
+}
+
+.text-bold {
+  font-family: @mb;
+}
+
+.compared {
+  .text-bold {
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+    @media (max-width: 767px) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.text-opacity {
+  color: @op06;
+}
+
+.compared-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @media (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.conclusion {
+  line-height: 1.5;
+  margin-bottom: 120px;
+
+  p+p {
+    margin-top: 10px;
+  }
+
+  p.text-60 {
+    line-height: 1.3;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
+}
+
+.conclusion-2 {
+  margin-bottom: 60px;
+
+  p+p {
+    margin-top: 20px;
+  }
+}
+
+.green-text {
+  color: @green;
+}
+
+.dividends p.text-20 {
+  margin-bottom: 20px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.factoid-money {
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.factoid-money__mob {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.grid-row.grid-column{
+  @media(min-width: 768px) and (max-width: 991px){
+    flex-direction: column;
+
+    .col-8{
+      width: 100%;
+    }
+  }
+}

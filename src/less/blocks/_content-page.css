@@ -1,0 +1,18 @@
+.modul-list__title {
+  display: flex;
+}
+.modul-list__title + .modul-list__title {
+  margin-top: 30px;
+}
+.modul-list__title-bg {
+  background: #25252e;
+  border-radius: 6px;
+}
+.modul-list__lable {
+  padding: 4px 8px;
+  border-radius: 3px;
+  line-height: 1.5;
+}
+.modul-list__lable-red {
+  background-color: #fff;
+}

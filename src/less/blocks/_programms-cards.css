@@ -1,0 +1,9 @@
+.card {
+  border-radius: 10px;
+  padding: 14px 20px 24px 20px;
+}
+.border-card {
+  width: 315px;
+  height: 222px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

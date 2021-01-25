@@ -1,0 +1,60 @@
+.content {
+  .fix-top-close {
+    position: fixed; 
+    top: 14px;
+    right: 20px; 
+    text-align: right;
+
+    .btn {
+      font-family: @mb;
+      background-color: rgba(37, 37, 46, 0.6);
+      color: rgba(255, 255, 255, 0.6);
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.modul-list__title {
+  display: flex;
+
+  p.text-16.text-bold{
+    margin-bottom: 5px;
+  }
+}
+
+.modul-list__item:last-child {
+  margin-bottom: 70px;
+}
+
+.modul-list__item + .modul-list__item {
+  margin-top: 30px;
+}
+
+.modul-list__item-bg {
+  background: #25252e;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-left: -8px;
+}
+
+.modul-list__lable {
+  padding: 4px 8px;
+  border-radius: 3px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.modul-list__lable-red {
+  background-color: @red;
+}
+
+.modul-list__lable-green {
+  background-color: @green;
+}
+
+section.content {
+  padding-top: 30px;
+}

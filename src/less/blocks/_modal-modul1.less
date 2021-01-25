@@ -1,0 +1,283 @@
+.modul-block.modul-block__modal {
+  border: 0px;
+  margin-bottom: 0;
+
+  @media (max-width: 424px) {
+    margin-left: -10px;
+    min-width: 355px;
+  }
+
+  .speicial-offset {
+    @media (max-width: 767px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  p.subtitle {
+    color: @green;
+    font-family: @bb;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    line-height: 0.5;
+    margin-bottom: 25px;
+  }
+
+  .title-3 {
+    font-family: @bb;
+    font-size: 60px;
+    //margin-bottom: 75px;
+    margin-bottom: 35px;
+  }
+
+  .modul-block__body {
+    padding-top: 40px;
+  }
+
+  .text-group-30 p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .title-5 {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+
+  h5.title-5 {
+    font-family: @mb;
+  }
+
+
+  h3.text-30 {
+    letter-spacing: normal;
+    margin-bottom: 15px;
+  }
+
+  .home-work__task p+p {
+    margin-top: 11px;
+  }
+
+  span.text-white {
+    display: block;
+    width: fit-content;
+    line-height: 0.8;
+    font-family: @b;
+    font-size: 20px;
+    background-color: @green;
+    letter-spacing: 0.02em;
+    padding: 5px 10px 10px 10px;
+    margin-bottom: 10px;
+
+    span {
+      font-size: 100px;
+    }
+
+    & + p {
+      font-family: @mb;
+    }
+  }
+
+  .lesson-block .right-col .sale {
+    top: 0;
+  }
+
+  .lesson-block .left-col {
+    margin-bottom: 33px;
+  }
+
+  #saleInfo p {
+    max-height: unset;
+    margin-top: -8px;
+  }
+
+  .chek-icon {
+    display: inline-block;
+    width: 30px;
+
+    svg {
+      max-width: 100%;
+    }
+
+    @media(max-width: 767px) {
+      position: relative;
+      top: 4px;
+      margin-left: 16px;
+      width: 24px;
+    }
+
+    @media(min-width: 450px) and (max-width: 575px) {
+      display: none;
+    }
+
+  }
+
+  .lesson-benefits {
+    @media (max-width: 425px) {
+      margin-left: -10px;
+      min-width: 346px;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 0px;
+      padding-left: 20px;
+
+    }
+  }
+
+  .lesson-2 {
+    margin-top: 85px;
+
+    .title-5 {
+      margin-top: 30px;
+    }
+  }
+
+  .lesson-3 {
+    margin-top: 75px;
+  }
+
+  .lesson-3 ul li+li {
+    margin-top: 17px;
+  }
+
+  .lesson-block .right-col .sale:after {
+    display: none;
+  }
+
+  .percent-200 {
+    margin-top: 40px;
+
+    p {
+      font-size: 16px;
+      font-family: @mb;
+    }
+  }
+
+  .lesson-4 {
+    .title-5 {
+      margin-top: 30px;
+    }
+  }
+
+  .btn.btn-solid {
+    display: block;
+    text-align: center;
+  }
+
+  //p.text-16 {
+  //  color: @op06;
+  //}
+
+  p.chek-icon--20 {
+    font-size: 20px;
+  }
+}
+
+.popup-close4 {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  font-size: 50px;
+  z-index: 10;
+}
+
+.popup.popup-large,
+.popup-fade.popup-full {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 0);
+}
+
+.popup-fade.popup-full .popup {
+  padding: 0;
+}
+
+.modul-block__body {
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+  // height: calc(~"100vh - 190px");
+
+  &::-webkit-scrollbar {
+    /* 1 - скроллбар */
+    width: 6px;
+    height: 30px;
+    //background-color: #FFFFFF;
+    background-color: #000;
+  }
+
+
+  &::-webkit-scrollbar-track {
+    /* 3 - трек */
+    //background-color: #dedede;
+    background-color: #000;
+  }
+
+
+  &::-webkit-scrollbar-thumb {
+    /* 5 - ползунок */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+#floatingBtn {
+  transition: opacity 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation: showBtn;
+  -moz-animation: showBtn;
+  -o-animation: showBtn;
+  animation: showBtn;
+  animation-duration: 1s;
+}
+
+#floatingBtn.active {
+  position: fixed;
+  bottom: 2px;
+  left: 49%;
+  transform: translateX(-50%);
+  z-index: 10;
+  min-width: 315px;
+  max-width: 315px;
+  white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-animation: showBtn;
+  -moz-animation: showBtn;
+  -o-animation: showBtn;
+  animation: showBtn;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showBtn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-group-30.pl-10{
+  padding-left: 10px;
+}
+
+.modul-footer__flex{
+  .text-16 p {
+    color: #111115;;
+  }
+}
