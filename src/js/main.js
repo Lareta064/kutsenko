@@ -101,6 +101,11 @@ $(document).ready(function () {
 	setupPopup('.popup-fade-2', '.popup-open2', '.popup-close2');
 	setupPopup('.popup-fade-3', '.popup-open3', '.popup-close3');
 	setupPopup('.popup-fade-4', '.popup-open4', '.popup-close4');
+	setupPopup('.popup-fade-10', '.popup-open10', '.popup-close');
+	setupPopup('.popup-fade-11', '.popup-open11', '.popup-close');
+	setupPopup('.popup-fade-12', '.popup-open12', '.popup-close');
+
+
 
 	// slider sertif
 	$('.sertificates-slider').owlCarousel({
