@@ -40,146 +40,162 @@ section.price#price
 			//.sale-icon.sale-icon--mob
 				//span &#8722;20%
 			//- 	span.sale-text с 6 по 8 марта
-		//===== тариф Любитель
-		.tariff-item.tariff-item--bg.block-flex.block-flex--center(itemscope itemtype="https://schema.org/ItemList")
+		//===== тариф Бесплатно
+		.tariff-item.block-flex(itemscope itemtype="https://schema.org/ItemList")
 			.price-card
 				.text-group-30
-					h3.mb-10(itemprop="name") Любитель
+					.head-box.mb-40
+						h3(itemprop="name") Ознакомительный
+						p.text-16 Начать обучение можно сразу
 					p.text-20.text-bold Включает:
 					.price-card-desk
-						p.text-16 Полный курс из 7 модулей — <br class="br-mobile">25 видеоуроков продолжительностью 16,5 часов, 12&nbsp;практических заданий, 10 тестов и дополнительные материалы;
-						p.text-16 Доступ в личный кабинет<br class="br-mobile"> на 3 месяца;
-					p.post-text.text-16 С рабочей тетрадью, без проверки домашних заданий. Вы можете задавать вопросы, на которые получите квалифицированные ответы от кураторов курса
+						p.text-16 Полный первый модуль<br class="br-mobile">платного курса — 4 видеоурока продолжительностью<br> 2,5 часа, 2 практических задания, 2&nbsp;теста и дополнительные материалы;
+						p.text-16 Доступ в личный кабинет не ограничен
+					p.post-text.text-16 Без рабочей тетради, проверки домашних заданий и чата с куратором
 
 				.footer-group.block-flex
-					.price-value.price-value--mob.text-green 5 500 &#8381;
-						//span.old-price 4500 &#8381;
-					a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
-
-					//a(href="https://investorway.getcourse.ru/page3" target="_blank").btn.btn-solid Перейти к оплате
-
-				.subfooter-group
-					//.badge.badge-round -20%
-				//	.subfooter-text.block-flex
-				//		p до 5 марта
-				//		p 4500 &#8381; с 5 марта
-				//		p 5000 &#8381; с 10 марта
-
+					.price-value 0 &#8381;
+					a(href='#' target="_blank").btn.btn-solid.popup-open13 Начать обучение
 			.price-card__info
-				.badge.badge-upper c 14 июня
-				p #[span.text-red Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
-				.text-part
-					p.text-bold Прохождение курса займет 
-					p 1 месяц (около 30 часов)
-				.payment-block
-					p.text-16 Курс можно оплатить картой <br>или через сервисы
-					.pay-logo 
-						span
-							+apple
-						span
-							+google
-		//===== тариф Эксперт
-		h3.title-3.text-red.tariff-item--title ТОП выбор среди&nbsp;учеников
-		.tariff-item.tariff-item--bg.block-flex(itemscope itemtype="https://schema.org/ItemList")
-			.price-card
-				.text-group-30
-					h3(itemprop="name") Эксперт
-					p.text-20.text-bold Включает:
-					.price-card-desk
-						p.text-16 Полный курс из 9 модулей (+2&nbsp;бонусных) — 33 видеоурока продолжительностью<br class="br-mobile"> 20 часов, 12 практических заданий, 11 тестов и&nbsp;дополнительные материалы;
-						p.text-16 Доступ в личный кабинет на&nbsp;3&nbsp;месяца и неограниченный доступ к видеоурокам (можно скачать по ссылке);
-						p.text-16 Рабочую тетрадь для выполнения практических заданий;
-						p.text-16 Проверку домашних заданий и&nbsp;возможность общаться с&nbsp;куратором в чате;
-					.price-card-benefits
-						p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции»:
-						p.text-16.text-offset Канал с оперативными торговыми идеями от лучших инвестиционных домов;
-						p.text-16.text-offset Чат со свободным общением всех участников курса по&nbsp;теме&nbsp;инвестиций и&nbsp;обсуждением своих торговых идей
+				.badge.badge-upper Не привязан к дате
+				p #[span.text-red Прохождение бесплатного <br class="br-mobile"> модуля не&nbsp;обязывает вас <br class="br-mobile"> к покупке платной части курса] <br class="br-mobile"> Я&nbsp;хочу, чтобы перед покупкой, вы&nbsp;были уверены в том, что курс действительно вам подойдет
+		.tariff-cards
+			.row
+				.col-md-6.col-lg-4
+					a(href="#").tariff-card.tariff-card__inner
+						.badge
+						.text-group-30
+							p.text-14 тариф
+							h3(itemprop="name") Любитель
+							p.text-16 1 месяц обучения,
+							.tariff-card-desk
+								p.text-16.text-bold 7 модулей (+2 бонусных):
+								p.text-16.text-offset 30 видеоуроков,
+								p.text-16.text-offset 16,5 часов материала,
+								p.text-16.text-offset 12 практических заданий,
+								p.text-16.text-offset 10 тестов,
+								p.text-16.text-offset дополнительные материалы
+							p.post-text.text-16 Электронная рабочая тетрадь для практических заданий,
+							p.post-text.text-16 Общий чат с экспертами работает ежедневно,
+							p.post-text.text-16 Доступ в личный кабинет студента курса — 2 месяца,
+							p.post-text.text-16 Учебное пособие на 150 страниц в печатном виде,
+							p.post-text.text-16 Проверка домашних заданий экспертами,
+							p.post-text.text-16 Сертификат об окончании курса,
+							.tariff-card-benefits
+								p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции» на 2 месяца с торговыми рекомендациями в конце обучения и чатом выпускников курса
+							p.post-text.text-16 2 месяца бесплатного участия во всех вебинарах, семинарах и уроках,
+							p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
+							p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
+							.tariff-card-price
+								p.text-16 Стоимость
+								.price-value.price-value--mob.text-green 458 &#8381;/мес
+								p.text-16 в рассрочку на 12 месяцев без %
+							.tariff-card-cost
+								p.text-16 Полная стоимость
+								.price-value.price-value--mob 5 500 &#8381;
+							a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
+					.price-card__info
+						p #[span.text-bold Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
+				.col-md-6.col-lg-4
+					a(href="#").tariff-card.tariff-card__inner
+						.badge
+						.text-group-30
+							p.text-14 тариф
+							h3(itemprop="name") Любитель
+							p.text-16 1 месяц обучения,
+							.tariff-card-desk
+								p.text-16.text-bold 7 модулей (+2 бонусных):
+								p.text-16.text-offset 30 видеоуроков,
+								p.text-16.text-offset 16,5 часов материала,
+								p.text-16.text-offset 12 практических заданий,
+								p.text-16.text-offset 10 тестов,
+								p.text-16.text-offset дополнительные материалы
+							p.post-text.text-16 Электронная рабочая тетрадь для практических заданий,
+							p.post-text.text-16 Общий чат с экспертами работает ежедневно,
+							p.post-text.text-16 Доступ в личный кабинет студента курса — 2 месяца,
+							p.post-text.text-16 Учебное пособие на 150 страниц в печатном виде,
+							p.post-text.text-16 Проверка домашних заданий экспертами,
+							p.post-text.text-16 Сертификат об окончании курса,
+							.tariff-card-benefits
+								p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции» на 2 месяца с торговыми рекомендациями в конце обучения и чатом выпускников курса
+							p.post-text.text-16 2 месяца бесплатного участия во всех вебинарах, семинарах и уроках,
+							p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
+							p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
+							.tariff-card-price
+								p.text-16 Стоимость
+								.price-value.price-value--mob.text-green 458 &#8381;/мес
+								p.text-16 в рассрочку на 12 месяцев без %
+							.tariff-card-cost
+								p.text-16 Полная стоимость
+								.price-value.price-value--mob 5 500 &#8381;
+							a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
+					.price-card__info
+						p #[span.text-bold Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
+				.col-md-6.col-lg-4
+					a(href="#").tariff-card.tariff-card__inner
+						.badge
+						.text-group-30
+							p.text-14 тариф
+							h3(itemprop="name") Любитель
+							p.text-16 1 месяц обучения,
+							.tariff-card-desk
+								p.text-16.text-bold 7 модулей (+2 бонусных):
+								p.text-16.text-offset 30 видеоуроков,
+								p.text-16.text-offset 16,5 часов материала,
+								p.text-16.text-offset 12 практических заданий,
+								p.text-16.text-offset 10 тестов,
+								p.text-16.text-offset дополнительные материалы
+							p.post-text.text-16 Электронная рабочая тетрадь для практических заданий,
+							p.post-text.text-16 Общий чат с экспертами работает ежедневно,
+							p.post-text.text-16 Доступ в личный кабинет студента курса — 2 месяца,
+							p.post-text.text-16 Учебное пособие на 150 страниц в печатном виде,
+							p.post-text.text-16 Проверка домашних заданий экспертами,
+							p.post-text.text-16 Сертификат об окончании курса,
+							.tariff-card-benefits
+								p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции» на 2 месяца с торговыми рекомендациями в конце обучения и чатом выпускников курса
+							p.post-text.text-16 2 месяца бесплатного участия во всех вебинарах, семинарах и уроках,
+							p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
+							p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
+							.tariff-card-price
+								p.text-16 Стоимость
+								.price-value.price-value--mob.text-green 458 &#8381;/мес
+								p.text-16 в рассрочку на 12 месяцев без %
+							.tariff-card-cost
+								p.text-16 Полная стоимость
+								.price-value.price-value--mob 5 500 &#8381;
+							a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
+					.price-card__info
+						p #[span.text-bold Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
 
-					.price-card-manual
-						.info-block
-							p #[span.text-bold Печатное учебное пособие,<br>] которое отправим бесплатно «Почтой России»
-						.tutorial-block
-							.img-block
-								img(src="img/manual.png", alt="tutorial" width="76")
-							a(href="https://askkutsenko.info/#training_manual").btn Узнать больше
 
-				.footer-group.footer-group--proff.block-flex
-					.price-value.price-value--mob.text-green 11 500 &#8381;
-						//span.old-price 9800 &#8381;
-					a(href='#' target="_blank").btn.btn-solid.popup-open11 Перейти к оплате
-					//a(href="https://investorway.getcourse.ru/page5" target="_blank").btn.btn-solid Перейти к оплате
-				.subfooter-group
-					//.badge.badge-round -20%
-				//- 	.subfooter-text.block-flex
-				//- 		p до 5 марта
-				//- 		p 8820 &#8381; с 5 марта
-				//- 		p 9800 &#8381; с 10 марта
-			.price-card__info.flex-column
-				.block-col
-					.badge.badge-upper c 14 июня
-					p #[span.text-red Для тех, кому важна групповая<br class="br-mobile">  активность и обратная связь <br class="br-mobile"> от автора курса.] Кто хочет заложить прочный фундамент своей финансовой свободы и&nbsp;знать все нюансы, позволяющие на старте избежать ошибок новичков
-					.text-part
-						p.text-bold Прохождение курса займет 
-						p 1,1 месяца (около 40 часов)
-				.block-col
-					.block-col__svg
-						+docs
-					.text-part.mt-20
-						p.text-bold Рабочая тетрадь 
-						p Гугл-документ с таблицами, графиками и&nbsp;полями. Нужна для&nbsp;выполнения практических заданий
+		//===== Рассрочка
+		section.installment-block
+			.installment-text
+				.img-installment
+					img(src="img/0.png" width="575" alt="img")
+				p.text-60 #[span.text-green Воспользуйтесь беспроцентной рассрочкой] на 4, 6, 10 или 12 месяцев
+			.installment-cards
+			.grid-row
+				.col-8
+					.installment-block
+						.installment-item__inner
+							.installment-item.installment-block__percent
+								p.text-20 Первый взнос только через месяц
+								p.text-16 Сейчас ничего не платите
+						.installment-item__inner
+							.installment-item.installment-block__percent
+								p.text-20 Первый взнос только через месяц
+								p.text-16 Сейчас ничего не платите
+						.installment-item__inner
+							.installment-item.installment-block__percent
+								p.text-20 Первый взнос только через месяц
+								p.text-16 Сейчас ничего не платите
+						.installment-item__inner
+							.installment-item.installment-block__percent
+								p.text-20 Первый взнос только через месяц
+								p.text-16 Сейчас ничего не платите
 
 
-		//===== тариф Профессионал
-		.tariff-item.block-flex(itemscope itemtype="https://schema.org/ItemList")
-			.price-card.price-card--black
-				.text-group-30
-					h3(itemprop="name") Профессионал (ваш личный куратор — Никита Куценко)
-					p.text-20.text-bold Включает:
-					.price-card-desk
-						p.text-16 Полный курс из 10 модулей (+3&nbsp;бонусных) — 35 видеоуроков продолжительностью<br class="br-mobile"> 20 часов, 12 практических заданий, 11 тестов и&nbsp;дополнительные материалы;
-						p.text-16 Доступ в личный кабинет на&nbsp;3&nbsp;месяца и неограниченный доступ к&nbsp;видеоурокам (можно скачать по ссылке);
-						p.text-16 Рабочую тетрадь для выполнения практических заданий;
-						p.text-16 Проверку домашних заданий и возможность общаться с&nbsp;куратором в чате;
-					.price-card-benefits
-						p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции»:
-						p.text-16.text-offset Канал с оперативными торговыми идеями от лучших инвестиционных домов;
-						p.text-16.text-offset Чат со свободным общением всех участников курса по&nbsp;теме&nbsp;инвестиций и обсуждением своих торговых&nbsp;идей
 
-					.price-card-manual
-						.info-block
-							p #[span.text-bold Печатное учебное пособие,<br>] которое отправим бесплатно «Почтой России»
-						.tutorial-block
-							.img-block
-								img(src="img/manual.png", alt="tutorial" width="76")
-							a(href="https://askkutsenko.info#training_manual").btn Узнать больше
-
-					p.text-16.text-bold.mt-20 2 часа личных консультаций, в том числе консультирую по составлению инвестиционного портфеля;
-					p.text-16.text-bold.mt-20 Дополнительный модуль «Агрессивный прирост капитала»
-
-				.footer-group.footer-group--proff.block-flex
-					.price-value.price-value--mob.text-green 26 500 &#8381;
-						//span.old-price 22800 &#8381;
-					a(href='#' target="_blank").btn.btn-solid.popup-open12 Перейти к оплате
-					//a(href="https://investorway.getcourse.ru/page4" target="_blank").btn.btn-solid Перейти к оплате
-				.subfooter-group
-					//.badge.badge-round -20%
-				//- 	.subfooter-text.block-flex
-				//- 		p до 5 марта
-				//- 		p 20900 &#8381; с 5 марта
-				//- 		p 22800 &#8381; с 10 марта
-
-			.price-card__info.flex-column
-				.block-col
-					.badge.badge-upper c 14 июня
-					p #[span.text-red Для тех, кому важен персональный подход автора курса и личная передача опыта.] На нем Никита Куценко лично является вашим куратором на курсе! Также имеется дополнительный 10 МОДУЛЬ! Как правило, этот тариф "отбивается" за 2-3 месяца с небольшим депозитом.
-					.text-part
-						p.text-bold Прохождение курса займет 
-						p 1,2 месяца (около 40 часов)
-				.block-col
-					.block-col__img
-						img(src="img/ava.png" width="120" alt="avatar")
-					.text-part.mt-20
-						p.text-bold Личная консультация
-						p Помогаю сформировать оптимальный инвестиционный портфель под ваши требования. Проводится удаленно
 
 // ========== КОНЕЦ СТОИМОСТЬ ==========
