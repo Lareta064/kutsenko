@@ -104,6 +104,7 @@ $(document).ready(function () {
 	setupPopup('.popup-fade-10', '.popup-open10', '.popup-close');
 	setupPopup('.popup-fade-11', '.popup-open11', '.popup-close');
 	setupPopup('.popup-fade-12', '.popup-open12', '.popup-close');
+	setupPopup('.popup-fade-13', '.popup-open13', '.popup-close');
 
 
 
