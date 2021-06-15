@@ -59,11 +59,43 @@ section.price#price
 			.price-card__info
 				.badge.badge-upper Не привязан к дате
 				p #[span.text-red Прохождение бесплатного <br class="br-mobile"> модуля не&nbsp;обязывает вас <br class="br-mobile"> к покупке платной части курса] <br class="br-mobile"> Я&nbsp;хочу, чтобы перед покупкой, вы&nbsp;были уверены в том, что курс действительно вам подойдет
+		//===== Новые Тарифы
+		//===== тариф Любитель
+		mixin tariff-cards(badge, title, subtitle, var1, var2, var3, var4, var5, var6, var7, var8, per2)
+			.tariff-card
+				if badge != ''
+					.card-badge !{badge}
+				.tariff-card__title
+					.text-group-30
+						p.text-14 тариф
+						h3(itemprop="name") !{title}
+						p.text-16 !{subtitle}
+				p.text-16.text-bold !{var1}:
+					.tariff-card-desk
+						p.text-16.text-offset !{var2},
+						p.text-16.text-offset !{var3},
+						p.text-16.text-offset 12 практических заданий,
+						p.text-16.text-offset !{var4},
+						p.text-16.text-offset дополнительные материалы
+				.tariff-card-option
+					p.post-text.text-16 Электронная рабочая тетрадь для практических заданий,
+					p.post-text.text-16 !{var5},
+					p.post-text.text-16 Доступ в личный кабинет студента курса — !{var6},
+					p.post-text.text-16 Учебное пособие на 150 страниц в печатном виде,
+					p.post-text.text-16 Проверка домашних заданий экспертами,
+					p.post-text.text-16 Сертификат об окончании курса,
+				.tariff-card-benefits
+					p.text-14 ВЫСШАЯ ЦЕННОСТЬ ТАРИФА
+					p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции» на !{var7} с торговыми рекомендациями в конце обучения и чатом выпускников курса
+				.tariff-card-extra
+					p.post-text.text-16 !{var8} бесплатного участия во всех вебинарах, семинарах и уроках,
+					p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
+					p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
+
 		.tariff-cards
 			.row
 				.col-md-6.col-lg-4
-					a(href="#").tariff-card.tariff-card__inner
-						.badge
+					.tariff-card
 						.text-group-30
 							p.text-14 тариф
 							h3(itemprop="name") Любитель
@@ -96,9 +128,9 @@ section.price#price
 							a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
 					.price-card__info
 						p #[span.text-bold Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
+				//===== тариф Любитель
 				.col-md-6.col-lg-4
-					a(href="#").tariff-card.tariff-card__inner
-						.badge
+					.tariff-card
 						.text-group-30
 							p.text-14 тариф
 							h3(itemprop="name") Любитель
@@ -131,12 +163,12 @@ section.price#price
 							a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
 					.price-card__info
 						p #[span.text-bold Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
+				//===== тариф Профессионал
 				.col-md-6.col-lg-4
-					a(href="#").tariff-card.tariff-card__inner
-						.badge
+					.tariff-card
 						.text-group-30
 							p.text-14 тариф
-							h3(itemprop="name") Любитель
+							h3(itemprop="name") Профессионал
 							p.text-16 1 месяц обучения,
 							.tariff-card-desk
 								p.text-16.text-bold 7 модулей (+2 бонусных):
