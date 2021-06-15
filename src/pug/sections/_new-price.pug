@@ -27,6 +27,48 @@ mixin docs
 		<path d="M59.9999 21.9118H42.6463C39.6983 21.9118 37.3096 19.6049 37.3096 16.7582V0L59.9999 21.9118Z" fill="#ACD1FC"/>
 		</svg>
 
+mixin tariff-cards(badge, title, subtitle, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10)
+	.tariff-card
+		if badge != ''
+			.card-badge !{badge}
+		.tariff-card__title
+			.text-group-30
+				p.text-14 тариф
+				h3(itemprop="name") !{title}
+				p.text-16 !{subtitle}
+		.tariff-card-desk
+			p.text-16.text-bold !{var1}:
+				.tariff-card-desk__item
+					p.text-16.text-offset !{var2},
+					p.text-16.text-offset !{var3},
+					p.text-16.text-offset 12 практических заданий,
+					p.text-16.text-offset !{var4},
+					p.text-16.text-offset дополнительные материалы
+		.tariff-card-option
+			p.post-text.text-16 Электронная рабочая тетрадь для практических заданий,
+			p.post-text.text-16 !{var5},
+			p.post-text.text-16 Доступ в личный кабинет студента курса — !{var6},
+			p.post-text.text-16 Учебное пособие на 150 страниц в печатном виде,
+			p.post-text.text-16 Проверка домашних заданий экспертами,
+			p.post-text.text-16 Сертификат об окончании курса,
+		.tariff-card-benefits
+			p.text-14 ВЫСШАЯ ЦЕННОСТЬ ТАРИФА
+			p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции» на !{var7} с торговыми рекомендациями в конце обучения и чатом выпускников курса
+		.tariff-card-extra
+			p.post-text.text-16 !{var8} бесплатного участия во всех вебинарах, семинарах и уроках,
+			p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
+			p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
+		.tariff-card-cost
+			.price-value.price-value--mob.text-green !{var9}&#8381
+				span.month /мес.
+			p.post-text.text-16 в рассрочку на 12 месяцев без %
+		.tariff-card-fullcost
+			p.text-16 Полная стоимость
+			.price-value.price-value--mob !{var10} &#8381;
+		a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
+	.price-card__info
+		p #[span.text-bold Для тех, у кого все хорошо<br class="br-mobile"> с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
+
 // ========== СТОИМОСТЬ ==========
 
 section.price#price
@@ -59,145 +101,16 @@ section.price#price
 			.price-card__info
 				.badge.badge-upper Не привязан к дате
 				p #[span.text-red Прохождение бесплатного <br class="br-mobile"> модуля не&nbsp;обязывает вас <br class="br-mobile"> к покупке платной части курса] <br class="br-mobile"> Я&nbsp;хочу, чтобы перед покупкой, вы&nbsp;были уверены в том, что курс действительно вам подойдет
-		//===== Новые Тарифы
-		//===== тариф Любитель
-		mixin tariff-cards(badge, title, subtitle, var1, var2, var3, var4, var5, var6, var7, var8, per2)
-			.tariff-card
-				if badge != ''
-					.card-badge !{badge}
-				.tariff-card__title
-					.text-group-30
-						p.text-14 тариф
-						h3(itemprop="name") !{title}
-						p.text-16 !{subtitle}
-				p.text-16.text-bold !{var1}:
-					.tariff-card-desk
-						p.text-16.text-offset !{var2},
-						p.text-16.text-offset !{var3},
-						p.text-16.text-offset 12 практических заданий,
-						p.text-16.text-offset !{var4},
-						p.text-16.text-offset дополнительные материалы
-				.tariff-card-option
-					p.post-text.text-16 Электронная рабочая тетрадь для практических заданий,
-					p.post-text.text-16 !{var5},
-					p.post-text.text-16 Доступ в личный кабинет студента курса — !{var6},
-					p.post-text.text-16 Учебное пособие на 150 страниц в печатном виде,
-					p.post-text.text-16 Проверка домашних заданий экспертами,
-					p.post-text.text-16 Сертификат об окончании курса,
-				.tariff-card-benefits
-					p.text-14 ВЫСШАЯ ЦЕННОСТЬ ТАРИФА
-					p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции» на !{var7} с торговыми рекомендациями в конце обучения и чатом выпускников курса
-				.tariff-card-extra
-					p.post-text.text-16 !{var8} бесплатного участия во всех вебинарах, семинарах и уроках,
-					p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
-					p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
 
+		//===== Новые Тарифы
 		.tariff-cards
 			.row
 				.col-md-6.col-lg-4
-					.tariff-card
-						.text-group-30
-							p.text-14 тариф
-							h3(itemprop="name") Любитель
-							p.text-16 1 месяц обучения,
-							.tariff-card-desk
-								p.text-16.text-bold 7 модулей (+2 бонусных):
-								p.text-16.text-offset 30 видеоуроков,
-								p.text-16.text-offset 16,5 часов материала,
-								p.text-16.text-offset 12 практических заданий,
-								p.text-16.text-offset 10 тестов,
-								p.text-16.text-offset дополнительные материалы
-							p.post-text.text-16 Электронная рабочая тетрадь для практических заданий,
-							p.post-text.text-16 Общий чат с экспертами работает ежедневно,
-							p.post-text.text-16 Доступ в личный кабинет студента курса — 2 месяца,
-							p.post-text.text-16 Учебное пособие на 150 страниц в печатном виде,
-							p.post-text.text-16 Проверка домашних заданий экспертами,
-							p.post-text.text-16 Сертификат об окончании курса,
-							.tariff-card-benefits
-								p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции» на 2 месяца с торговыми рекомендациями в конце обучения и чатом выпускников курса
-							p.post-text.text-16 2 месяца бесплатного участия во всех вебинарах, семинарах и уроках,
-							p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
-							p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
-							.tariff-card-price
-								p.text-16 Стоимость
-								.price-value.price-value--mob.text-green 458 &#8381;/мес
-								p.text-16 в рассрочку на 12 месяцев без %
-							.tariff-card-cost
-								p.text-16 Полная стоимость
-								.price-value.price-value--mob 5 500 &#8381;
-							a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
-					.price-card__info
-						p #[span.text-bold Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
-				//===== тариф Любитель
+					+tariff-cards('', 'Любитель', '1 месяц обучения', '7 модулей (+2 бонусных)', '30 видеоуроков', '16,5 часов материала,', '10 тестов', 'Общий чат с экспертами работает ежедневно,', '2 месяца', '2 месяца', '2 месяца', '485', '5 500')
 				.col-md-6.col-lg-4
-					.tariff-card
-						.text-group-30
-							p.text-14 тариф
-							h3(itemprop="name") Любитель
-							p.text-16 1 месяц обучения,
-							.tariff-card-desk
-								p.text-16.text-bold 7 модулей (+2 бонусных):
-								p.text-16.text-offset 30 видеоуроков,
-								p.text-16.text-offset 16,5 часов материала,
-								p.text-16.text-offset 12 практических заданий,
-								p.text-16.text-offset 10 тестов,
-								p.text-16.text-offset дополнительные материалы
-							p.post-text.text-16 Электронная рабочая тетрадь для практических заданий,
-							p.post-text.text-16 Общий чат с экспертами работает ежедневно,
-							p.post-text.text-16 Доступ в личный кабинет студента курса — 2 месяца,
-							p.post-text.text-16 Учебное пособие на 150 страниц в печатном виде,
-							p.post-text.text-16 Проверка домашних заданий экспертами,
-							p.post-text.text-16 Сертификат об окончании курса,
-							.tariff-card-benefits
-								p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции» на 2 месяца с торговыми рекомендациями в конце обучения и чатом выпускников курса
-							p.post-text.text-16 2 месяца бесплатного участия во всех вебинарах, семинарах и уроках,
-							p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
-							p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
-							.tariff-card-price
-								p.text-16 Стоимость
-								.price-value.price-value--mob.text-green 458 &#8381;/мес
-								p.text-16 в рассрочку на 12 месяцев без %
-							.tariff-card-cost
-								p.text-16 Полная стоимость
-								.price-value.price-value--mob 5 500 &#8381;
-							a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
-					.price-card__info
-						p #[span.text-bold Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
-				//===== тариф Профессионал
+					+tariff-cards(badge, 'Эксперт', '1,1 месяц обучения', '9 модулей (+2 бонусных)', '36 видеоуроков', '20 часов материала,', '11 тестов', 'Общий чат с экспертами работает ежедневно&nbsp;(отвечают&nbsp;на&nbsp;ваши&nbsp;вопросы),', '5 месяцев', '2 месяца', '2 месяца', '958', '11 500')
 				.col-md-6.col-lg-4
-					.tariff-card
-						.text-group-30
-							p.text-14 тариф
-							h3(itemprop="name") Профессионал
-							p.text-16 1 месяц обучения,
-							.tariff-card-desk
-								p.text-16.text-bold 7 модулей (+2 бонусных):
-								p.text-16.text-offset 30 видеоуроков,
-								p.text-16.text-offset 16,5 часов материала,
-								p.text-16.text-offset 12 практических заданий,
-								p.text-16.text-offset 10 тестов,
-								p.text-16.text-offset дополнительные материалы
-							p.post-text.text-16 Электронная рабочая тетрадь для практических заданий,
-							p.post-text.text-16 Общий чат с экспертами работает ежедневно,
-							p.post-text.text-16 Доступ в личный кабинет студента курса — 2 месяца,
-							p.post-text.text-16 Учебное пособие на 150 страниц в печатном виде,
-							p.post-text.text-16 Проверка домашних заданий экспертами,
-							p.post-text.text-16 Сертификат об окончании курса,
-							.tariff-card-benefits
-								p.text-16.text-bold Доступ в закрытый клуб «Эффективные инвестиции» на 2 месяца с торговыми рекомендациями в конце обучения и чатом выпускников курса
-							p.post-text.text-16 2 месяца бесплатного участия во всех вебинарах, семинарах и уроках,
-							p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
-							p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
-							.tariff-card-price
-								p.text-16 Стоимость
-								.price-value.price-value--mob.text-green 458 &#8381;/мес
-								p.text-16 в рассрочку на 12 месяцев без %
-							.tariff-card-cost
-								p.text-16 Полная стоимость
-								.price-value.price-value--mob 5 500 &#8381;
-							a(href='#' target="_blank").btn.btn-solid.popup-open10  Перейти к оплате
-					.price-card__info
-						p #[span.text-bold Для тех, у кого все хорошо<br class="br-mobile">  с&nbsp;самоорганизацией.] <br class="br-mobile">  Кто хочет повысить<br class="br-mobile">  уровень финансовой грамотности&nbsp;и&nbsp;готов самостоятельно искать информацию и&nbsp;набивать «шишки»&nbsp;на&nbsp;практике
+					+tariff-cards('', 'Профессионал', '1,2 месяца обучения', '10 модулей (+3 бонусных)', '40 видеоуроков', '20 часов материала,', '11 тестов', 'Общий чат с экспертами работает ежедневно,', '1 год', '5 месяцев', '5 месяцев', '2 208', '26 500')
 
 
 		//===== Рассрочка
@@ -226,8 +139,5 @@ section.price#price
 							.installment-item.installment-block__percent
 								p.text-20 Первый взнос только через месяц
 								p.text-16 Сейчас ничего не платите
-
-
-
 
 // ========== КОНЕЦ СТОИМОСТЬ ==========

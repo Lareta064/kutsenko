@@ -1,11 +1,80 @@
-.tariff-card {
-  max-width: 300px;
-  width: 100%;
-  min-height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  position: relative;
-  background: @bg;
+.tariff-cards {
+  margin-top: 140px;
 }
 
+.tariff-card {
+  background-color: @bg;
+  border-radius: 10px;
+  padding: 30px 30px 100px;
+
+  .btn{
+    font-family: @mb;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+.tariff-card__title {
+  .text-group-30 h3 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.tariff-card-desk, .tariff-card-benefits {
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 14px 20px 24px 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tariff-card-desk__item {
+  padding-left: 30px;
+}
+
+.tariff-card-option p + p, .tariff-card-extra p + p {
+  margin-top: 20px;
+}
+
+.tariff-card-benefits {
+  .text-14 p {
+    text-transform: uppercase;
+    font-family: @mb;
+  }
+}
+
+.tariff-card-cost {
+  background-color: rgba(17, 17, 21, 0.5);
+  border-radius: 10px;
+  padding: 14px 20px 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.price-value {
+  font-size: 60px;
+
+  .month {
+    font-size: 30px;
+  }
+}
+
+.tariff-card-fullcost {
+  border-radius: 10px;
+  padding: 14px 20px 20px;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.installment-text {
+  position: relative;
+}
+
+.img-installment {
+  position: absolute;
+  right: 0;
+
+}
