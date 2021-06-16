@@ -59,6 +59,7 @@ mixin tariff-cards(badge, title, subtitle, var1, var2, var3, var4, var5, var6, v
 			p.post-text.text-16 Личные рекомендации Никиты Куценко по инвестиционной стратегии и обратная связь по дипломной работе,
 			p.post-text.text-16 Дополнительный модуль «Агрессивный прирост капитала» (уроки по IPO и криптовалюте)
 		.tariff-card-cost
+			p.text-16 Стоимость
 			.price-value.price-value--mob.text-green !{var9}&#8381
 				span.month /мес.
 			p.post-text.text-16 в рассрочку на 12 месяцев без %
@@ -118,26 +119,25 @@ section.price#price
 			.installment-text
 				.img-installment
 					img(src="img/0.png" width="575" alt="img")
-				p.text-60 #[span.text-green Воспользуйтесь беспроцентной рассрочкой] на 4, 6, 10 или 12 месяцев
+				p.text-60 #[span.text-green Воспользуйтесь<br> беспроцентной рассрочкой<br>] на 4, 6, 10 или 12 месяцев
 			.installment-cards
 			.grid-row
-				.col-8
-					.installment-block
+				.col-12
+					.installment-cards__item
 						.installment-item__inner
-							.installment-item.installment-block__percent
-								p.text-20 Первый взнос только через месяц
+							.installment-item
+								p.text-20 Первый взнос только через месяц
 								p.text-16 Сейчас ничего не платите
 						.installment-item__inner
-							.installment-item.installment-block__percent
-								p.text-20 Первый взнос только через месяц
-								p.text-16 Сейчас ничего не платите
+							.installment-item
+								p.text-20 Возможно только для граждан России
 						.installment-item__inner
-							.installment-item.installment-block__percent
-								p.text-20 Первый взнос только через месяц
-								p.text-16 Сейчас ничего не платите
+							.installment-item
+								p.text-20 По паспорту
+								.icon-age 18+
 						.installment-item__inner
-							.installment-item.installment-block__percent
-								p.text-20 Первый взнос только через месяц
-								p.text-16 Сейчас ничего не платите
+							.installment-item
+								p.text-20 С СНГ и Крымом банк не работает
+								p.text-16 Приносим извинения
 
 // ========== КОНЕЦ СТОИМОСТЬ ==========

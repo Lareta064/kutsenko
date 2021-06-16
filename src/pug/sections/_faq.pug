@@ -1,0 +1,102 @@
+mixin plus
+    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.5">
+    <path d="M0.372667 17.9016C0.141768 17.6707 -0.0013072 17.352 9.00373e-06 16.9998C1.49799e-07 16.2954 0.57096 15.7245 1.27531 15.7245L32.7247 15.7249C33.429 15.7249 34 16.2959 34 17.0002C34 17.7046 33.4291 18.2755 32.7245 18.2757L1.27556 18.2753C0.923167 18.2742 0.603345 18.1323 0.372667 17.9016Z" fill="white"/>
+    <path d="M16.0986 33.6276C15.8677 33.3967 15.7249 33.0782 15.726 32.7258L15.7243 1.27552C15.7245 0.57095 16.2954 -8.85383e-06 16.9998 1.03709e-10C17.7041 8.85404e-06 18.2751 0.570982 18.2753 1.27556L18.2755 32.7247C18.2755 33.429 17.7046 34 17.0002 34C16.6478 33.9989 16.3282 33.8571 16.0986 33.6276Z" fill="white"/>
+    </g>
+    </svg>
+
+section.faq
+    .container
+        .faq-content
+            .section-title
+                h2 Часто задаваемые вопросы
+            #accordion.faq-accordion
+                .row
+                    .col-xl-12
+                        .faq-accordion
+                            .card
+                                #headingOne.card-header.collapsed(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                                    .text-block__column
+                                        .head-4
+                                            h4 В какое время проходят занятия? Я могу смотреть вечером?
+                                    .accordion-icon
+                                        +plus
+                                #collapseOne.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                                    .text-paragraph
+                                        .row
+                                            .col-lg-8
+                                                p Many lenders can provide loans even if you have bad credit, though you will face tougher interest rates and less leeway with the loan amount and repayment terms.
+                                                p Typically anything under 630 is considered a bad credit rating, and even when people in this range do get loans, they tend to have a 28.64% APR on average. If you have collateral to put up, this can help you secure better terms despite a low credit rating.
+                                                p In addition, many lenders allow cosigned loans. These are loans where someone with better credit co-signs the loan with you. While this is a way for you to get a loan that you’d be shut out from otherwise, there are some caveats. Mainly, the person who cosigned for the loan is on the hook too so if you default on the payment, it could wreck their credit as well as your own.
+                                            .col-lg-4
+                                                .text-20
+                                                    p Typically anything under 630 is considered a bad credit rating, and even when people
+                            .card
+                                #headingTwo.card-header.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                                    .text-block__column
+                                        .head-4
+                                            h4 What if I have bad credit?
+                                    .accordion-icon
+                                        +plus
+                                #collapseTwo.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                                    .text-paragraph
+                                        .row
+                                            .col-lg-8
+                                                p Many lenders can provide loans even if you have bad credit, though you will face tougher interest rates and less leeway with the loan amount and repayment terms.
+                                                p Typically anything under 630 is considered a bad credit rating, and even when people in this range do get loans, they tend to have a 28.64% APR on average. If you have collateral to put up, this can help you secure better terms despite a low credit rating.
+                                                p In addition, many lenders allow cosigned loans. These are loans where someone with better credit co-signs the loan with you. While this is a way for you to get a loan that you’d be shut out from otherwise, there are some caveats. Mainly, the person who cosigned for the loan is on the hook too so if you default on the payment, it could wreck their credit as well as your own.
+                                            .col-lg-4
+                                                .text-20
+                                                    p Typically anything under 630 is considered a bad credit rating, and even when people
+                            .card
+                                #headingThree.card-header.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                                    .text-block__column
+                                        .head-4
+                                            h4 How do interest rates work?
+                                    .accordion-icon
+                                        +plus
+                                #collapseThree.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                                    .text-paragraph
+                                        .row
+                                            .col-lg-8
+                                                p Many lenders can provide loans even if you have bad credit, though you will face tougher interest rates and less leeway with the loan amount and repayment terms.
+                                                p Typically anything under 630 is considered a bad credit rating, and even when people in this range do get loans, they tend to have a 28.64% APR on average. If you have collateral to put up, this can help you secure better terms despite a low credit rating.
+                                                p In addition, many lenders allow cosigned loans. These are loans where someone with better credit co-signs the loan with you. While this is a way for you to get a loan that you’d be shut out from otherwise, there are some caveats. Mainly, the person who cosigned for the loan is on the hook too so if you default on the payment, it could wreck their credit as well as your own.
+                                            .col-lg-4
+                                                .text-20
+                                                    p Typically anything under 630 is considered a bad credit rating, and even when people
+                            .card
+                                #headingFour.card-header.collapsed(data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                                    .text-block__column
+                                        .head-4
+                                            h4 What affects interest rates?
+                                    .accordion-icon
+                                        +plus
+                                #collapseFour.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                                    .text-paragraph
+                                        .row
+                                            .col-lg-8
+                                                p Many lenders can provide loans even if you have bad credit, though you will face tougher interest rates and less leeway with the loan amount and repayment terms.
+                                                p Typically anything under 630 is considered a bad credit rating, and even when people in this range do get loans, they tend to have a 28.64% APR on average. If you have collateral to put up, this can help you secure better terms despite a low credit rating.
+                                                p In addition, many lenders allow cosigned loans. These are loans where someone with better credit co-signs the loan with you. While this is a way for you to get a loan that you’d be shut out from otherwise, there are some caveats. Mainly, the person who cosigned for the loan is on the hook too so if you default on the payment, it could wreck their credit as well as your own.
+                                            .col-lg-4
+                                                .text-20
+                                                    p Typically anything under 630 is considered a bad credit rating, and even when people
+                            .card
+                                #headingFive.card-header.collapsed(data-toggle='collapse', data-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+                                    .text-block__column
+                                        .head-4
+                                            h4 What is an APR?
+                                    .accordion-icon
+                                        +plus
+                                #collapseFive.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                                    .text-paragraph
+                                        .row
+                                            .col-lg-8
+                                                p Many lenders can provide loans even if you have bad credit, though you will face tougher interest rates and less leeway with the loan amount and repayment terms.
+                                                p Typically anything under 630 is considered a bad credit rating, and even when people in this range do get loans, they tend to have a 28.64% APR on average. If you have collateral to put up, this can help you secure better terms despite a low credit rating.
+                                                p In addition, many lenders allow cosigned loans. These are loans where someone with better credit co-signs the loan with you. While this is a way for you to get a loan that you’d be shut out from otherwise, there are some caveats. Mainly, the person who cosigned for the loan is on the hook too so if you default on the payment, it could wreck their credit as well as your own.
+                                            .col-lg-4
+                                                .text-20
+                                                    p Typically anything under 630 is considered a bad credit rating, and even when people

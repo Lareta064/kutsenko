@@ -7,10 +7,12 @@
   border-radius: 10px;
   padding: 30px 30px 100px;
 
-  .btn{
+  .btn {
     font-family: @mb;
     height: 60px;
     line-height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -54,6 +56,11 @@
   margin-bottom: 20px;
 }
 
+.tariff-card-fullcost p, .tariff-card-cost p {
+  font-family: @mb;
+  margin-bottom: 30px;
+}
+
 .price-value {
   font-size: 60px;
 
@@ -71,10 +78,49 @@
 
 .installment-text {
   position: relative;
+  margin-bottom: 50px;
 }
 
 .img-installment {
   position: absolute;
   right: 0;
-
 }
+
+
+.installment-cards__item {
+  display: flex;
+
+  .installment-item__inner {
+    padding: 10px 14px 23px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-right: 30px;
+    min-width: 300px;
+  }
+
+  .installment-item__inner:first-child {
+    margin-left: -10px;
+  }
+
+  .installment-item__inner:last-child {
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+  }
+}
+
+.installment-item .text-20 p {
+  font-family: @mb;
+}
+
+.icon-age {
+  position: relative;
+  font-size: 16px;
+  font-family: @mb;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: #DD4F48;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
