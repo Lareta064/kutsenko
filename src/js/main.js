@@ -228,4 +228,14 @@ $(document).ready(function () {
 		scrollChange: function ($currentListItem) {}
 	});
 
+	// Аккордион часто задаваемые вопросы
+	$('.collapse').each(function () {
+		$(this).on('show.bs.collapse', function () {
+			$(this).siblings('.question-header').children('.accordion-icon').addClass('active');
+		});
+		$(this).on('hide.bs.collapse', function () {
+			$(this).siblings('.question-header').children('.accordion-icon').removeClass('active');
+		})
+	});
+
 });
