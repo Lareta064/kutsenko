@@ -1,11 +1,19 @@
 .tariff-cards {
   margin-top: 140px;
 }
-.tariff-card.bg{
+
+.tariff-card{
+  margin-bottom: 50px;
+  @media(max-width: 1199px){
+    margin-bottom: 100px;
+  }
+}
+
+.tariff-card.bg {
   position: relative;
 }
 
-.tariff-badge{
+.tariff-badge {
   position: absolute;
   display: inline-block;
   height: 34px;
@@ -24,6 +32,10 @@
 .tariff-card {
   border-radius: 10px;
   padding: 30px 30px 100px;
+  @media(max-width: 767px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   .btn {
     font-family: @mb;
@@ -78,13 +90,17 @@
   margin-bottom: 20px;
 }
 
-.tariff-card-fullcost .text16, .tariff-card-cost .text16 {
+.tariff-card-fullcost .text-16, .tariff-card-cost .text-16 {
   font-family: @mb;
   margin-bottom: 30px;
 }
 
 .price-value {
   font-size: 60px;
+
+  @media (max-width: 767px) {
+    font-size: 50px;
+  }
 
   .month {
     font-size: 30px;
@@ -149,8 +165,19 @@
   font-family: @mb;
 }
 
-.price-card__info.price-card__info-100{
+.price-card__add {
   width: 100%;
+  @media(max-width: 1199px){
+    margin-bottom: 100px;
+  }
+}
+
+.price-card__add p {
+  font-size: 16px;
+}
+
+.price-card__add p + p {
+  margin-top: 14px;
 }
 
 
