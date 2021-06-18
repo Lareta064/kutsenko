@@ -229,6 +229,7 @@ $(document).ready(function () {
 	});
 
 	// Аккордион часто задаваемые вопросы
+	console.log($('.collapse'));
 	$('.collapse').each(function () {
 		$(this).on('show.bs.collapse', function () {
 			$(this).siblings('.question-header').children('.accordion-icon').addClass('active');

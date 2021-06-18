@@ -24,13 +24,27 @@
     min-height: 72px;
     display: flex;
     align-items: center;
+    position: relative;
+    cursor:pointer;
+    @media(max-width:1199px){
+      padding-right: 70px;
+    }
   }
 
   .accordion-icon svg {
     position: absolute;
     right: 27px;
     transition: 0.5s;
-    top: 19px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
+.question .text-paragraph p{
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  @media(max-width:767px){
+    padding-right: 40px;
+  }
+}
